@@ -17,7 +17,7 @@
     "images": "cp -R img/headers img/sprites dist",
     "debug": "node-sass --include-path node_modules/bourbon/app/assets/stylesheets --include-path style --output-style expanded style -o style",
     "dev": "node-sass --include-path node_modules/bourbon/app/assets/stylesheets --output-style compressed -w style/flattish.scss style/flattish.min.css",
-    "build": "npm run clean && npm run minify-css && npm run readme && npm run images",
+    "build": "yarn run clean && yarn run minify-css && yarn run readme && yarn run images",
     "test": "gulp && git status"
   },
   "repository": {
