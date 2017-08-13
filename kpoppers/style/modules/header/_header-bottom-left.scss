@@ -1,0 +1,136 @@
+// header image, pagename, tabmenu
+#header-bottom-left {
+  position: absolute;
+
+  @if $header-large {
+		top: 172px;
+	} @else {
+        top: 132px;
+	}
+
+  height: 93px;
+  width: 100%;
+  margin: 0 !important;
+  font-size: 12px;
+  background: linear-gradient(transparent 60%, rgb(221, 94, 137));
+
+  // subreddit name
+  // nested to avoid body:link styling
+  .pagename {
+    display: inline-block;
+    margin: 0;
+    color: transparent;
+    font-size: 16px;
+
+    a {
+      position: relative;
+      display: inline-block;
+      font-size: 12px;
+      height: 42px;
+      padding: 0 16px;
+      color: $dark-secondary-text;
+      font-variant: normal;
+      line-height: 53px;
+      text-transform: uppercase;
+      font-weight: 400;
+
+      &:hover {
+        font-size: 0;
+
+        &::after {
+          font-size: 16px;
+          content: '케이팝';
+          color: $pink;
+        }
+      }
+    }
+
+    &:hover a {
+      color: $dark-text;
+      text-decoration: none;
+    }
+  }
+
+  // tabmenu
+  .tabmenu {
+    position: absolute;
+    left: 0;
+    top: 29px;
+    padding-left: 16px;
+    margin-top: 43px;
+
+    li {
+      // tab styles
+      a {
+        @include tab-list-anchors(true, transparent, $light-accent, $primary, $dark-secondary-text, $dark-text);
+      }
+
+      // styles tabs
+      a { width: initial; }
+
+      // ensures selected tab remains unchanged
+      &.selected a { background-color: transparent; }
+    }
+  }
+}
+
+.res-nightmode #header-bottom-left .tabmenu li.selected a {
+  border-bottom-color: $accent;
+  border-bottom-style: solid;
+  @include border-width(0 0 2px 0);
+}
+
+// snooface
+#header-img,
+#header-img.default-header {
+  height: 67px;
+  width: 0;
+  @include margin(0 0 0 40px);
+  padding-right: 120px; // makes space for snoo visibility
+  background: url(%%snoo-2%%);
+}
+
+@media (min-width: $screen-md-min) {
+  #header-bottom-left {
+    @if $header-large {
+      @if $pinned-topics {
+        left: 0;
+      } @else {
+        left: 48px;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  #header-bottom-left {
+    @if $header-large {
+      top: 245px;
+    } @else {
+      top: 159px;
+    }
+
+    height: 64px;
+    background: linear-gradient(transparent 40%, rgb(221, 94, 137));
+
+    // positioning fix for pagename and tabmenu when reddit pushes custom banner image
+    .pagename a {
+      line-height: 62px; // to compensate for taller height of tabs
+    }
+
+    // restore initial tabmenu values
+    .tabmenu {
+      // position: static;
+      left: initial;
+      top: initial;
+      width: initial;
+      padding-left: initial;
+    }
+  }
+
+  #header-img,
+  #header-img.default-header {
+    height: 64px;
+    @include margin(0 0 0 16px);
+  }
+}

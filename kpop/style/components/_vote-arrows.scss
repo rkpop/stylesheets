@@ -1,0 +1,79 @@
+// vote arrow/score column & thumbnail margin
+.midcol {
+	position: relative; // need for placing pseudo element BEHIND vote arrow
+	z-index: 1;
+	@include margin(1px 16px null null);
+	width: 32px !important;
+	overflow: visible;
+}
+
+// styles nightmode AND default mode vote arrows (after upvote/downvote action)
+.res-nightmode .link .arrow,
+.res-nightmode .reddit-link .arrow,
+.res-nightmode .comment .arrow,
+.arrow {
+	&.upmod::before,
+	&.upmod:hover::before {
+		background-color: $upvote;
+	}
+
+	&.downmod::before,
+	&.downmod:hover::before {
+		background-color: $downvote;
+	}
+}
+
+// default arrow styles -- also affects sidebar vote arrows
+@keyframes upvote {
+	from { top: 0; opacity: 1; }
+	to { top: -20px; opacity: 0; }
+}
+
+@keyframes downvote {
+	from { bottom: 0; opacity: 1; }
+	to { bottom: -20px; opacity: 0; }
+}
+
+.res-nightmode .arrow,
+.arrow {
+	height: 15px;
+	width: 30px;
+
+	&.upmod,
+  &.up,
+  &.downmod,
+  &.down {
+		background: url(%%upboatsndownboats%%) !important;
+	}
+
+	&.upmod:focus::after,
+	&.downmod:focus::after {
+		display: block;
+		font-size: 12px;
+		opacity: 0;
+	}
+
+	&.upmod {
+		background-position: 0 0 !important;
+
+		&:focus::after {
+			content: '위';
+			color: $upvote;
+			animation: 1.5s upvote;
+		}
+	}
+
+	&.up { background-position: 30px 0 !important; }
+
+	&.downmod {
+		background-position: 0 15px !important;
+
+		&:focus::after {
+			content: '아래';
+			color: $downvote;
+			animation: 1.5s downvote;
+		}
+	}
+
+	&.down { background-position: 30px 14px !important; }
+}

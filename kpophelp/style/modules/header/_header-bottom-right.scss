@@ -1,0 +1,221 @@
+.userbarShow form.logout {
+  display: inline-block !important;
+}
+
+#userbarToggle,
+#header-bottom-right .user,
+#header-bottom-right span a,
+#header-bottom-right:hover span a {
+  text-shadow: $text-shadow;
+}
+
+@mixin header-bottom-right($image, $gradient, $image-light) {
+  @if ($image) {
+    @if ($gradient) {
+      #userbarToggle,
+      #header-bottom-right .user,
+      #header-bottom-right span a {
+        color: $dark-secondary-text !important;
+      }
+
+      #header-bottom-right:hover span a {
+        color: $dark-text !important;
+      }
+
+      .pref-lang.choice {
+        background-position: -200px -63px;
+      }
+
+      .gearIcon {
+        background: transparent url(%%spritesheet%%) -162px -97px no-repeat !important;
+      }
+
+      .logout a {
+        background-position: -16px -43px;
+      }
+    } @else if ($image-light) {
+      #userbarToggle,
+      #header-bottom-right .user,
+      #header-bottom-right span a {
+        color: $light-secondary-text !important;
+      }
+
+      #header-bottom-right:hover span a {
+        color: $light-text !important;
+      }
+
+      .pref-lang.choice {
+        background-position: -139px -43px;
+      }
+
+      .gearIcon {
+        background: transparent url(%%spritesheet) -146px -97px no-repeat !important;
+      }
+
+      .logout a {
+        background-position: 0 -43px;
+      }
+    } @else {
+      #userbarToggle,
+      #header-bottom-right .user,
+      #header-bottom-right span a {
+        color: $dark-secondary-text !important;
+      }
+
+      #header-bottom-right:hover span a {
+        color: $dark-text !important;
+      }
+
+      .pref-lang.choice {
+        background-position: -200px -63px;
+      }
+
+      .gearIcon {
+        background: transparent url(%%spritesheet%%) -162px -97px no-repeat !important;
+      }
+
+      .logout a {
+        background-position: -16px -43px;
+      }
+    }
+  } @else {
+    #userbarToggle,
+    #header-bottom-right .user,
+    #header-bottom-right span a {
+      color: set-text-color($primary, secondary-text) !important;
+    }
+
+    #header-bottom-right:hover span a {
+      color: set-text-color($primary, text) !important;
+    }
+
+    .pref-lang.choice {
+      background-position: -139px -43px;
+    }
+
+    .gearIcon {
+      background: transparent url(%%spritesheet) -146px -97px no-repeat !important;
+    }
+
+    .logout a {
+      background-position: 0 -43px;
+    }
+  }
+}
+
+// image, gradient, image-light
+@include header-bottom-right(true, false, false);
+
+.pref-lang.choice,
+.logout a {
+  position: relative;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  color: transparent;
+  text-indent: -9999px;
+}
+
+.gearIcon,
+.pref-lang.choice {
+  opacity: 0.87;
+
+  &:hover { opacity: 1; }
+}
+
+.res #header-bottom-right,
+#header-bottom-right {
+  position: absolute;
+  height: 20px;
+  margin-right: 16px;
+  padding: 0;
+  background-color: transparent !important;
+}
+
+html.res #header-bottom-right { top: 200px; }
+
+.res-nightmode #userbarToggle {
+  @extend #userbarToggle;
+}
+
+#userbarToggle {
+  background-color: transparent !important;
+  border: 0 !important;
+}
+
+// preferences button
+.pref-lang.choice { top: -1px; }
+
+// RES gear button
+.gearIcon {
+  position: relative;
+  right: 1px;
+  top: 5px;
+  height: 16px !important;
+  width: 16px !important;
+}
+
+// RES gear button on mouseover
+#RESMainGearOverlay {
+  background-color: transparent !important;
+  border: 0 !important;
+  top: 35px !important; // also positions gear icon when hovered
+}
+
+// RES settings dropdown menu
+.res-nightmode .RESDropdownList {
+  background-color: $dark-cards !important;
+}
+
+.RESDropdownList {
+  top: 68px !important;
+  right: 40px !important;
+  left: unset !important;
+  border: 0 !important;
+  border-radius: 2px !important;
+  background-color: $light-cards !important;
+  @include drop-shadow(1);
+  @include animation(RES-settings 0.2s $animation-curve-default);
+}
+
+.res-nightmode .RESDropdownList li {
+
+  &:hover a { background-color: $dark-app-bar !important; }
+
+  a {
+    color: $dark-text !important;
+
+    &:hover { background-color: $dark-app-bar !important; }
+  }
+}
+
+.RESDropdownList li {
+  height: auto !important;
+  border: 0 !important;
+  border-radius: 2px;
+
+  a {
+    color: $light-text !important;
+
+    &:hover { background-color: $light-app-bar !important; }
+  }
+}
+
+// RES settings search icon
+#RESSearchMenuItem {
+  top: 25px;
+  color: $light-icons !important;
+
+  &:hover {
+    color: rgba($primary, 0.38) !important;
+    background-color: transparent !important;
+  }
+}
+
+#nightSwitchToggleContainer,
+#nsfwSwitchToggle {
+  top: 10px;
+}
+
+// logout button
+.logout a { top: -2px; }

@@ -1,0 +1,17 @@
+@import "content/sitetable";
+
+.res-nightmode div.content { background-color: transparent !important; }
+
+.modtools-page div.content,
+div.content {
+	margin : {
+		right: 345px;
+		left: 10px;
+	}
+}
+
+// reddit newsletter infobar
+.infobar.newsletterbar {
+	width: 100%;
+	overflow: visible;
+}

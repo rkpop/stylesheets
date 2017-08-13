@@ -1,0 +1,113 @@
+// shared styles
+.res-nightmode input[type="text"],
+.res-nightmode input[type="password"],
+.res-nightmode input[type="url"],
+.res-nightmode textarea,
+input[type="text"],
+input[type="password"],
+input[type="url"],
+textarea {
+  border : {
+    width: 1px;
+    color: get-color('grey', '600');
+    radius: 2px;
+  }
+
+  font-family: $font-stack;
+  background-color: transparent !important;
+  box-shadow: none !important;
+
+  &:focus { border-color: $accent !important; }
+}
+
+// nightmode
+.res-nightmode input[type="text"],
+.res-nightmode input[type="password"],
+.res-nightmode input[type="url"],
+.res-nightmode textarea {
+  color: $dark-text !important;
+}
+
+// default
+input[type="text"],
+input[type="password"],
+input[type="url"],
+textarea {
+  color: $light-text;
+}
+
+// macros menu
+.res-nightmode .RESMacroDropdown {
+  border: 0;
+  background-color: $dark-cards !important;
+}
+
+.RESMacroDropdown {
+  font-size: 10px;
+  border-radius: 2px;
+  background-color: $light-cards;
+}
+
+.res-nightmode .RESMacroDropdownList li a {
+  border: 0;
+  color: $dark-text !important;
+
+  &:hover { background-color: $dark-app-bar !important; }
+}
+
+.RESMacroDropdownList li a {
+  color: $light-text !important; // thx RES
+
+  &:hover { background-color: $light-app-bar !important;  } // thx RES
+}
+
+// text editor container
+.usertext-edit {
+  textarea {
+    width: 100%;
+    margin-bottom: 9px !important; // override global reddit styles
+  }
+
+  // comment style buttons and character counter
+  & > .markdownEditor-wrapper { width: auto; } // override inline styling
+}
+
+.bottom-area { margin-bottom: 10px; }
+
+// live preview
+.res-nightmode .RESDialogSmall.livePreview {
+
+  & > h3 {
+    background-color: $primary;
+    color: set-text-color($primary, text);
+  }
+
+  .md.RESDialogContents p { color: $dark-text; }
+}
+
+.RESDialogSmall.livePreview {
+
+  // offset box-sizing
+  & > h3 {
+    height: 40px;
+    background-color: $primary;
+  }
+
+  .gearIcon {
+    position: static;
+
+    &::after { display: none; }
+  }
+
+  .md.RESDialogContents {
+    padding: 16px;
+    background-image: transparent;
+
+    p { color: $light-text; }
+  }
+}
+
+.livePreview,
+.livePreview .md {
+  background: none !important; // RES PLS
+}

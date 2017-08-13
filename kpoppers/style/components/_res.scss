@@ -1,0 +1,71 @@
+// RES settings menu hover animation
+@include keyframes(RES-settings) {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    width: em(180, 10);
+    height: em(330, 10);
+    opacity: 1;
+  }
+}
+
+// RES macros menu open animation
+@include keyframes(RESmenuopen) {
+  0% { @include transform(scale(0)); }
+  100% { @include transform(scale(1)); }
+}
+
+#RESShortcutsViewport {
+  max-height: none !important;
+}
+
+.res .thing .tagline .author,
+.thing .tagline .author {
+  border-radius: 2px !important;
+}
+
+.res .thing .tagline .author.moderator,
+.thing .tagline .author.moderator {
+  color: set-text-color(get-color('green'), text);
+  background-color: get-color('green') !important;
+
+  &:hover {
+    background-color: set-text-color(get-color('green'), '700');
+  }
+}
+
+#modalOverlay {
+  background-color: $light-disabled-text !important;
+}
+
+#RESConsoleContainer {
+  @include drop-shadow(6);
+
+  * { box-sizing: initial; }
+}
+
+.res-nightmode .infobar:not(.newsletterbar) .md,
+.res-nightmode .reddit-infobar .md {
+  color: inherit !important;
+}
+
+// RES tips & tricks
+.guiders_content h2 { font-size: initial; }
+
+// dialog box when hovering over a user
+.RESDialogSmall {
+  &::before,
+  &::after {
+    display: none !important;
+  }
+
+  @include drop-shadow(5);
+}
+
+.RESDialogSmall,
+.RESDialogSmall * {
+  box-sizing: content-box;
+}

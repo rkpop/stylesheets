@@ -1,0 +1,193 @@
+// nightmode
+.res-nightmode .titlebox {
+
+	// title
+	h1.hover.redditname {
+		border: 0;
+		background-color: transparent !important;
+	}
+
+	a.hover { color: $dark-text !important; }
+
+	// mod/approved submitter/flair label background
+	.leavemoderator,
+	form.toggle.leavecontributor-button,
+	form.toggle.flairtoggle {
+		color: $dark-secondary-text !important;
+		background-color: transparent !important;
+	}
+
+	// approved submitter text
+	span.option.main.active { color: $dark-secondary-text; }
+
+	.subscribers,
+	.users-online {
+		color: $dark-secondary-text !important;
+	}
+
+	.users-online::before {
+		background-position: -262px -160px;
+		opacity: 1;
+	}
+
+	// subscribe and dashboard buttons container
+	.subButtons { border-left-color: $dark-divider-text; }
+
+	.md p { color: $dark-text; }
+}
+
+// res
+.res .titlebox {
+	.usertext-body { clear: both; }
+
+	.fancy-toggle-button {
+		float: none;
+		margin-top: unset;
+		padding: 0;
+		border-left: unset;
+	}
+
+	a.option,
+	.res-fancy-toggle-button {
+		height: auto;
+		line-height: 2em;
+	}
+}
+
+.titlebox {
+	z-index: 0;
+	padding: 8px;
+
+	// title
+	a.hover {
+		color: $light-text;
+		font-size: 19px;
+		padding: 2px 0 0 2px;
+	}
+
+	// subscribe and dashboard buttons container
+	.subButtons {
+		display: flex;
+		float: right;
+		flex-direction: column;
+		padding: 0 15px 0 25px;
+		border : {
+			left: 1px solid $light-divider-text;
+			bottom: 5px solid transparent;
+			top: 5px solid transparent;
+		}
+	}
+
+	.fancy-toggle-button {
+		float: right;
+		padding: 5px 20px 5px 30px;
+		border-left: 1px solid $light-divider-text;
+	}
+
+	a.option {
+		height: auto;
+		border-radius: 2px;
+		background-image: none;
+
+		// thx nightmode
+		&.remove { background-color: get-color('red', '500') !important; }
+	}
+
+	.toggle a.option.active {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.subscribers,
+	.users-online {
+		display: block; // moves text below sub button for non-RES users
+		padding-left: 6px;
+		color: $light-secondary-text;
+	}
+
+	// subscribers
+	.subscribers {
+		.number {
+			font-weight: bold;
+			font-size: 24px;
+			margin-right: 1px;
+		}
+
+		.word { font-size: 13px; }
+	}
+
+	.tagline {
+		margin-left: 0;
+		padding: 5px;
+		text-align: center;
+	}
+
+	.users-online {
+		font-size: 13px;
+
+		// replace online user green orb
+		&::before {
+			background-position: -246px -160px;
+			opacity: 0.87;
+			height: 16px;
+			width: 16px;
+		}
+	}
+
+	.leavemoderator,
+	form.toggle,
+	.tagline {
+		padding-left: 5px;
+		font-size: 10px;
+	}
+
+	.tagline {
+		margin-left: 0;
+		padding: 5px;
+		text-align: center;
+
+	}
+
+	.bottom {
+		font-size: 100%;
+		display: none;
+	}
+
+	// material checkbox
+	.flairtoggle input[type="checkbox"]+label::before { vertical-align: -25%; }
+
+	form.flairtoggle {
+		padding-right: 5px;
+		overflow: hidden;
+	}
+}
+
+// subscribe button tooltip
+.res-nightmode .hover-bubble.multi-selector strong { color: $dark-text; }
+
+.hover-bubble.multi-selector {
+	border: 0;
+
+	&::before,
+	&::after {
+		display: none !important;
+	}
+
+	label {
+		&:hover { background-color: transparent; }
+
+		a {
+			height: 14px;
+			width: 14px;
+		}
+	}
+}
+
+.flairselector {
+	transition: none;
+
+	h2 {
+		background: none;
+		font-size: 16px;
+	}
+}

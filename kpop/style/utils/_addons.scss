@@ -1,0 +1,289 @@
+// sidebar image
+@if $sidebar-img {
+  .titlebox::before {
+    position: absolute;
+    top: -$sidebar-img-height - 16px;
+    right: -330px;
+    display: block;
+    height: $sidebar-img-height;
+    width: 330px; // 100%
+    content: '';
+    border-radius: 2px;
+    background: url(%%sidebar%%) center;
+    @include drop-shadow(1);
+  }
+
+  @media (max-resolution: 1dppx) and (min-width: $screen-md-min) {
+    .titlebox::before {
+      right: 0;
+    }
+  }
+}
+
+// pinned topics
+@if $pinned-topics {
+  // number of stickied links
+  $num-stickied-links: 0;
+
+  // number of stickied menus
+  $num-stickied-menus: 0;
+
+  // desired image backgrounds for stickies
+  $sticky-link-images: ();
+  $sticky-menu-images: ();
+
+  @each $key, $map in $pinned-map {
+    $type: map-get($map, type);
+    $image: map-get($map, image);
+
+    // calculate number of sticky links and sticky menus
+    @if $type == 'link' {
+      $num-stickied-links: $num-stickied-links + 1;
+      $sticky-link-images: append($sticky-link-images, $image, 'comma');
+    } @else if $type == 'menu' {
+      $num-stickied-menus: $num-stickied-menus + 1;
+      $sticky-menu-images: append($sticky-menu-images, $image, 'comma');
+    }
+  }
+
+  // assign image backgrounds
+  @if $num-stickied-links > 0 {
+    @for $i from 1 through $num-stickied-links {
+      @include sticky-image-switch('link', nth($sticky-link-images, $i), $i);
+    }
+  }
+
+  @if $num-stickied-menus > 0 {
+    @for $i from 1 through $num-stickied-menus {
+      @include sticky-image-switch('menu', nth($sticky-menu-images, $i), $i);
+    }
+  }
+
+  .res-nightmode .titlebox blockquote {
+    p {
+      background-color: $dark-background;
+
+      a {
+        color: $dark-secondary-text;
+        background-color: $dark-background;
+      }
+    }
+
+    ul:first-of-type {
+      background-color: $dark-background;
+
+      li:first-of-type {
+        color: $dark-secondary-text;
+        background-color: transparent;
+      }
+
+      li:not(:first-of-type) {
+        color: $dark-secondary-text;
+        background-color: $dark-background;
+
+        &:hover { color: $light-primary; }
+
+        a { color: $dark-secondary-text; }
+      }
+    }
+
+    ul:nth-of-type(2) {
+      background-color: $dark-background;
+
+
+      li:first-of-type {
+        a {
+          color: $dark-secondary-text !important;
+        }
+        background-color: transparent;
+        &:hover {
+            color: #fff !important;
+            background-color: rgba(77,208,225, 0.75);
+        }
+      }
+    }
+  }
+
+  .titlebox blockquote {
+    border: 0;
+    margin: 0 !important;
+    padding: 0;
+
+    p,
+    ul,
+    a {
+      @include transition-default;
+      @include border-right-radius(2px);
+    }
+
+    p,
+    ul {
+      background: url(%%stickies%%) no-repeat;
+    }
+
+    // pinned links
+    p {
+      width: 100%;
+      height: 40px;
+      background-color: $light-background;
+
+      &:hover { background-color: $light-primary; }
+
+      a {
+        display: block;
+        height: 40px;
+        border-color: transparent;
+        border-style: solid;
+        border-width: 0 0 0 60px;
+        padding: 0;
+        line-height: 40px;
+        font-size: 14px;
+        color: $light-secondary-text;
+        font-weight: bold;
+        background-color: $light-background;
+        background-clip: padding-box;
+
+        &:hover {
+          background-color: $light-primary;
+          color: $dark-text;
+        }
+      }
+    }
+
+    // pinned menus
+    ul {
+      padding-left: 0;
+
+      li {
+        list-style-type: none;
+
+        // list titles
+        &:first-of-type {
+          height: 40px;
+          padding-left: 60px;
+          margin-left: 0 !important;
+          font-size: 14px;
+          font-weight: bold;
+          color: $light-secondary-text;
+          line-height: 40px;
+          background-color: transparent !important;
+        }
+      }
+
+      // media & discussion menu
+      &:first-of-type {
+        padding: 0 0 8px;
+        background-color: $light-background;
+
+        li:not(:first-of-type) {
+          padding: 5px 0 5px 30px;
+          line-height: 20px;
+          font-size: 14px;
+          color: $light-secondary-text;
+          background-color: $light-background;
+          @include transition-default;
+
+          &:hover {
+            background-color: $tooltip;
+
+            a {
+              font-weight: bold;
+              color: $light-primary;
+            }
+          }
+
+          a {
+            display: block;
+            color: $light-secondary-text;
+          }
+        }
+      }
+    }
+
+    // music shows
+    ul:nth-of-type(2) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: center;
+      align-items: flex-start;
+      margin-top: 5px;
+      background-color: $light-background;
+
+      li {
+        // title
+        &:first-of-type {
+          width: 100%;
+          &:hover {
+            background-color: rgba(77,208,225, 0.75) !important;
+            a {
+              color: #fff !important;
+            }
+          }
+
+          a {
+            color: $light-secondary-text;
+          }
+        }
+
+        // tiles
+        &:not(:first-of-type) {
+          position: relative;
+          display: block;
+          height: 100px;
+          width: 104px;
+          margin-bottom: 5px;
+          overflow: hidden;
+
+          &:hover::before { @include transform(scale(1.25)); }
+
+          &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            content: '';
+            background: url(%%spritesheet-musicshows%%);
+            @include transition-default;
+          }
+
+          a {
+            display: block;
+            height: 100%;
+            width: 100%;
+            font-size: 10px;
+            font-weight: bold;
+            line-height: 180px;
+            text-align: center;
+            color: $dark-secondary-text;
+            text-transform: uppercase;
+            background: $scrim;
+
+            &:hover { color: $pink; }
+          }
+        }
+
+        // mcd
+        &:nth-of-type(2)::before { background-position: 0 -100px; }
+
+        // mubank
+        &:nth-of-type(3)::before { background-position: -104px -100px; }
+
+        // mucore
+        &:nth-of-type(4)::before { background-position: -208px 0; }
+
+        // show champ
+        &:nth-of-type(5)::before { background-position: -208px -100px; }
+
+        // inki
+        &:nth-of-type(6)::before { background-position: -104px 0; }
+
+        // sketchbook
+        &:nth-of-type(7)::before { background-position: 0 -200px; }
+      }
+    }
+  }
+}

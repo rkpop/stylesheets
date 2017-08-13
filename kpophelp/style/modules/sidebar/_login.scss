@@ -1,0 +1,41 @@
+// danger
+#remember-me .recover-password:hover {
+  font-size: 0;
+
+  &::after {
+    margin-left: 1em;
+    content: 'rememBER me';
+    font-size: x-small;
+    vertical-align: middle;
+  }
+}
+
+.login-form-side:hover::after {
+  position: relative;
+  top: -24px;
+  left: 26px;
+  content: "i'm in da-da-da-danger pinocchio~";
+}
+
+// sign up/login modal
+.c-checkbox input[type="checkbox"] + label::before {
+	vertical-align: -4px;
+}
+
+// sidebar login card
+.res-nightmode .login-form-side .submit {
+	background-color: transparent !important;
+
+	&:hover { border-radius: 2px !important; }
+}
+
+#login_login-main {
+	position: relative;
+	top: -84px;
+	border: 0;
+}
+
+.res-nightmode .login-form-side label { color: $dark-text !important; }
+
+// material checkbox
+.login-form-side input[type="checkbox"]+label::before { vertical-align: -25%; }

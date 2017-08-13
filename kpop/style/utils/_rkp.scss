@@ -1,0 +1,340 @@
+// main: ../flattish.scss
+
+// sidebar fix
+.res-nightmode .icon-menu a {
+    background-color: $dark-cards !important;
+}
+
+// Spoiler tag within comments. Your comment should be: "[This is a spoiler sentence.](/spoiler)"
+a[href$="/spoiler"] {
+  background: $black !important;
+  color: $black !important;
+
+  &:hover { color: $white !important; }
+}
+
+// stickied posts
+.stickied .title { color: $pink !important; }
+
+// link flairs
+.linkflairlabel {
+    display: inline-block;
+    vertical-align: top;
+    background-color: transparent;
+    border: none;
+    color: #000 !important;
+    font-size: 12px;
+    padding: 0 8px;
+    margin: 2px 6px 2px 0;
+    max-width: none;
+}
+
+.res-nightmode
+.linkflairlabel {
+    display: inline-block;
+    vertical-align: top;
+    background-color: transparent;
+    border: none;
+    color: #fff !important;
+    font-size: 12px;
+    padding: 0 8px;
+    margin: 2px 6px 2px 0;
+    max-width: none;
+}
+
+.linkflair-announcement .linkflairlabel {
+  padding: 2px;
+  color: $white;
+  font-weight: bold;
+  background-color: $black;
+}
+
+.res-nightmode body:not(.comments-page) .linkflair-spoiler a.title,
+body:not(.comments-page) .linkflair-spoiler a.title {
+  background: $black!important;
+  color: $black!important;
+  @include transition-default;
+
+  &:hover {
+    background: transparent!important;
+    color: $primary!important;
+  }
+}
+
+// Linkflair for news
+.linkflair-news span.linkflairlabel {
+    color: #fff !important;
+    background-color: $flair-news;
+}
+
+.linkflair .linkflair-news > span {
+    color: #fff !important;
+    background-color: $flair-news !important;
+}
+
+// Linkflair for releases
+.linkflair-release span.linkflairlabel {
+    color: #fff !important;
+    background-color: $flair-release;
+}
+
+.linkflair .linkflair-release > span {
+    color: #fff !important;
+    background-color: $flair-release !important;
+}
+
+// Linkflair for teasers
+.linkflair-teaser span.linkflairlabel {
+    color: #fff !important;
+    background-color: $flair-teaser;
+}
+
+.linkflair .linkflair-teaser > span {
+    color: #fff !important;
+    background-color: $flair-teaser !important;
+}
+
+// Linkflair for discussions
+.linkflair-discussion span.linkflairlabel {
+    color: #fff !important;
+    background-color: $flair-discussion;
+}
+
+.linkflair .linkflair-discussion > span {
+    color: #fff !important;
+    background-color: $flair-discussion !important;
+}
+
+// Linkflair for performance
+.linkflair-performance span.linkflairlabel {
+    color: #fff !important;
+    background-color: $flair-performance;
+}
+
+.linkflair .linkflair-performance > span {
+    color: #fff !important;
+    background-color: $flair-performance !important;
+}
+
+// Linkflair for variety
+.linkflair-variety span.linkflairlabel {
+    color: #fff !important;
+    background-color: $flair-variety;
+}
+
+.linkflair .linkflair-variety > span {
+    color: #fff !important;
+    background-color: $flair-variety !important;
+}
+
+// Linkflair for spoiler
+.linkflair span.linkflair-spoiler {
+    color: #000 !important;
+    background-color: transparent;
+}
+
+.linkflair .linkflair-spoiler > span {
+    color: #000 !important;
+    background-color: transparent !important;
+}
+
+// Linkflair for error
+.linkflair span.linkflair-error {
+    color: #000 !important;
+    background-color: transparent;
+}
+
+.linkflair .linkflair-error > span {
+    color: #000 !important;
+    background-color: transparent !important;
+}
+
+// Sidebar search buttons
+.side .md [href*="search?q=flair"] {
+    display: inline-block;
+    padding: 2px 8px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 14px;
+    margin: 4px;
+    border-radius: 3px;
+}
+
+.side .md [href*="search?q=flair%3A%22news"] {
+    background: $flair-news;
+}
+.side .md [href*="search?q=flair%3A%22teaser"] {
+    background: $flair-teaser;
+}
+.side .md [href*="search?q=flair%3A%22discussion"] {
+    background: $flair-discussion;
+}
+.side .md [href*="search?q=flair%3A%22mv"] {
+    background: $flair-release;
+}
+.side .md [href*="search?q=flair%3A%22song"] {
+    background: $flair-performance;
+}
+.side .md [href*="search?q=flair%3A%22variety"] {
+    background: $flair-variety;
+}
+
+// Sidebar filtering buttons
+.side .md a[href*="kr-"] {
+    display: inline-block;
+    padding: 10px 8px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.54);
+    line-height: 14px;
+    margin: 0px 4px 5px 0px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    width: 48%;
+    text-align: center;
+    font-size: 1.1666666666666667em;
+    background-color: #EFEFEF;
+    &:hover {
+        color: #fff;
+        background-color: #3CCADE;
+    }
+}
+
+.res-nightmode
+.side .md a[href*="kr-"] {
+    display: inline-block;
+    padding: 10px 8px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 14px;
+    margin: 0px 4px 5px 0px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    width: 48%;
+    text-align: center;
+    font-size: 1.1666666666666667em;
+    background-color: #303030;
+    &:hover {
+        background-color: #4dd0e1;
+    }
+}
+
+.side .md a[href*="#"] {
+    display: inline-block;
+    padding: 10px 8px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 14px;
+    margin: 0px 4px 5px 0px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    width: 48%;
+    text-align: center;
+    font-size: 13px;
+}
+
+// If on homepage, hide all the show buttons
+:not([lang^="kr-"]) .side .md [href*="s="] {
+    display: none;
+}
+
+[lang^="kr-"] .side .md [href^="//reddit.com"] {
+    display: inline-block;
+    color: #fff;
+    background-color: #FF8CC6;
+    &:hover {
+        color: #4f4f4f;
+        background-color: #EFEFEF;
+    }
+}
+
+.res-nightmode
+[lang^="kr-"] .side .md [href^="//reddit.com"] {
+    display: inline-block;
+    color: #fff;
+    background-color: #FF8CC6;
+    width: 46%;
+    &:hover {
+        background-color: #303030;
+    }
+}
+
+// Filtering news
+html:lang(kr-01) .linkflair-news {
+    display: none;
+}
+
+html:lang(kr-01) .side .md [href*="kr-01"] {
+    display: none;
+}
+
+// Filtering teasers
+html:lang(kr-02) .linkflair-teaser {
+    display: none;
+}
+
+html:lang(kr-02) .side .md [href*="kr-02"] {
+    display: none;
+}
+
+// Filtering performances
+html:lang(kr-03) .linkflair-performance {
+    display: none;
+}
+
+html:lang(kr-03) .side .md [href*="kr-03"] {
+    display: none;
+}
+
+// Filtering discussions
+html:lang(kr-04) .linkflair-discussion {
+    display: none;
+}
+
+html:lang(kr-04) .side .md [href*="kr-04"] {
+    display: none;
+}
+
+// Filtering releases
+html:lang(kr-05) .linkflair-release {
+    display: none;
+}
+
+html:lang(kr-05) .side .md [href*="kr-05"] {
+    display: none;
+}
+
+// Filtering variety
+html:lang(kr-06) .linkflair-variety {
+    display: none;
+}
+
+html:lang(kr-06) .side .md [href*="kr-06"] {
+    display: none;
+}
+
+/*
+
+Making changes to the top bar
+
+*/
+
+#header-bottom-left .tabmenu li [href*="controversial"] {
+    display: none !important;
+}
+
+#header-bottom-left .tabmenu li [href*="ads"] {
+    display: none !important;
+}
+
+.tb-metrics > a {
+    display: none !important;
+}
+
+.user .userkarma {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+#header-bottom-right > span.user > a {
+    font-size: 12px;
+}

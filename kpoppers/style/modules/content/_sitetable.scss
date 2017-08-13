@@ -1,0 +1,213 @@
+// promoted links
+.organic-listing {
+	overflow: inherit;
+	border: 0;
+
+	.link.promotedlink {
+		&.promoted,
+		&.external {
+			width: 100%;
+		}
+	}
+}
+
+.organic-listing {
+	overflow: inherit;
+	border: 0;
+
+	.link.promotedlink.promoted,
+	.link.promotedlink.external {
+		width: 100%;
+	}
+}
+
+// temporary empty state
+#noresults { padding: 16px; }
+
+// post rank
+.rank { display: none; }
+
+// site table
+.res-nightmode #siteTable {
+	background-color: $dark-cards;
+
+	.score.unvoted { color: $dark-disabled-text !important; }
+
+	// individual post listings
+	&>.thing {
+		border-bottom: 1px solid $dark-divider-text !important;
+
+		.title {
+            color: $dark-text !important;
+			&:visited { color: $grey-text !important; }
+        }
+
+		// RES active post highlight
+		&.RES-keyNav-activeThing {
+			background-color: rgba($dark-app-bar, 1) !important;
+		}
+
+		.tagline { color: $grey-text !important; }
+
+		.domain,
+		.domain a { color: $dark-secondary-text; }
+
+		.buttons li a {	color: $grey-text; }
+	}
+}
+
+#siteTable {
+	border-radius: 2px;
+	background-color: $light-cards;
+	@include drop-shadow(1);
+
+	// aligns score between new arrows
+	.score {
+
+		&.unvoted { color: $light-disabled-text; }
+
+		&.likes { color: $upvote; }
+
+		&.dislikes { color: $downvote; }
+	}
+
+	&>.likes .score,
+	&>.dislikes .score,
+	&>.thing .score {
+		position: relative;
+		height: 100%;
+		padding: 3px 0;
+		font-size: 14px;
+		line-height: 1;
+	}
+
+	// individual post listings
+	&>.thing {
+		height: auto !important;
+		margin: 0;
+		border-bottom: 1px solid $light-divider-text !important;
+		padding: 5px 5px 3px 5px !important;
+
+		// RES active post highlight
+		&.RES-keyNav-activeThing {
+			// background-color: rgba($light-app-bar, 1);
+			background-color: #f7f7f7;
+		}
+
+		.entry.RES-keyNav-activeElement {
+			background-color: transparent !important;
+		}
+
+		// post title
+		.title {
+			color: $link-color;
+			line-height: 1.35;
+			margin: 0;
+
+			&:hover { color: $link-color-hover; }
+			&:active { color: $link-color-active; }
+			&:visited { color: $link-color-visited; }
+		}
+
+		.tagline { color: $light-text; }
+
+		.domain,
+		.domain a { color: $light-secondary-text; }
+
+		// link action icons
+		.buttons li a { color: $light-text; }
+	}
+}
+
+// remove reddit default styling for borders of previously clicked links
+.link.last-clicked {
+	overflow: visible;
+	@include border-style(none none null none);
+}
+
+// color of post score
+.thing .link .score {
+
+	&.likes { color: $upvote; }
+
+	&.dislikes { color: $downvote; }
+}
+
+// expando related
+.self .expanded ~ .expando .usertext-body {
+	@include animation(0.2s slide-down $animation-curve-default forwards);
+}
+
+.tagline,
+.flat-list.buttons {
+	font-size: 11px;
+}
+
+// "submitted by"
+.tagline { margin: 8px 0; }
+
+// selftext body
+.res-nightmode .link .usertext-body .md { border-color: $dark-text; }
+
+.link .usertext-body .md {
+	background-color: $light-background;
+	border-color: $light-text;
+	border-radius: 2px;
+}
+
+// nsfw stamp
+.stamp {
+	padding: 0;
+	border: 0 !important;
+}
+
+.entry .buttons li.nsfw-stamp,
+.nsfw-stamp acronym {
+	border: 0 !important; // ;_; thx reddit css
+	border-radius: 2px;
+	background-color: $nsfw;
+	color: $white;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 0;
+	padding: 0 2px;
+}
+
+.error {	color: $error; }
+
+.thing[data-type="link"] .entry {
+	margin-left: 133px;
+}
+
+.flat-list.buttons {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	margin: 0;
+
+	li {
+		height: 20px;
+		line-height: 18px;
+
+		&.first { flex: 0 1 auto; }
+
+		&:not(.first) {
+			flex: 0 1 auto;
+
+			a {
+				display: inline-block;
+				background-repeat: no-repeat;
+				text-decoration: none;
+			}
+		}
+
+		a.flairselectbtn[data-event-action="editflair"] {
+			font-size: 0;
+
+			&::after {
+				font-size: 11px;
+				content: 'flair your post';
+			}
+		}
+	}
+}

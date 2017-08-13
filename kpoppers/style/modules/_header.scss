@@ -1,0 +1,109 @@
+#header {
+  height: 223px;
+  border: 0;
+  margin-bottom: 7px;
+  background: transparent !important;
+}
+
+@if $random-header {
+  // header image when logged in
+  // fallback image for logged out users in content.scss
+  .pinHeader-subanduser,
+  .pinHeader-userbar {
+    input[name=uh] ~ a::after { position: static; }
+  }
+
+  input[name=uh] {
+    ~ a::after {
+      position: absolute;
+      top: -39px;
+      right: -16px;
+      z-index: -1;
+      width: 100vw;
+      background-position: top center;
+
+      @if $header-large {
+        height: 420px;
+      } @else {
+        height: 223px;
+      }
+
+      content: '';
+      pointer-events: none;
+      background-attachment: scroll, fixed;
+    }
+
+    // declare lists
+    $header-images: ();
+    $group: ();
+    $selectors: ();
+
+    // 36 total values for random, rotating header
+    $values: ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9');
+
+    // number of values assigned to each header
+    $values-per-header: floor(length($values) / $num-header-images);
+
+    // remainder of values after division
+    $remainder: (length($values) - ($num-header-images * $values-per-header));
+
+    // least common multiple
+    $lcm: ($num-header-images * $values-per-header);
+
+    // populate header-images list
+    @for $i from 1 through $num-header-images {
+      $header-images: append($header-images, unquote('header#{$i}'), comma);
+    }
+
+    // assign a header image to each header image group
+    $counter: 1;
+    @for $i from 1 through $num-header-images {
+
+      // assign values for each group
+      @for $counter from $counter through ($values-per-header * $i) {
+        $group: append($group, nth($values, $counter), comma);
+      }
+
+      // assign selectors for each group
+      @for $a from 1 through length($group) {
+        $selectors: append($selectors, unquote('&[value^="#{nth($group, $a)}"] ~ a::after'), comma);
+      }
+
+      // assign selectors for remainder
+      @if $remainder > 0 {
+        $selectors: append($selectors, unquote('&[value^="#{nth($values, ($lcm + $remainder))}"] ~ a::after'), comma);
+      }
+
+      // styles
+      #{$selectors} {
+        @if $holiday {
+          background-image: $scrim,url(%%snow%%),url(%%snow%%),url(%%snow%%),url(%%snow%%),url(%%#{nth($header-images, $i)}%%);
+          background-position: 0 0, 0 0, 0 0, 50px 50px, 150px 10px, 0 0;
+          background-repeat: repeat;
+          animation: snowfall 4s linear infinite;
+
+          @keyframes snowfall {
+            to { background-position: 0 0, 600px 600px, 600px 600px, 1300px 1300px, 400px 600px, 0 0; }
+          }
+        } @else {
+          margin-top: -165px;
+          background-image: url(%%#{nth($header-images, $i)}%%);
+        }
+      }
+
+      // clear lists for next iteration
+      $group: ();
+      $selectors: ();
+
+      // increment counter
+      $counter: ($counter + $values-per-header);
+
+      // decrement remainder
+      $remainder: $remainder - 1;
+    }
+  }
+}
+
+@import "header/sr-bar";
+@import "header/header-bottom-right";
+@import "header/header-bottom-left";

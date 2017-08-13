@@ -1,0 +1,129 @@
+.res-nightmode .side,
+.side {
+	background-color: transparent !important;
+	margin-right: 10px;
+}
+
+.side {
+	padding-top: 85px;
+	width: 330px;
+
+	#ad_main,
+	#ad_main_top {
+		// stupid ad widths
+		box-sizing: content-box;
+
+	  // to compensate for box-sizing change
+		width: 302px;
+		padding: 16px 14px !important;
+	}
+
+	// first card (containing search and submit)
+	.spacer {
+		width: 330px;
+		margin: 0 0 5px;
+
+		&:first-of-type {
+			position: relative;
+			top: -85px;
+		}
+	}
+
+	.spacer:first-of-type,
+	.titlebox,
+	#moderation_tools,
+	#ad_main,
+	#ad_main_top,
+	.sidecontentbox {
+		font-size: 100%;
+	}
+
+	// hide mod tools collapse button
+	#moderation_tools .collapse-button { display: none; }
+
+	// hide create subreddit button and account activity div
+	.sidebox.create,
+	.account-activity-box {
+		display: none;
+	}
+
+	// sidebar markdown area
+	.md {
+		table {
+			width: 100%;
+		}
+
+		h5 + p {
+			display: flex;
+			justify-content: space-around;
+		}
+
+		a {
+			// hide nightmode compatibility link
+			&[href="#/RES_SR_Config/NightModeCompatible"] { display: none !important; }
+
+			// subreddit rules button
+			&[href="/r/kpop/wiki/rules"],
+			&[href="/r/kpop/wiki/relatedsubs"],
+			&[href="/r/kpop/wiki/usefulsites"] {
+				display: block;
+				margin: 15px 0;
+			}
+
+			// social icons
+			&[href$="btn"] {
+				display: inline-block !important;
+				position: relative !important;
+				width: 50px !important;
+				height: 50px !important;
+				color: transparent !important;
+				background-image: url(%%rkp-social-icons%%) !important;
+			}
+
+			&[href$="#lastfm-btn"] {
+				background-position: -50px 0;
+			}
+
+			&[href$="#steam-btn"] {
+				background-position: -100px 0;
+			}
+
+			&[href$="#irc-btn"] {
+				background-position: -150px 0;
+			}
+		}
+	}
+
+	@include transition-default;
+}
+
+#ad_main_top {
+	position: relative;
+	top: -84px;
+}
+
+// login form
+@import "sidebar/login";
+
+// search
+@import "sidebar/search";
+
+// submit buttons
+@import "sidebar/submit";
+
+// titlebox
+@import "sidebar/titlebox";
+
+// sidecontentbox
+@import "sidebar/sidecontentbox";
+
+@media (min-width: $screen-md-min) {
+	.side,
+	.side * {
+		z-index: 2; // higher than content z-index
+	}
+
+	.side {
+		width: 330px;
+	}
+}

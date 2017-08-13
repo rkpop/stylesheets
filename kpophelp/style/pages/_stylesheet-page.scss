@@ -1,0 +1,22 @@
+// makes stylesheet editor full width
+.sheets { margin: 0; }
+
+// Note: any changes to images here will be reflected immediately on reload and cannot be undone.
+#images .error { margin: 16px 0; }
+
+// stylesheet images
+ul#image-preview-list {
+  margin: 0;
+
+  li {
+    width: calc(50% - 8px);
+
+    &:nth-of-type(2n+1) { margin: 0 0 16px 0; }
+
+    &:nth-of-type(2n) { margin: 0 16px 16px 0; }
+  }
+
+  .preview img {
+    max-height: 68px; // 100px - padding-top and padding-bottom
+  }
+}

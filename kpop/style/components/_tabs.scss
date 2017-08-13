@@ -1,0 +1,52 @@
+@mixin tabs {
+  font-size: 12px;
+}
+
+@mixin tab-list-anchors($ripple: false, $orig-background-color: transparent, $ripple-color: $light-accent, $bg-color: $primary, $text-color: set-text-color($bg-color, secondary-text), $text-color-hover: set-text-color($bg-color, text)) {
+
+  color: $text-color !important;
+  background: transparent;
+  &:hover { color: $text-color-hover !important; background: rgba(255,209,129,0.3) }
+}
+
+@mixin base-tab-anchor-styles {
+  display: inline-block;
+  height: 20px;
+  line-height: 22px;
+  padding: 0 10px;
+  border: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  overflow: hidden;
+  @include transform(translateZ(0));
+  @include backface-visibility(hidden);
+}
+
+@mixin selected-tab {
+  border: 0;
+
+  &::after { right: 0; }
+}
+
+// header-bottom-left, flair page, and submit page
+.tabmenu,
+ul.tabmenu.formtab {
+  @include tabs;
+}
+
+.tabmenu li a,
+.res-nightmode ul.tabmenu.formtab li a,
+ul.tabmenu.formtab li a {
+  @include base-tab-anchor-styles;
+}
+
+.tabmenu li { margin: 0; }
+
+.tabmenu li.selected a,
+ul.tabmenu.formtab li.selected a {
+  @include selected-tab;
+}
+
+.tabmenu li.res-tabmenu-button {
+  height: 100%;
+}

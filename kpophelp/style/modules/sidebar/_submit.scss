@@ -1,0 +1,47 @@
+.submit-link,
+.submit-text {
+	position: relative;
+	width: 0;
+	height: 0;
+
+	.morelink {
+		background: none;
+		border: 0;
+		height: 0;
+
+		a {
+			position: relative;
+			top: 35px;
+			width: 146px;
+		}
+	}
+
+	.nub { display: none; }
+}
+
+.submit-link {
+	top: -69px;
+
+	.morelink {
+		top: -102px;
+		left: 15px;
+	}
+
+	// card underneath submit buttons
+	&::before {
+		position: relative;
+		top: -15px;
+		display: block;
+		height: 88px;
+		width: 330px;
+		font-size: 14px;
+		font-weight: bold;
+		content: 'Submit a new:';
+		padding: 8px !important;
+	}
+}
+
+.submit-text {
+	top: -88px;
+	left: 170px;
+}

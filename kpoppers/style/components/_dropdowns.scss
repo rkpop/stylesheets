@@ -1,0 +1,47 @@
+// dropdown menus
+select {
+  color: $light-text;
+  font-size: 13px;
+  background-color: transparent;
+  outline: none;
+  border-bottom-color: $light-hint-text;
+  @include border-width(0 0 1px 0);
+  @include appearance(none);
+
+  option {
+    color: $light-text;
+    background-color: $light-cards;
+  }
+}
+
+.res-nightmode select {
+  color: $dark-text !important;
+  border-bottom-color: $dark-hint-text !important;
+
+  option {
+    color: $dark-text !important;
+    background-color: $dark-cards;
+  }
+}
+
+
+// dropdown menu labels
+$dropdown-arrow-selectors: (
+  '#searchexpando label:not(:first-of-type)',
+  '.gold-accent.comment-visits-box .title::after'
+);
+$night-dropdown-arrow-selectors: ();
+
+@each $item in $dropdown-arrow-selectors {
+	$night-dropdown-arrow-selectors: append($night-dropdown-arrow-selectors, unquote('.res-nightmode #{$item}'), 'comma');
+}
+
+#{$dropdown-arrow-selectors} {
+  height: 19px;
+  width: 19px;
+  background: url(%%dropdown%%) no-repeat right;
+}
+
+#{$night-dropdown-arrow-selectors} {
+  background: url(%%dropdown-night%%) no-repeat right;
+}

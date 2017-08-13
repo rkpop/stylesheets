@@ -1,0 +1,45 @@
+.res-nightmode table {
+  border: 1px solid $dark-divider-text;
+  background-color: get-color('grey', '900');
+}
+
+table {
+  border: 1px solid $light-divider-text;
+  background-color: $light-cards;
+}
+
+thead {
+  padding-bottom: 3px;
+}
+
+.res-nightmode th {
+  color: $dark-secondary-text;
+}
+
+th {
+  vertical-align: bottom;
+  text-overflow: ellipsis;
+  letter-spacing: 0;
+  color: $light-text;
+}
+
+.res-nightmode tbody tr:hover {
+  /*background-color: #101010;*/
+    background-color: $pink;  
+}
+
+tbody tr {
+  @include transition(background-color .28s $animation-curve-default);
+
+  &:hover {
+    background-color: lighten($pink, 30%);
+  }
+}
+
+.res-nightmode td {
+  border-color: $dark-divider-text !important;
+}
+
+td {
+  border-color: $light-divider-text !important;
+}

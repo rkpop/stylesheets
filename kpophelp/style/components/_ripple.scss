@@ -1,0 +1,19 @@
+// ripple effect on button press
+@include keyframes(button-ripple) {
+	0% {
+		@include transform(scale(0));
+		opacity: 1;
+	}
+	100% {
+		@include transform(scale(2));
+		opacity: 0;
+	}
+}
+
+.arrow:focus::after,
+.sidecontentbox .gadget .right a:focus::before {
+  position: absolute;
+  content: " ";
+  border-radius: 50%;
+  @include animation(button-ripple .3s $animation-curve-linear-out-slow-in forwards);
+}

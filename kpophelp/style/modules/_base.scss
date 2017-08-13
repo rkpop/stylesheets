@@ -1,0 +1,66 @@
+* {
+  font-family: $font-stack;
+  outline: none;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+@if $link-color == $link-color-night and
+$link-color-hover == $link-color-hover-night and
+$link-color-active == $link-color-active-night and
+$link-color-visited == $link-color-visited-night {
+  .res-nightmode body a,
+  body a {
+    color: $link-color;
+    &:hover { color: $link-color-hover; }
+    &:active { color: $link-color-active; }
+    &:visited { color: $link-color-visited; }
+  }
+} @else {
+  .res-nightmode body a {
+    color: $link-color-night;
+    &:hover { color: $link-color-hover-night; }
+    &:active { color: $link-color-active-night; }
+    &:visited { color: $link-color-visited-night; }
+  }
+
+  body a {
+    color: $link-color;
+    &:hover { color: $link-color-hover; }
+    &:active { color: $link-color-active; }
+    &:visited { color: $link-color-visited; }
+  }
+}
+
+.res-nightmode body {
+  background-color: $dark-background !important;
+}
+
+body {
+  background-color: $light-background;
+
+  // header image for logged out users
+  &::before {
+    position: absolute;
+    z-index: -1;
+
+    @if $header-large {
+      height: 420px;
+    } @else {
+      height: 223px;
+    }
+
+    width: 100%;
+    content: '';
+
+    @if $random-header {
+      background-image: linear-gradient(to right,#dd5e89 0%,#f7bb97 100%);
+    } @else {
+      background-image: $scrim,url(%%header%%);
+    }
+
+    background-attachment: scroll, fixed;
+  }
+}

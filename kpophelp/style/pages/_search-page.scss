@@ -1,0 +1,26 @@
+.searchpane {
+  padding-left: 96px !important;
+  margin: 0;
+}
+
+.search-page .side .spacer:first-of-type { display: none; }
+
+.combined-search-page .searchpane { margin: 0; }
+
+#search input[type="text"] { font-family: $font-stack; }
+
+.combined-search-page .search-result-group {
+  padding: 0;
+  min-width: unset;
+  max-width: unset;
+}
+
+.res-nightmode .combined-search-page .search-result p { color: $dark-text; }
+
+.combined-search-page .search-result { margin: 0 0 16px 0; }
+
+.combined-search-page .search-result.has-thumbnail > .thumbnail {
+  max-height: 70px;
+
+  img { width: unset; }
+}

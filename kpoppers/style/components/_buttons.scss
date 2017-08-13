@@ -1,0 +1,321 @@
+@mixin global-button-styles {
+	height: 36px;
+	min-width: 64px;
+	padding: 0 8px !important;
+	border: 0 !important;
+	border-radius: 2px !important;
+	font-weight: bold;
+	font-family: $font-stack;
+	letter-spacing: normal;
+	line-height: 36px;
+	text-align: center;
+	text-transform: uppercase;
+	outline: 0;
+	will-change: box-shadow;
+	transition: box-shadow 0.2s $animation-curve-fast-out-linear-in,
+              background-color 0.2s $animation-curve-default,
+              color 0.2s $animation-curve-default;
+
+
+	&::-moz-focus-inner { border: 0; }
+}
+
+$button-selector-map: (
+  global-button: (
+		selector-name: 'button',
+		desired-font-size: 14,
+		color: $primary,
+		button-type: 'flat-button-colored-text',
+  ),
+
+	// titlebox
+	subreddit-subscribe-button: (
+		selector-name: '.titlebox a.option',
+		desired-font-size: 10,
+		background-color: get-color('green', '500'),
+		hover-color: get-color('green', '300'),
+		ripple-color: transparent,
+		button-type: 'flat-colorized-bg-button',
+  ),
+	add-shortcut-and-dashboard-button: (
+		selector-name: '.res-fancy-toggle-button',
+		desired-font-size: 10,
+		background-color: get-color('green', '500'),
+		hover-color: get-color('green', '300'),
+		ripple-color: transparent,
+		button-type: 'flat-colorized-bg-button',
+  ),
+
+	// submit page
+  submit-page-button: (
+		selector-name: '.submit-page button[type="submit"]',
+		desired-font-size: 14,
+		background-color: $primary,
+		hover-color: $dark-primary,
+		focus-not-active-background-color: $light-primary,
+		ripple-color: $light-primary,
+		button-type: 'raised-colorized-button',
+  ),
+
+	// settings page
+	settings-page-button: (
+		selector-name: '#sr-form .save-button button',
+		desired-font-size: 14,
+		background-color: $primary,
+		hover-color: $dark-primary,
+		focus-not-active-background-color: $light-primary,
+		ripple-color: $light-primary,
+		button-type: 'raised-colorized-button',
+  ),
+
+	// sidebar submit
+  submit-sidebar-card-button-one: (
+		selector-name: '.submit-link .morelink a',
+		desired-font-size: 14,
+		background-color: $primary,
+		hover-color: $dark-primary,
+		ripple-color: $light-primary,
+		button-type: 'flat-colorized-bg-button',
+  ),
+	submit-sidebar-card-button-two: (
+		selector-name: '.submit-text .morelink a',
+		desired-font-size: 14,
+		background-color: $primary,
+		hover-color: $dark-primary,
+		ripple-color: $light-primary,
+		button-type: 'flat-colorized-bg-button',
+  ),
+	sidebar-rules-button: (
+		selector-name: '.side a[href="/r/kpop/wiki/rules"]',
+		desired-font-size: 14,
+		background-color: $accent,
+		hover-color: $dark-accent,
+		ripple-color: $light-accent,
+		button-type: 'flat-colorized-bg-button',
+  ),
+	related-subs-button: (
+		selector-name: '.side a[href="/r/kpop/wiki/relatedsubs"]',
+		desired-font-size: 14,
+		background-color: $primary,
+		hover-color: $dark-primary,
+		ripple-color: $light-primary,
+		button-type: 'flat-colorized-bg-button',
+  ),
+	useful-sites-button: (
+		selector-name: '.side a[href="/r/kpop/wiki/usefulsites"]',
+		desired-font-size: 14,
+		background-color: $primary,
+		hover-color: $dark-primary,
+		ripple-color: $light-primary,
+		button-type: 'flat-colorized-bg-button',
+  ),
+
+	// comments page
+	comments-page-button-one: (
+		selector-name: '.commentarea .menuarea .spacer + .spacer form',
+		desired-font-size: 13,
+		button-type: 'flat-button-colored-text',
+  ),
+	comments-page-button-two: (
+		selector-name: '#REScommentSubToggle',
+		desired-font-size: 12,
+		color: get-color('green', '500'),
+		button-type: 'flat-button-colored-text',
+  ),
+
+	// flair page
+	flair-page-save-options: (
+		selector-name: '.save-button > button:nth-child(1)',
+		desired-font-size: 14,
+		background-color: $primary,
+		hover-color: $dark-primary,
+		focus-not-active-background-color: $light-primary,
+		ripple-color: $light-primary,
+		button-type: 'raised-colorized-button',
+	),
+
+	// RES tips and tricks
+	guiders_button: (
+	  selector-name: '.guiders_button',
+		desired-font-size: 14,
+		button-type: 'flat-button-colored-text',
+	)
+);
+
+$base-button-selectors: ();
+$night-button-selectors: ();
+$default-font-sized-buttons: ();
+$flat-button-colored-text-selectors: ();
+$night-flat-button-colored-text-selectors: ();
+$default-raised-button-selectors: ();
+$night-default-raised-button-selectors: ();
+
+$flat-colorized-bg-button-selectors: ();
+
+$raised-colorized-button-selectors: ();
+$night-raised-colorized-button-selectors: ();
+
+@each $key, $map in $button-selector-map {
+	$selector-name: map-get($map, selector-name);
+	$desired-font-size: map-get($map, desired-font-size);
+	$color: map-get($map, color);
+	$background-color: map-get($map, background-color);
+	$focus-not-active-background-color: map-get($map, focus-not-active-background-color);
+	$ripple-color: map-get($map, ripple-color);
+	$hover-color: map-get($map, hover-color);
+	$button-type: map-get($map, button-type);
+
+	$base-button-selectors: append($base-button-selectors, unquote('#{$selector-name}'), 'comma');
+	$night-button-selectors: append($night-button-selectors, unquote('.res-nightmode #{$selector-name}'), 'comma');
+
+	@if $desired-font-size != 14 {
+		#{$selector-name} { font-size: #{$desired-font-size}px !important; }
+	} @else {
+		$default-font-sized-buttons: append($default-font-sized-buttons, unquote('#{$selector-name}'), 'comma');
+	}
+
+	// flat buttons
+	@if $button-type == 'flat-button-colored-text' {
+		$flat-button-colored-text-selectors: append($flat-button-colored-text-selectors, unquote('#{$selector-name}'), 'comma');
+		$night-flat-button-colored-text-selectors: append($night-flat-button-colored-text-selectors, unquote('.res-nightmode #{$selector-name}'), 'comma');
+
+		@if $color != null {
+			.res-nightmode #{$selector-name},
+			#{$selector-name} {
+				color: $color !important;
+			}
+		} @else {
+			.res-nightmode #{$selector-name} { color: $light-text; }
+
+			#{$selector-name} { color: $dark-text; }
+		}
+	}
+
+	// default raised buttons
+	@if $button-type == 'default-raised-button' {
+		$default-raised-button-selectors: append($default-raised-button-selectors, unquote('#{$selector-name}'), 'comma');
+		$night-default-raised-button-selectors: append($night-default-raised-button-selectors, unquote('.res-nightmode #{$selector-name}'), 'comma');
+
+		.res-nightmode #{$selector-name},
+		#{$selector-name} {
+			@include drop-shadow(1);
+
+			&:focus:not(:active) { @include focus-shadow(); }
+
+			&:active { @include drop-shadow(2); }
+		}
+
+		.res-nightmode #{$selector-name} {
+			color: $dark-text;
+
+			&:hover { background-color: $dark-button-hover !important; }
+
+			&:focus:not(:active) { background-color: $dark-button-focus !important; }
+
+			&:active { background-color: $dark-button-active !important; }
+		}
+
+		#{$selector-name} {
+			color: $light-text;
+
+			&:hover { background-color: $light-button-hover; }
+
+			&:focus:not(:active) { background-color: $light-button-focus; }
+
+			&:active { background-color: $light-button-active; }
+		}
+	}
+
+	// flat buttons with color bg
+	@if $button-type == 'flat-colorized-bg-button' {
+		@if $background-color != $primary {
+			#{$selector-name} {
+				color: set-text-color($background-color, text) !important;
+
+				@include ripple($background-color, $ripple-color);
+
+				&:hover { background-color: $hover-color !important; }
+			}
+		} @else {
+			$flat-colorized-bg-button-selectors: append($flat-colorized-bg-button-selectors, unquote('#{$selector-name}'), 'comma');
+		}
+	}
+
+	// raised buttons with color bg
+	@if $button-type == 'raised-colorized-button' {
+		@if $background-color != $primary {
+			.res-nightmode #{$selector-name} {
+				background-color: $background-color !important;
+
+				@include ripple($background-color, $ripple-color);
+			}
+
+			#{$selector-name} {
+				color: set-text-color($background-color, text) !important;
+
+				@include ripple($background-color, $ripple-color);
+
+				&:hover { background-color: $hover-color !important; }
+
+				&:focus:not(:active) {
+					background-color: $focus-not-active-background-color !important;
+				}
+			}
+		} @else {
+			$raised-colorized-button-selectors: append($raised-colorized-button-selectors, unquote('#{$selector-name}'), 'comma');
+			$night-raised-colorized-button-selectors: append($night-raised-colorized-button-selectors, unquote('#{$selector-name}'), 'comma');
+		}
+	}
+}
+
+// global button styles
+#{$base-button-selectors},
+#{$night-button-selectors} {
+	@include global-button-styles;
+}
+
+#{$default-font-sized-buttons} {
+	font-size: 14px !important;
+}
+
+// flat button colored text
+#{$night-flat-button-colored-text-selectors} {
+	background-color: transparent !important;
+
+	&:hover { background-color: $dark-button-hover !important; }
+
+	&:focus:not(:active) { background-color: $dark-button-focus !important; }
+
+	&:active { background-color: $dark-button-active !important; }
+}
+
+#{$flat-button-colored-text-selectors} {
+	background: none transparent !important;
+
+	&:hover { background-color: $light-button-hover !important; }
+
+	&:focus:not(:active) { background-color: $light-button-focus !important; }
+
+	&:active { background-color: $light-button-active !important; }
+}
+
+// flat buttons and raised buttons with color bg
+#{$flat-colorized-bg-button-selectors},
+#{$raised-colorized-button-selectors} {
+	color: set-text-color($primary, text) !important;
+	@include ripple($primary);
+
+	&:hover { background-color: $dark-primary !important; }
+}
+
+// raised buttons with color bg
+#{$raised-colorized-button-selectors} {
+	@include drop-shadow(1);
+
+	&:active { @include drop-shadow(2); }
+
+	&:focus:not(:active) {
+		@include focus-shadow();
+		background-color: $light-primary !important;
+	}
+}
