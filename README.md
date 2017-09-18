@@ -11,6 +11,6 @@ Just clone the repository or download a zip file
 # Building
 The repo uses a few npm scripts for compiling the scss
 
-Just run `npm run-script build`
+Just run `yarn build`
 
 The compiled and minified css file will be in `dist/`.
