@@ -11,8 +11,8 @@
   height: 93px;
   width: 100%;
   margin: 0 !important;
-  font-size: 12px;
-  background: linear-gradient(transparent 60%, rgb(221, 94, 137));
+  font-size: 14px;
+  background: linear-gradient(transparent 60%, $dark-primary);
 
   // subreddit name
   // nested to avoid body:link styling
@@ -25,7 +25,7 @@
     a {
       position: relative;
       display: inline-block;
-      font-size: 12px;
+      font-size: 14px;
       height: 42px;
       padding: 0 16px;
       color: $dark-secondary-text;
@@ -39,7 +39,7 @@
 
         &::after {
           font-size: 16px;
-          content: '케이팝';
+          content: '케이팝헬프';
           color: $pink;
         }
       }
@@ -111,7 +111,7 @@
     }
 
     height: 64px;
-    background: linear-gradient(transparent 40%, rgb(221, 94, 137));
+    background: linear-gradient(transparent 40%, $dark-primary);
 
     // positioning fix for pagename and tabmenu when reddit pushes custom banner image
     .pagename a {

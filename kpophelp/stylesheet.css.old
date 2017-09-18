@@ -1,0 +1,1590 @@
+/* kpop stickies */
+
+.titlebox h6 + blockquote {
+    position: absolute;
+    display: block;
+    top: 45px;
+    left: 265px;
+    z-index: 99;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.titlebox a[href*="#sticky-"] {
+    font-size: 14px;
+    font-weight: normal;
+    color: white;
+    padding: 4px 8px 4px 28px;
+    opacity: 0.8;
+    }
+
+.titlebox a[href*="#sticky-"]:hover {
+    opacity: 1.0;
+}
+
+.titlebox a[href$="#sticky-events"] {
+    background: transparent url(%%calender-2%%) no-repeat 0px -2px;
+}
+
+.titlebox a[href$="#sticky-qa"] {
+    background: transparent url(%%discussion-2%%) no-repeat -2px 2px;
+}
+
+/* Banner==============================================================================*/
+
+#header {
+    border-bottom: 2px solid #BBBBBB;
+    position: relative;
+    background: url(%%header%%) bottom left;
+    background-repeat:no-repeat;
+    background-color: #000000;
+    z-index: 99;
+    height:119px;
+    }
+#header-img {
+    margin-top: 43px;
+    }
+#header-bottom-left {
+    font-size: larger;
+    height: 100px;
+    }
+.pagename a {
+    text-indent: -9999px;
+    background-image: url(%%pagename%%);
+    width: 145px;
+    height: 31px;
+    background-position: 0px 0px;
+    display: inline-block;
+    position: absolute;
+    top: 85px;
+    margin-left: -150px;
+    }
+.pagename {
+    color: white;
+    margin-left: 158px;
+    }
+
+/*Scoreboard============================================================================*/
+
+#header-bottom-right {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-color: #888888;
+    color: #FFFFFF;
+    padding: 4px;
+    -moz-border-radius-topleft: 7px;
+    -webkit-border-top-left-radius: 7px
+    }
+#header-bottom-right a {
+    color: #FFFFFF
+    }
+#header-bottom-right b {
+    color: #FFFFFF
+    }
+.user {
+    color: white;
+    }
+
+/* My Reddits Bar ==========================================================================*/
+
+#sr-bar .separator {
+    color: #B49071
+    }
+#sr-bar a {
+    color: #545454
+    }
+#sr-more-link {
+    color: white!important;
+    background-color: black!important;
+    position: absolute;
+    right: 0px;
+    top: 3px;
+    padding: 0 5px 0 15px;
+    font-weight: bold;
+    margin: 0;
+    }
+#sr-header-area {
+    background-color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    text-transform: none !important;
+    border-bottom: none !important;
+    font-size: 90%;
+    z-index: 99;
+    }
+#sr-header-area .selected a {
+    color: brown
+    }
+#sr-more-link {
+    color: black;
+    /*background-image: url(%%t5-2qlqh-8%%);*/
+    background-color: #DDDDDD;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 0 5px 0 15px;
+    font-weight: bold;
+    margin: 0
+    }
+.dropdown.srdrop .selected {
+    color: white!important;
+    }
+
+/* Tabs =================================================================================*/
+
+#header-bottom-left .tabmenu li a {
+    -moz-border-radius-topleft: 7px;
+    -moz-border-radius-topright: 7px;
+    -webkit-border-top-left-radius: 7px;
+    -webkit-border-top-right-radius: 7px
+    }
+#header-bottom-left .tabmenu li a {
+    background-color: transparent !important;
+    color: white
+    }
+#header-bottom-left .tabmenu li.selected a {
+    background-color: transparent !important;
+    color: #dd3131;
+    border: none;
+    }
+#header-bottom-left .tabmenu {
+    position: absolute;
+    top: 97px;
+    left: 307px;
+    }
+.content .tabmenu.formtab li a {
+    color: white;
+    background: #cfcfcf;
+    border-radius: 3px;
+    padding: 3px;
+    margin-right: 4px;
+    border: none
+    }
+.content .tabmenu.formtab li.selected a {
+    color: black !important;
+    background: #cfcfcf;
+    }
+.formtabs-content {
+    border-color: #cfcfcf;
+    z-index: 99;
+    position: relative;
+    }
+.roundfield {
+    background-color: #CFCFCF;
+    }
+
+/* Content===============================================================================*/
+
+html {
+    position: relative
+    }
+#link-desc {
+   display: none !important ;
+   }
+#text-desc {
+   display: none !important ;
+   }
+
+/* large headline text============================*/
+
+.usertext-body h4 {
+    text-shadow: 1px 1px 3px #0094FF
+    }
+
+div.titlebox span.word {
+    display: none
+    }
+div.titlebox span.number:after {
+    content: ""
+    }
+a[href*="/r/kpop"].title:link {
+    color: #293578
+    }
+
+/* RULES ======================================*/
+
+.md ul {
+    background-color: transparent;
+    padding-top: 0px;
+    padding-left: 15px;
+    padding-right: 20px;
+    padding-bottom: 2px;
+    margin: 0px;
+    font-size: 95%;
+    color: black
+    }
+.md ul {
+    padding-right: 5px
+    }
+.titlebox .md pre {
+    margin: 5px;
+    font-size: 11px;
+    text-transform: capitalize;
+    }
+
+/* Custom Up and Down arrows ======================*/
+
+
+/* Highlight Original Poster=======================*/
+
+.author.submitter {
+    padding: 2px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px
+    }
+.noncollapsed .author.submitter {
+    background-color: #E6F4E3
+    }
+.collapsed .author.submitter {
+    color: #dd3131
+    }
+
+a.title:before {padding-right: 5px}
+
+/*zebra-stripes and padding=======================*/
+
+.sitetable {
+    list-style-type: none;
+    /*margin-right: 310px;*/
+    }
+.sitetable > .link:first-child {
+    background-color: #F7F7F7;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px
+    }
+.link ~ .odd {
+    background-color: #F7F7F7;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px
+    }
+.link {
+    margin: 0 0 10px;
+    padding: 2px
+    }
+
+/* title style for logged-in users===================*/
+
+.thing .title.loggedin {
+    color: #063C6D
+    }
+.thing .title.loggedin:visited {
+    color: #70002d
+    }
+.thing .title.loggedin:hover {
+    color: #ff0084
+    }
+.thing .title.loggedin.click {
+    color: #063C6D
+    }
+.thing .title.loggedin.click:visited {
+    color: #063C6D
+    }
+.thing .title.loggedin.click:hover {
+    color: #ff0084
+    }
+
+/* title style for frontpage and self posts=============*/
+
+.comment .author {
+    /*color: green*/
+    }
+.thing .title {
+    color: #063C6D;
+    padding: 0px;
+    overflow: hidden
+    }
+.thing .title:visited {
+    color: #70002d
+    }
+.thing .title:hover {
+    color: #ff0084
+    }
+.thing .title.click {
+    color: #063C6D
+    }
+.thing .title.click:visited {
+    color: #ff0066
+    }
+.thing .title.click:hover {
+    color: #ff0084
+    }
+.thing.spam {
+    background-color: salmon !important;
+    }
+
+/* Downvote tooltip==============================*/
+
+.arrow.down:hover:before {
+    position: absolute;
+    background: white;
+    display: block;
+    z-index: 1000;
+    width: 210px;
+    padding: 5px;
+    border: 1px solid black;
+    content: "Remember, this button is for comments and submissions that don't contribute to the community.";
+    text-align: center;
+    font-size: 10px;
+    color: black;
+    font-weight: bold;
+    margin-left: 25px;
+    margin-top: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px
+    }
+
+/* Sidebar================================================================================*/
+
+/* Leaderboard */
+
+.side .md table {
+    color: #454545!important;
+    margin-top: -1px;
+    margin-bottom: 10px;
+    width: 240px;
+    border: none;
+    margin-left: 20px;
+    }
+.side .md td {
+    border-style: solid;
+    border-color: #757575;
+    border-width: 1px;
+    margin-bottom: 3px;
+    border-radius: 4px;
+    }
+.side .md table tr {
+    background: url(%%t5-2gpp6-31%%);
+    }
+.titlebox .md th {
+    border-top: 1px solid #757575;
+    border-bottom: none;
+    border-left: 1px solid #757575;
+    border-right: 1px solid #757575;
+    text-align: center;
+    }
+.titlebox h3 {
+    width: 245px;
+    font-size: 120%!important;
+    background: url(%%t5-2gpp6-31%%);
+    text-align: center;
+    border-style: solid;
+    border-color: #757575;
+    border-width: 1px;
+    border-radius: 4px;
+    color: #454545!important;
+    margin-left: 17px;
+    margin-top: 10px;
+    }
+
+/* ====== */
+
+.titlebox .bottom{
+    display:none;
+    }
+div.titlebox span.word {
+    display: none
+    }
+div.titlebox span.number:after {
+    content: " K-poppers"
+    }
+.titlebox h1 {
+    display: none
+     }
+.login-form-side {
+    position: relative;
+    top: 0px;
+    }
+
+/* Search ===================================*/
+
+.side form#search {
+    margin-left: 2px
+    }
+.side form#search input[name="q"] {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    line-height: 25px;
+    text-align: center
+    }
+#searchexpando {
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border: 1px solid #5F99CF;
+    background-color: #EFF7FF;
+    }
+
+/*========================================*/
+
+.infobar {
+    background-color: #EFF7FF;
+    border: 1px solid #5F99CF;
+    }
+.login-form-side {
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    }
+
+/*Submit===================================*/
+
+.side {
+    float: right;
+    background-color: white;
+    width: 310px;
+    }
+.sidebox {
+    width: 300px;
+    }
+.morelink {
+    padding: 2px;
+    text-align:center;
+    padding: 1px;
+    background: url(%%submit%%);
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    font-size:12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    margin:0px;
+    left: 3px
+    }
+.morelink:hover, .mlh {
+    border-color: gray;
+    background-image: none;
+    visibility: visible !important
+    }
+.morelink a {
+    color: #393939;
+    display: block;
+    width: 100%;
+    }
+.morelink:hover a {
+    color: #393939;
+    background-color: white;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    }
+.morelink .nub {
+    display: none
+    }
+
+/*========================================*/
+
+.linkinfo {
+    position: relative;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    }
+.side .sidebox.create {
+    display: none
+    }
+.titlebox form.toggle {
+    background: white;
+    }
+.icon-menu a {
+    background: white;
+    }
+.sidebox .spacer {
+    display: none;
+    }
+#moresearchinfo {
+    border: none !important
+    }
+div.titlebox {
+    border: 1px solid gray;
+    padding: 1em 1em 0;
+    padding-bottom: 4px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    }
+.sidecontentbox h1 {
+    display: block!important;
+    background-color: white !important;
+    font-weight: bold;
+    font-size: 11px !important;
+    padding: 2px 5px;
+    -moz-border-radius-topleft: 7px;
+    -moz-border-radius-topright: 7px;
+    -webkit-border-top-left-radius: 7px;
+    -webkit-border-top-right-radius: 7px;
+    border: 1px solid gray
+    }
+.sidecontentbox .content {
+    border: none;
+    background-color: white;
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    -moz-border-radius-bottomleft: 7px;
+    -moz-border-radius-bottomright: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    -webkit-border-bottom-right-radius: 7px;
+    }
+.sidecontentbox .helplink {
+    padding-right: 5px
+    }
+.sidecontentbox .collapse-button {
+    display: none;
+    }
+
+/* media logos =====================*/
+
+/* fancy social network buttons */
+.titlebox h5 + p {
+    text-align: center;
+    }
+
+.titlebox a[href$="#twitter-btn"], .titlebox a[href$="#lastfm-btn"],
+.titlebox a[href$="#grooveshark-btn"], .titlebox a[href$="#steam-btn"],
+.titlebox a[href$="#irc-btn"] {
+    width: 46px;
+    height: 46px;
+    display: inline-block;
+    content: "";
+    position: relative;
+    vertical-align: middle;
+    text-indent: -9999px;
+    }
+
+.titlebox a[href$="#twitter-btn"] { background-image: url(%%twitter%%); }
+.titlebox a[href$="#lastfm-btn"] { background-image: url(%%lastfm%%); }
+.titlebox a[href$="#grooveshark-btn"] { background-image: url(%%grooveshark%%); }
+.titlebox a[href$="#steam-btn"] { background-image: url(%%steam%%); }
+.titlebox a[href$="#irc-btn"] { background-image: url(%%irc%%); }
+
+/*RES fixes, aesthetics, etc.=====================================================================*/
+/*Changes color of subscribe, +shortcut and +dashboard buttons for RES*/
+.fancy-toggle-button .remove {
+    border: 1px solid #d6d6d6 !important;
+    background-image: url(%%submit%%) !important;
+    color: #575757 !important;
+    text-shadow: 0 1px 0 white !important
+    }
+.RESshortcutside {
+    background-image: url(%%submit%%) !important;
+    border: 1px solid #d6d6d6 !important;
+    color: #575757 !important;
+    text-shadow: 0 1px 0 white !important
+    }
+.RESDashboardToggle {
+    background-image: url(%%submit%%) !important;
+    border: 1px solid #d6d6d6 !important;
+    color: #575757 !important;
+    text-shadow: 0 1px 0 white !important
+    }
+.fancy-toggle-button .add {
+    border: 1px solid #D6D6D6 !important;
+    background-image: url(%%submit%%) !important;
+    color: #dd3131 !important;
+    text-shadow: 0 1px 0 white !important;
+}
+.subscriber.moderator.loggedin.contributor.listing-page.res > #editShortcutDialog {
+    z-index: 10000
+    }
+#RESShortcuts.sr-bar > .RESShortcutsCurrentSub:visited {
+    color: #dd3131 !important;
+    font-weight: bold;
+    }
+.sr-bar a {
+    color: white;
+    }
+.sr-bar > .separator {
+    color: white;
+    }
+#sr-header-area {
+    background-color: transparent;
+    border-bottom: none !important;
+    }
+#userbarToggle {
+    background-image: url(%%t5-2gpp6-31%%);
+    color: black!important;
+    background-color: black!important;
+    border-right: 1px solid #090808!important;
+    }
+#header-bottom-right.res-navTop {
+    background-image: url(%%t5-2gpp6-31%%);
+    height:19px;
+    color: black!important;
+    }
+#header-bottom-right a, .user, srSep {
+    color: black;
+    }
+#RESShortcutsEditContainer, #RESShortcutsAdd, #RESShortcutsLeft, #RESShortcutsRight, #RESShortcutsTrash {
+    background-color: transparent!important;
+    color:white!important;
+    }
+#RESConsole {
+    z-index: 10000!important;
+    }
+
+/* Sidebar Links==============================*/
+
+.titlebox a {
+    color: #454545;
+    font-weight: bold;
+    font-size: 10px
+    }
+.titlebox a[href*="http://goo.gl/0HNh87"] {
+    display: block;
+    list-style: none;
+    background-image: url(%%t5-2gpp6-31%%);
+    padding: 4px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-style: solid;
+    border-color: #757575;
+    border-width: 1px;
+    margin-bottom: 3px;
+    border-radius: 4px
+    }
+.titlebox a[href*="http://goo.gl/xQFOk"] {
+    display: block;
+    list-style: none;
+    background-image: url(%%t5-2gpp6-31%%);
+    padding: 4px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-style: solid;
+    border-color: #757575;
+    border-width: 1px;
+    margin-bottom: 3px;
+    border-radius: 4px
+    }
+.titlebox a[href*="http://goo.gl/oaHsa"] {
+    display: block;
+    list-style: none;
+    background-image: url(%%t5-2gpp6-31%%);
+    padding: 4px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-style: solid;
+    border-color: #757575;
+    border-width: 1px;
+    margin-bottom: 3px;
+    border-radius: 4px
+    }
+.titlebox a[href*="http://goo.gl/60NiV"] {
+    display: block;
+    list-style: none;
+    background-image: url(%%t5-2gpp6-31%%);
+    padding: 4px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-style: solid;
+    border-color: #757575;
+    border-width: 1px;
+    margin-bottom: 3px;
+    border-radius: 4px
+    }
+.titlebox a[href*="http://goo.gl/Ty471"] {
+    display: block;
+    list-style: none;
+    background-image: url(%%t5-2gpp6-31%%);
+    padding: 4px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-style: solid;
+    border-color: #757575;
+    border-width: 1px;
+    margin-bottom: 3px;
+    border-radius: 4px
+    }
+.titlebox a[href*="http://goo.gl/YZ0C4"] {
+    display: block;
+    list-style: none;
+    background-image: url(%%t5-2gpp6-31%%);
+    padding: 4px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-style: solid;
+    border-color: #757575;
+    border-width: 1px;
+    margin-bottom: 3px;
+    border-radius: 4px
+    }
+.titlebox a[href*="http://goo.gl/c4mbb"] {
+    display: block;
+    list-style: none;
+    background-image: url(%%t5-2gpp6-31%%);
+    padding: 4px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-style: solid;
+    border-color: #757575;
+    border-width: 1px;
+    margin-bottom: 3px;
+    border-radius: 4px
+    }
+.titlebox a[href*="http://kpopsubs.wordpress.com/"] {
+    display: block;
+    list-style: none;
+    background-image: url(%%t5-2gpp6-31%%);
+    padding: 4px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-style: solid;
+    border-color: #757575;
+    border-width: 1px;
+    margin-bottom: 3px;
+    border-radius: 4px
+    }
+.titlebox a[href*="http://seoul.fm/"] {
+    display: block;
+    list-style: none;
+    background-image: url(%%t5-2gpp6-31%%);
+    padding: 4px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-style: solid;
+    border-color: #757575;
+    border-width: 1px;
+    margin-bottom: 3px;
+    border-radius: 4px
+    }
+.titlebox a[href*="/r/solresol"] {
+    display: block;
+    list-style: none;
+    background-image: url(%%t5-2gpp6-31%%);
+    padding: 4px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-style: solid;
+    border-color: #757575;
+    border-width: 1px;
+    margin-bottom: 3px;
+    border-radius: 4px
+    }
+.titlebox a[href*="/r/HiphopWorldwide"] {
+    display: block;
+    list-style: none;
+    background-image: url(%%t5-2gpp6-31%%);
+    padding: 4px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-style: solid;
+    border-color: #757575;
+    border-width: 1px;
+    margin-bottom: 3px;
+    border-radius: 4px
+    }
+.titlebox a[href*="/r/kpop#"] {
+    display: block;
+    list-style: none;
+    background-image: url(%%t5-2gpp6-31%%);
+    padding: 4px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-style: solid;
+    border-color: #757575;
+    border-width: 1px;
+    margin-bottom: 3px;
+    border-radius: 4px
+    }
+.titlebox a[href*="/r/kpics#"] {
+    display: block;
+    list-style: none;
+    background-image: url(%%t5-2gpp6-31%%);
+    padding: 4px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-style: solid;
+    border-color: #757575;
+    border-width: 1px;
+    margin-bottom: 3px;
+    border-radius: 4px
+    }
+.titlebox a[href*="/r/asianladyboners/new"] {
+    display: block;
+    list-style: none;
+    background-image: url(%%t5-2gpp6-31%%);
+    padding: 4px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-style: solid;
+    border-color: #757575;
+    border-width: 1px;
+    margin-bottom: 3px;
+    border-radius: 4px
+    }
+.titlebox a[href*="/r/tpop"] {
+    display: block;
+    list-style: none;
+    background-image: url(%%t5-2gpp6-31%%);
+    padding: 4px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-style: solid;
+    border-color: #757575;
+    border-width: 1px;
+    margin-bottom: 3px;
+    border-radius: 4px
+    }
+.titlebox a[href*="/r/cpop"] {
+    display: block;
+    list-style: none;
+    background-image: url(%%t5-2gpp6-31%%);
+    padding: 4px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-style: solid;
+    border-color: #757575;
+    border-width: 1px;
+    margin-bottom: 3px;
+    border-radius: 4px
+    }
+.titlebox a[href*="/r/vpop"] {
+    display: block;
+    list-style: none;
+    background-image: url(%%t5-2gpp6-31%%);
+    padding: 4px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-style: solid;
+    border-color: #757575;
+    border-width: 1px;
+    margin-bottom: 3px;
+    border-radius: 4px
+    }
+.titlebox a[href*="/r/jpop"] {
+    display: block;
+    list-style: none;
+    background-image: url(%%t5-2gpp6-31%%);
+    padding: 4px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-style: solid;
+    border-color: #757575;
+    border-width: 1px;
+    margin-bottom: 3px;
+    border-radius: 4px
+    }
+.titlebox a[href*="http://www.reddit.com/r/Music/wiki/musicsubreddits"] {
+    display: block;
+    list-style: none;
+    background-image: url(%%t5-2gpp6-31%%);
+    padding: 4px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-style: solid;
+    border-color: #757575;
+    border-width: 1px;
+    margin-bottom: 3px;
+    border-radius: 4px
+    }
+
+/* Submit Page============================================================================*/
+
+
+/* Flair ==================================================================================*/
+
+.link .linkflairlabel {
+    max-width: 60em;
+    vertical-align: bottom;
+}
+
+.flair-fan {
+    font-size:11px;
+    padding:2px;
+    color:#dd3131;
+    border:1px;
+    border-style:solid;
+    border-color:#d1d1d1;
+    border-radius:3px;
+    background-image: url(%%t5-2sl9p-11%%);
+    }
+
+/*== Link Flair ==*/
+
+.flat-list.buttons .flairselectbtn {
+    font-size: 0px;
+    }
+
+.flat-list.buttons a.flairselectbtn:hover {
+    text-decoration: none;
+    }
+.flat-list.buttons a.flairselectbtn:before {
+    content: "click here to tag this post";
+    font-size: 12px;
+    color: #ACACAC;
+    padding: 0px 4px 0px 4px;
+    background-color: #f5f5f5;
+    border: 1px solid #CFCFCF;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    }
+
+.linkflair-solved .linkflairlabel {
+    color: black;
+    background-color: #CCFFCE;
+    font-size: 14px;
+    width: 90px;
+    text-align: center;
+    }
+.linkflair-unsolved .linkflairlabel {
+    color: black;
+    background-color: #Df7C81;
+    font-size: 14px;
+    width: 90px;
+    text-align: center;
+    }
+.linkflair-discussion .linkflairlabel {
+    color: black;
+    background-color: #F7FFCC;
+    font-size: 14px;
+    width: 90px;
+    text-align: center;
+    }
+.linkflair-reccomendation .linkflairlabel {
+    color: black;
+    background-color: #9BCDFF;
+    font-size: 14px;
+    width: 90px;
+    text-align: center;
+    }
+.linkflair-explain .linkflairlabel {
+    color: black;
+    background-color: #E8AE6d;
+    font-size: 14px;
+    width: 90px;
+    text-align: center;
+    }
+
+/* Menu thanks to Raerth! - Raerth is so handsome - KJONESLOL========================================*/
+
+/*sticky menu bar*/
+
+/*moves links down to make space*/
+
+div.content {
+    margin-top: 55px;
+    margin-right: 12px;
+    }
+
+/*hack to enable positioning of child elements*/
+
+.titlebox form {
+    position: static
+    }
+
+/*turns top quote in sidebar into menu container*/
+
+.titlebox blockquote:first-child {
+    border-left: none;
+    position: absolute;
+    z-index: 10;
+    top: 127px;
+    left: 5px
+    }
+
+.titlebox blockquote:first-child ul {
+    margin-top: 0px;
+}
+/*turns first paragraph into menu title*/
+
+/*turns the lists into menus*/
+
+.titlebox blockquote ul {
+    float: right;
+    padding: 1px;
+    margin:0px;
+    }
+
+/*hide and styles lists*/
+
+.titlebox blockquote ul li {
+    display: none;
+    padding:2px;
+    text-align:center;
+    padding: 1px;
+    background-image: url(%%t5-2sl9p-11%%);
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin:0px;
+    }
+/*makes whole list item selectable*/
+
+.titlebox blockquote li a {
+    display:block;
+    }
+
+/*shows menu on hover*/
+
+.titlebox blockquote ul li:first-child, .titlebox blockquote ul:hover li {
+    display: block;
+    }
+/*turns top list item into section header*/
+.titlebox blockquote li:first-child {
+    font-size: 12pt;
+    padding: 4px;
+    cursor:default;
+    }
+
+/*styling menu items*/
+
+.titlebox blockquote:first-child ul li:hover {
+    background:#ffffff;
+    }
+.titlebox blockquote li a:hover {
+    color:#dd3131;
+    }
+
+/*custom size for menu sections*/
+
+.titlebox blockquote ul {width:140px;}
+.titlebox blockquote ul:nth-of-type(1) {width:140px;}
+.titlebox blockquote ul:nth-of-type(2) {width:140px;}
+
+/* Rage Faces=========================================================================*/
+
+a[href$="//#taeyeon"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -959px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#boredsica"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -2279px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#yoonaugh"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -480px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#sica"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -1799px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#sunny"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -1079px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#taeyeonwat"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -779px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#siwon"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -1259px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#minho"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -1619px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#cry"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -2039px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#jonghyun"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -1739px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#Fanyfuckthat"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -1979px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#disapproval"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -1679px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#sicasad"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -1379px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#CLsurprise"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -2099px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#sooyoungwat"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -1199px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#sickburn"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -1319px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#minwat"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -1500px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#sooyoungwow"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -1139px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#taeyeonlolwat"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -839px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#sicalol"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -1439px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#yurilol"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -60px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#taeyeondayum"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -899px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#yoonaomglol"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -600px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#yoonapfftch"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -540px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#coolstorybro"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -0px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#minoh"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -1619px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#yuri"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -420px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#suzyyay"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -1019px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#yurisad"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -180px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#yuriomg"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -300px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#yeaaah"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -660px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#yuriderp"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -360px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#yuriohsnap"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -2339px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#yuriqq"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -240px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#yuriwink"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -120px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#teehee"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -720px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#IU"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -1919px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#IUlol"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -1859px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#IUsurprise"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -2399px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#siwondatass"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -2459px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#Nichkhuh"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -2519px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#taecyeonteehee"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -2579px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#sunnyomg"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -2639px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#sunnywat"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -2699px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#yoonarofl"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -2759px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+a[href$="//#yuriwat"] {
+    text-indent: -9999px;
+    background-image: url(%%ragesprite%%);
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-position: 0px -2819px;
+    display: inline-block;
+    position: relative;
+    cursor: default !important
+    }
+
+/* on-focus tooltip for textareas on submission page */
+.roundfield { position: relative; }
+
+#title-field textarea:focus ~ .NO_TEXT:empty {
+    display: inline!important;
+}
+
+#title-field textarea:focus ~ .NO_TEXT:empty::after {
+    content: "Please read the title formatting rules before submitting.";
+    position: absolute;
+    left: 10px;
+    bottom: -25px;
+    color: white;
+    background-color: black;
+    padding: 8px;
+    border-radius: 4px;
+    line-height: 1.4;
+    font-size: 11px;
+    opacity: 0.8;
+    z-index: 999;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#title-field textarea:focus ~ .NO_TEXT:empty::before {
+    position: absolute;
+    display: block;
+    height: 0;
+    width: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0 5px 5px;
+    border-bottom-color: black;
+    opacity: 0.8;
+    content: "";
+    bottom: 6px;
+    left: 30px;
+}
+
+/* flair filters */
+html:lang(so) .link:not(.linkflair-solved) {  display: none; }
+html:lang(un) .link:not(.linkflair-unsolved) {  display: none; }
+html:lang(di) .link:not(.linkflair-discussion) {  display: none; }

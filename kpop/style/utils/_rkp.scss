@@ -331,10 +331,114 @@ Making changes to the top bar
 }
 
 .user .userkarma {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
 }
 
 #header-bottom-right > span.user > a {
+    font-size: 14px;
+}
+
+
+// For collapsible rules
+.side h5+ul,
+.side h5+ul {
+    padding: 0 8px;
+    margin: 0 !important;
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.side h5:hover+ul,
+.side h5+ul:hover {
+    height: auto;
+    padding: 8px;
+    max-height: 500px;
+}
+
+.side .md a[href*="/r/kpop/wiki/rules#wiki_iii._title_formatting_guide"] {
+    font-weight: bold;
+   	display: initial;
+    padding: initial;
+    font-weight: initial;
+    color: #2196f3;
+    line-height: initial;
+    margin: initial;
+    border-radius: initial;
+    box-sizing: initial;
+    width: initial;
+    text-align: initial;
     font-size: 12px;
+
+    &:visited {
+        color: #9575D9
+    }
+}
+
+.side .md a[href*="/r/kpop/wiki/rules#wiki_b.__group-specific_content"] {
+    font-weight: bold;
+   	display: initial;
+    padding: initial;
+    font-weight: initial;
+    color: #2196f3;
+    line-height: initial;
+    margin: initial;
+    border-radius: initial;
+    box-sizing: initial;
+    width: initial;
+    text-align: initial;
+    font-size: 12px;
+
+    &:visited {
+        color: #9575D9
+    }
+}
+
+.side h5:nth-of-type(3) {
+    text-align: center;
+    background-color: $accent !important;
+    font-weight: bold;
+
+    a {
+        color: #fff !important;
+        display: inline-block;
+        width: 100%;
+    }
+
+    &:hover {
+        background-color: $dark-accent !important;
+    }
+}
+
+.side h5:nth-of-type(n+3) {
+	background-color: #eee;
+    padding: 5px 15px;
+    border-bottom: 2px solid #ccc;
+	margin-top: 0;
+	margin-bottom: 0;
+    color: rgba(0,0,0,0.54);
+}
+
+.res-nightmode
+.side h5:nth-of-type(n+3) {
+    padding: 5px 15px;
+    border-bottom: 2px solid #ccc;
+	margin-top: 0;
+	margin-bottom: 0;
+    background-color: #303030;
+    color: rgba(255,255,255,0.9);
+}
+
+.side h5:nth-of-type(n+13) {
+    margin-bottom: 0.7142857142857143em !important;
+}
+
+.side h5:nth-child(36) {
+    visibility: hidden;
+}
+
+.side h4:first-of-type {
+    font-weight: bold;
 }

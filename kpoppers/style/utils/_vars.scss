@@ -6,31 +6,17 @@
   } @else { @error '=> ERROR'; }
 }
 
-// flair colors
-$colorblind: false;
-html:lang(kr-00) {
-    $colorblind: false;
-}
-
 $flair-news: #00bcd4;
 $flair-release: #f44336;
 $flair-teaser: #9575cd;
 $flair-variety: #dd5e89;
 $flair-discussion: #ffbd24;
 $flair-performance: #4caf50;
-@if $colorblind {
-	$flair-news: #2166ac;
-	$flair-release: #b2182b;
-	$flair-teaser: #ef8a62;
-	$flair-variety: #fddbc7;
-	$flair-discussion: #ffbd24;
-	$flair-performance: #d1e5f0;
-}
 
 // theme colors
-$primary: get-color('cyan', '500');
-$dark-primary: get-color('cyan', '700');
-$light-primary: get-color('cyan', '300');
+$primary: #9575cd;
+$dark-primary: #755aa5;
+$light-primary: #b298e0;
 $accent: get-color('orange', 'A200');
 $dark-accent: get-color('orange', 'A400');
 $light-accent: get-color('orange', 'A100');
@@ -132,8 +118,8 @@ $header-large: false;
 
 // random, rotating header
 // affects header, base
-$random-header: true;
-$num-header-images: 36;
+$random-header: false;
+$num-header-images: 1;
 
 // sidebar image
 // affects addons, footer, sidebar

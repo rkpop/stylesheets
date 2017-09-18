@@ -1,5 +1,5 @@
 @mixin tabs {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 @mixin tab-list-anchors($ripple: false, $orig-background-color: transparent, $ripple-color: $light-accent, $bg-color: $primary, $text-color: set-text-color($bg-color, secondary-text), $text-color-hover: set-text-color($bg-color, text)) {

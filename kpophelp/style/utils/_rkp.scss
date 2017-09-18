@@ -160,23 +160,20 @@ body:not(.comments-page) .linkflair-spoiler a.title {
     border-radius: 3px;
 }
 
-.side .md [href*="search?q=flair%3A%22news"] {
+.side .md [href*="search?q=flair%3A%22Explain"] {
     background: $flair-news;
 }
-.side .md [href*="search?q=flair%3A%22teaser"] {
+.side .md [href*="search?q=flair%3A%22Recommend"] {
     background: $flair-teaser;
 }
-.side .md [href*="search?q=flair%3A%22discussion"] {
+.side .md [href*="search?q=flair%3A%22Discussion"] {
     background: $flair-discussion;
 }
-.side .md [href*="search?q=flair%3A%22mv"] {
+.side .md [href*="search?q=flair%3A%22Unsolved"] {
     background: $flair-release;
 }
-.side .md [href*="search?q=flair%3A%22song"] {
+.side .md [href*="search?q=flair%3A%22Solved"] {
     background: $flair-performance;
-}
-.side .md [href*="search?q=flair%3A%22variety"] {
-    background: $flair-variety;
 }
 
 // Sidebar filtering buttons
@@ -195,7 +192,7 @@ body:not(.comments-page) .linkflair-spoiler a.title {
     background-color: #EFEFEF;
     &:hover {
         color: #fff;
-        background-color: #3CCADE;
+        background-color: $light-primary;
     }
 }
 
@@ -218,100 +215,6 @@ body:not(.comments-page) .linkflair-spoiler a.title {
     }
 }
 
-.side .md a[href*="#"] {
-    display: inline-block;
-    padding: 10px 8px;
-    font-weight: bold;
-    color: #fff;
-    line-height: 14px;
-    margin: 0px 4px 5px 0px;
-    border-radius: 2px;
-    box-sizing: border-box;
-    width: 48%;
-    text-align: center;
-    font-size: 13px;
-}
-
-// If on homepage, hide all the show buttons
-:not([lang^="kr-"]) .side .md [href*="s="] {
-    display: none;
-}
-
-[lang^="kr-"] .side .md [href^="//reddit.com"] {
-    display: inline-block;
-    color: #fff;
-    background-color: #FF8CC6;
-    &:hover {
-        color: #4f4f4f;
-        background-color: #EFEFEF;
-    }
-}
-
-.res-nightmode
-[lang^="kr-"] .side .md [href^="//reddit.com"] {
-    display: inline-block;
-    color: #fff;
-    background-color: #FF8CC6;
-    width: 46%;
-    &:hover {
-        background-color: #303030;
-    }
-}
-
-// Filtering news
-html:lang(kr-01) .linkflair-news {
-    display: none;
-}
-
-html:lang(kr-01) .side .md [href*="kr-01"] {
-    display: none;
-}
-
-// Filtering teasers
-html:lang(kr-02) .linkflair-teaser {
-    display: none;
-}
-
-html:lang(kr-02) .side .md [href*="kr-02"] {
-    display: none;
-}
-
-// Filtering performances
-html:lang(kr-03) .linkflair-performance {
-    display: none;
-}
-
-html:lang(kr-03) .side .md [href*="kr-03"] {
-    display: none;
-}
-
-// Filtering discussions
-html:lang(kr-04) .linkflair-discussion {
-    display: none;
-}
-
-html:lang(kr-04) .side .md [href*="kr-04"] {
-    display: none;
-}
-
-// Filtering releases
-html:lang(kr-05) .linkflair-release {
-    display: none;
-}
-
-html:lang(kr-05) .side .md [href*="kr-05"] {
-    display: none;
-}
-
-// Filtering variety
-html:lang(kr-06) .linkflair-variety {
-    display: none;
-}
-
-html:lang(kr-06) .side .md [href*="kr-06"] {
-    display: none;
-}
-
 /*
 
 Making changes to the top bar
@@ -331,10 +234,21 @@ Making changes to the top bar
 }
 
 .user .userkarma {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
 }
 
 #header-bottom-right > span.user > a {
-    font-size: 12px;
+    font-size: 14px;
+}
+
+.submit-link .morelink a {
+    display: none;
+}
+
+.submit-text .morelink a {
+    position: relative;
+    top: 25px;
+    left: -150px;
+    width: 290px;
 }

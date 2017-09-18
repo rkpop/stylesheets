@@ -63,12 +63,13 @@
 			&[href="#/RES_SR_Config/NightModeCompatible"] { display: none !important; }
 
 			// subreddit rules button
-			&[href="/r/kpop/wiki/rules"],
-			&[href="/r/kpop/wiki/relatedsubs"],
-			&[href="/r/kpop/wiki/usefulsites"] {
-				display: block;
-				margin: 15px 0;
-			}
+            /* &[href="/r/kpop/wiki/rules"], */
+            &[href="/r/kpop/wiki/relatedsubs"],
+            &[href="/r/kpop/wiki/usefulsites"] {
+                display: block;
+                margin: 15px 0;
+            }
+
 
 			// social icons
 			&[href$="btn"] {

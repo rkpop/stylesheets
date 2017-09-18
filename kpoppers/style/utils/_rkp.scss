@@ -14,7 +14,7 @@ a[href$="/spoiler"] {
 }
 
 // stickied posts
-.stickied .title { color: $pink !important; }
+.stickied .title { color: $primary !important; }
 
 // link flairs
 .linkflairlabel {
@@ -62,34 +62,34 @@ body:not(.comments-page) .linkflair-spoiler a.title {
 }
 
 // Linkflair for news
-.linkflair-news span.linkflairlabel {
+.linkflair-review span.linkflairlabel {
     color: #fff !important;
     background-color: $flair-news;
 }
 
-.linkflair .linkflair-news > span {
+.linkflair .linkflair-review > span {
     color: #fff !important;
     background-color: $flair-news !important;
 }
 
 // Linkflair for releases
-.linkflair-release span.linkflairlabel {
+.linkflair-fancam span.linkflairlabel {
     color: #fff !important;
     background-color: $flair-release;
 }
 
-.linkflair .linkflair-release > span {
+.linkflair .linkflair-fancam > span {
     color: #fff !important;
     background-color: $flair-release !important;
 }
 
 // Linkflair for teasers
-.linkflair-teaser span.linkflairlabel {
+.linkflair-funny span.linkflairlabel {
     color: #fff !important;
     background-color: $flair-teaser;
 }
 
-.linkflair .linkflair-teaser > span {
+.linkflair .linkflair-funny > span {
     color: #fff !important;
     background-color: $flair-teaser !important;
 }
@@ -106,23 +106,23 @@ body:not(.comments-page) .linkflair-spoiler a.title {
 }
 
 // Linkflair for performance
-.linkflair-performance span.linkflairlabel {
+.linkflair-cover span.linkflairlabel {
     color: #fff !important;
     background-color: $flair-performance;
 }
 
-.linkflair .linkflair-performance > span {
+.linkflair .linkflair-cover > span {
     color: #fff !important;
     background-color: $flair-performance !important;
 }
 
 // Linkflair for variety
-.linkflair-variety span.linkflairlabel {
+.linkflair-misc span.linkflairlabel {
     color: #fff !important;
     background-color: $flair-variety;
 }
 
-.linkflair .linkflair-variety > span {
+.linkflair .linkflair-misc > span {
     color: #fff !important;
     background-color: $flair-variety !important;
 }
@@ -160,22 +160,22 @@ body:not(.comments-page) .linkflair-spoiler a.title {
     border-radius: 3px;
 }
 
-.side .md [href*="search?q=flair%3A%22news"] {
+.side .md [href*="search?q=flair%3A%22review"] {
     background: $flair-news;
 }
-.side .md [href*="search?q=flair%3A%22teaser"] {
+.side .md [href*="search?q=flair%3A%22funny"] {
     background: $flair-teaser;
 }
 .side .md [href*="search?q=flair%3A%22discussion"] {
     background: $flair-discussion;
 }
-.side .md [href*="search?q=flair%3A%22mv"] {
+.side .md [href*="search?q=flair%3A%22mashup"] {
     background: $flair-release;
 }
 .side .md [href*="search?q=flair%3A%22song"] {
     background: $flair-performance;
 }
-.side .md [href*="search?q=flair%3A%22variety"] {
+.side .md [href*="search?q=flair%3A%22misc"] {
     background: $flair-variety;
 }
 
@@ -258,8 +258,8 @@ body:not(.comments-page) .linkflair-spoiler a.title {
     }
 }
 
-// Filtering news
-html:lang(kr-01) .linkflair-news {
+// Filtering funny
+html:lang(kr-01) .linkflair-funny {
     display: none;
 }
 
@@ -267,8 +267,8 @@ html:lang(kr-01) .side .md [href*="kr-01"] {
     display: none;
 }
 
-// Filtering teasers
-html:lang(kr-02) .linkflair-teaser {
+// Filtering covers
+html:lang(kr-02) .linkflair-cover {
     display: none;
 }
 
@@ -276,8 +276,8 @@ html:lang(kr-02) .side .md [href*="kr-02"] {
     display: none;
 }
 
-// Filtering performances
-html:lang(kr-03) .linkflair-performance {
+// Filtering reviews
+html:lang(kr-03) .linkflair-review {
     display: none;
 }
 
@@ -294,8 +294,8 @@ html:lang(kr-04) .side .md [href*="kr-04"] {
     display: none;
 }
 
-// Filtering releases
-html:lang(kr-05) .linkflair-release {
+// Filtering fancams
+html:lang(kr-05) .linkflair-fancam {
     display: none;
 }
 
@@ -303,8 +303,8 @@ html:lang(kr-05) .side .md [href*="kr-05"] {
     display: none;
 }
 
-// Filtering variety
-html:lang(kr-06) .linkflair-variety {
+// Filtering misc
+html:lang(kr-06) .linkflair-misc {
     display: none;
 }
 
@@ -331,10 +331,114 @@ Making changes to the top bar
 }
 
 .user .userkarma {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
 }
 
 #header-bottom-right > span.user > a {
+    font-size: 14px;
+}
+
+
+// For collapsible rules
+.side h5+ul,
+.side h5+ul {
+    padding: 0 8px;
+    margin: 0 !important;
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.side h5:hover+ul,
+.side h5+ul:hover {
+    height: auto;
+    padding: 8px;
+    max-height: 500px;
+}
+
+.side .md a[href*="/r/kpop/wiki/rules#wiki_iii._title_formatting_guide"] {
+    font-weight: bold;
+   	display: initial;
+    padding: initial;
+    font-weight: initial;
+    color: #2196f3;
+    line-height: initial;
+    margin: initial;
+    border-radius: initial;
+    box-sizing: initial;
+    width: initial;
+    text-align: initial;
     font-size: 12px;
+
+    &:visited {
+        color: #9575D9
+    }
+}
+
+.side .md a[href*="/r/kpop/wiki/rules#wiki_b.__group-specific_content"] {
+    font-weight: bold;
+   	display: initial;
+    padding: initial;
+    font-weight: initial;
+    color: #2196f3;
+    line-height: initial;
+    margin: initial;
+    border-radius: initial;
+    box-sizing: initial;
+    width: initial;
+    text-align: initial;
+    font-size: 12px;
+
+    &:visited {
+        color: #9575D9
+    }
+}
+
+.side h5:nth-of-type(3) {
+    text-align: center;
+    background-color: $accent !important;
+    font-weight: bold;
+
+    a {
+        color: #fff !important;
+        display: inline-block;
+        width: 100%;
+    }
+
+    &:hover {
+        background-color: $dark-accent !important;
+    }
+}
+
+.side h5:nth-of-type(n+3) {
+	background-color: #eee;
+    padding: 5px 15px;
+    border-bottom: 2px solid #ccc;
+	margin-top: 0;
+	margin-bottom: 0;
+    color: rgba(0,0,0,0.54);
+}
+
+.res-nightmode
+.side h5:nth-of-type(n+3) {
+    padding: 5px 15px;
+    border-bottom: 2px solid #ccc;
+	margin-top: 0;
+	margin-bottom: 0;
+    background-color: #303030;
+    color: rgba(255,255,255,0.9);
+}
+
+.side h5:nth-of-type(n+13) {
+    margin-bottom: 0.7142857142857143em !important;
+}
+
+.side h5:nth-child(33) {
+    visibility: hidden;
+}
+
+.side h4:first-of-type {
+    font-weight: bold;
 }

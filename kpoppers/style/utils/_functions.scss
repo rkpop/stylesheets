@@ -1,7 +1,7 @@
 // dynamic text colors
 @function set-text-color($bg-color, $text-type) {
   // if bgc is light, return dark colored text
-  @if (lightness($bg-color) > 50) {
+  @if (lightness($bg-color) > 70) {
     @if ($text-type == text) {
       @return $light-text;
     } @else if ($text-type == secondary-text) or if ($text-type == icons) {

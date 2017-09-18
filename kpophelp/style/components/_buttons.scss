@@ -67,9 +67,8 @@ $button-selector-map: (
 		ripple-color: $light-primary,
 		button-type: 'raised-colorized-button',
   ),
-
 	// sidebar submit
-  submit-sidebar-card-button-one: (
+    submit-sidebar-card-button-one: (
 		selector-name: '.submit-link .morelink a',
 		desired-font-size: 14,
 		background-color: $primary,
