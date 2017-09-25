@@ -2076,12 +2076,14 @@ h6,
 
 .res-nightmode div.content {
   background-color: transparent !important;
+  margin-top: 36px;
 }
 
 .modtools-page div.content,
 div.content {
   margin-right: 345px;
   margin-left: 10px;
+  margin-top: 36px;
 }
 
 .infobar.newsletterbar {
@@ -2123,7 +2125,7 @@ div.content {
 
 input[name=uh] ~ a::after {
   position: absolute;
-  top: -39px;
+  top: -68px;
   right: -16px;
   z-index: -1;
   width: 100vw;
@@ -2390,19 +2392,9 @@ input[name=uh][value^="7"] ~ a::after {
 
 #userbarToggle, .res-nightmode #userbarToggle,
 #header-bottom-right .user,
-#header-bottom-right span a,
-#header-bottom-right:hover span a {
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
-}
-
-#userbarToggle, .res-nightmode #userbarToggle,
-#header-bottom-right .user,
 #header-bottom-right span a {
-  color: rgba(255, 255, 255, 0.7) !important;
-}
-
-#header-bottom-right:hover span a {
-  color: #fff !important;
+  color: #dd5e89 !important;
+  font-weight: 500;
 }
 
 .pref-lang.choice {
@@ -2447,7 +2439,7 @@ input[name=uh][value^="7"] ~ a::after {
 }
 
 html.res #header-bottom-right {
-  top: 200px;
+  top: 230px;
 }
 
 #userbarToggle, .res-nightmode #userbarToggle {
@@ -2537,12 +2529,12 @@ html.res #header-bottom-right {
 
 #header-bottom-left {
   position: absolute;
-  top: 132px;
+  top: 131px;
   height: 93px;
   width: 100%;
   margin: 0 !important;
   font-size: 14px;
-  background: linear-gradient(transparent 60%, #dd5e89);
+  background: linear-gradient(transparent 50%, #808080);
 }
 
 #header-bottom-left .pagename {
@@ -2623,9 +2615,9 @@ html.res #header-bottom-right {
 
 @media (min-width: 1400px) {
   #header-bottom-left {
-    top: 159px;
+    top: 160px;
     height: 64px;
-    background: linear-gradient(transparent 40%, #dd5e89);
+    /*background: linear-gradient(transparent 40%, rgb(221, 94, 137));*/
   }
   #header-bottom-left .pagename a {
     line-height: 62px;
@@ -2647,6 +2639,7 @@ html.res #header-bottom-right {
 .side {
   background-color: transparent !important;
   margin-right: 10px;
+  margin-top: 30px;
 }
 
 .side {
@@ -4333,10 +4326,80 @@ Making changes to the top bar
   margin-bottom: 0.7142857142857143em !important;
 }
 
-.side h5:nth-child(36) {
+.side h5:nth-child(37) {
   visibility: hidden;
 }
 
 .side h4:first-of-type {
   font-weight: bold;
+}
+
+.res-nightmode .side .md ul:nth-child(2) {
+  background-color: #303030;
+}
+
+.res-nightmode .side .md ul:nth-child(2) li {
+  background-color: #292929;
+}
+
+.side .md ul:nth-child(2) {
+  position: absolute;
+  top: 219px;
+  /* display: inline-block; */
+  background-color: #f1f1f1;
+  left: 0px;
+  width: 100%;
+  height: 30px;
+  margin-left: 90px;
+}
+
+.side .md ul:nth-child(2) li {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  line-height: 35px;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: rgba(221, 221, 221, 0.7);
+  margin: 0 25px;
+}
+
+.side .md ul:nth-child(2) li a {
+  color: #fff;
+}
+
+.side .md ul:nth-child(2) li:nth-child(1) {
+  background-color: #dd5e89;
+}
+
+.side .md ul:nth-child(2) li:nth-child(1) a {
+  padding: 10px 50px;
+}
+
+.side .md ul:nth-child(2) li:nth-child(2):hover {
+  color: #fff;
+  background-color: #4caf50;
+}
+
+.side .md ul:nth-child(2) li:nth-child(2) a {
+  color: #4caf50;
+  padding: 10px 30px;
+}
+
+.side .md ul:nth-child(2) li:nth-child(2) a:hover {
+  color: #fff;
+}
+
+.side .md ul:nth-child(2) li:nth-child(3):hover {
+  color: #fff;
+  background-color: #9575cd;
+}
+
+.side .md ul:nth-child(2) li:nth-child(3) a {
+  padding: 10px 30px;
+  color: #9575cd;
+}
+
+.side .md ul:nth-child(2) li:nth-child(3) a:hover {
+  color: #fff;
 }

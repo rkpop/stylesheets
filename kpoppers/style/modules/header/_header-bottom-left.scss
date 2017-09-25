@@ -5,14 +5,14 @@
   @if $header-large {
 		top: 172px;
 	} @else {
-        top: 132px;
+        top: 131px;
 	}
 
   height: 93px;
   width: 100%;
   margin: 0 !important;
   font-size: 14px;
-  background: linear-gradient(transparent 60%, $primary);
+  background: linear-gradient(transparent 50%, #808080);
 
   // subreddit name
   // nested to avoid body:link styling
@@ -107,11 +107,11 @@
     @if $header-large {
       top: 245px;
     } @else {
-      top: 159px;
+      top: 160px;
     }
 
     height: 64px;
-    background: linear-gradient(transparent 40%, $primary);
+    background: linear-gradient(transparent 50%, #808080);
 
     // positioning fix for pagename and tabmenu when reddit pushes custom banner image
     .pagename a {

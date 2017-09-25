@@ -448,7 +448,7 @@ button:active, .commentarea .menuarea .spacer + .spacer form:active, #REScomment
 
 .submit-link .morelink a, .submit-text .morelink a, .side a[href="/r/kpop/wiki/relatedsubs"], .side a[href="/r/kpop/wiki/usefulsites"],
 .submit-page button[type="submit"], #sr-form .save-button button, .save-button > button:nth-child(1) {
-  color: rgba(0, 0, 0, 0.87) !important;
+  color: #fff !important;
   background: #9575cd radial-gradient(circle, rgba(178, 152, 224, 0.3) 15%, transparent 30%) no-repeat 50% 50%/0 !important;
   -webkit-transition: background 0.3s cubic-bezier(0, 0, 0.2, 1), color 0.6s cubic-bezier(0, 0, 0.2, 1) !important;
   -moz-transition: background 0.3s cubic-bezier(0, 0, 0.2, 1), color 0.6s cubic-bezier(0, 0, 0.2, 1) !important;
@@ -1221,7 +1221,7 @@ textarea {
 
 .res-nightmode .RESDialogSmall.livePreview > h3 {
   background-color: #9575cd;
-  color: rgba(0, 0, 0, 0.87);
+  color: #fff;
 }
 
 .res-nightmode .RESDialogSmall.livePreview .md.RESDialogContents p {
@@ -2192,7 +2192,7 @@ div.content {
 #sr-more-link {
   margin: 0;
   padding: 0 5px;
-  color: rgba(0, 0, 0, 0.87);
+  color: #fff;
   background-color: #ffab40 !important;
 }
 
@@ -3181,7 +3181,7 @@ body::before {
 }
 
 .res-nightmode #BigEditor .RESDialogSmall h3 {
-  color: rgba(0, 0, 0, 0.87);
+  color: #fff;
   background-color: #9575cd;
 }
 
@@ -3193,7 +3193,7 @@ body::before {
 
 #BigEditor .RESDialogSmall h3 {
   height: 38px;
-  color: rgba(0, 0, 0, 0.87);
+  color: #fff;
   background-color: #9575cd;
 }
 
@@ -3367,7 +3367,7 @@ html.res-nightmode .RES-keyNav-activeElement .md-container,
 }
 
 .flair-settings + .tabmenu li.selected a {
-  color: rgba(0, 0, 0, 0.87) !important;
+  color: #fff !important;
   font-size: inherit;
   background-color: #9575cd;
 }
@@ -3569,7 +3569,7 @@ ul#image-preview-list .preview img {
 }
 
 .res-nightmode ul.tabmenu.formtab li.selected a {
-  color: rgba(0, 0, 0, 0.87) !important;
+  color: #fff !important;
   background-color: #9575cd !important;
 }
 
@@ -3592,7 +3592,7 @@ ul.tabmenu.formtab li a:hover {
 }
 
 ul.tabmenu.formtab li.selected a {
-  color: rgba(0, 0, 0, 0.87) !important;
+  color: #fff !important;
   font-size: inherit;
   background-color: #9575cd;
 }
@@ -3713,7 +3713,7 @@ ul.tabmenu.formtab a.text-button.choice {
   padding: 16px;
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px;
-  color: rgba(0, 0, 0, 0.87);
+  color: #fff;
   text-decoration: none;
   background: none;
   background-color: #9575cd;
@@ -3786,32 +3786,32 @@ body:not(.comments-page) .linkflair-spoiler a.title:hover {
   color: #9575cd !important;
 }
 
-.linkflair-news span.linkflairlabel {
+.linkflair-review span.linkflairlabel {
   color: #fff !important;
   background-color: #00bcd4;
 }
 
-.linkflair .linkflair-news > span {
+.linkflair .linkflair-review > span {
   color: #fff !important;
   background-color: #00bcd4 !important;
 }
 
-.linkflair-release span.linkflairlabel {
+.linkflair-fancam span.linkflairlabel {
   color: #fff !important;
   background-color: #f44336;
 }
 
-.linkflair .linkflair-release > span {
+.linkflair .linkflair-fancam > span {
   color: #fff !important;
   background-color: #f44336 !important;
 }
 
-.linkflair-teaser span.linkflairlabel {
+.linkflair-funny span.linkflairlabel {
   color: #fff !important;
   background-color: #9575cd;
 }
 
-.linkflair .linkflair-teaser > span {
+.linkflair .linkflair-funny > span {
   color: #fff !important;
   background-color: #9575cd !important;
 }
@@ -3826,22 +3826,22 @@ body:not(.comments-page) .linkflair-spoiler a.title:hover {
   background-color: #ffbd24 !important;
 }
 
-.linkflair-performance span.linkflairlabel {
+.linkflair-cover span.linkflairlabel {
   color: #fff !important;
   background-color: #4caf50;
 }
 
-.linkflair .linkflair-performance > span {
+.linkflair .linkflair-cover > span {
   color: #fff !important;
   background-color: #4caf50 !important;
 }
 
-.linkflair-variety span.linkflairlabel {
+.linkflair-misc span.linkflairlabel {
   color: #fff !important;
   background-color: #dd5e89;
 }
 
-.linkflair .linkflair-variety > span {
+.linkflair .linkflair-misc > span {
   color: #fff !important;
   background-color: #dd5e89 !important;
 }
@@ -3876,11 +3876,11 @@ body:not(.comments-page) .linkflair-spoiler a.title:hover {
   border-radius: 3px;
 }
 
-.side .md [href*="search?q=flair%3A%22news"] {
+.side .md [href*="search?q=flair%3A%22review"] {
   background: #00bcd4;
 }
 
-.side .md [href*="search?q=flair%3A%22teaser"] {
+.side .md [href*="search?q=flair%3A%22funny"] {
   background: #9575cd;
 }
 
@@ -3888,7 +3888,7 @@ body:not(.comments-page) .linkflair-spoiler a.title:hover {
   background: #ffbd24;
 }
 
-.side .md [href*="search?q=flair%3A%22mv"] {
+.side .md [href*="search?q=flair%3A%22mashup"] {
   background: #f44336;
 }
 
@@ -3896,7 +3896,7 @@ body:not(.comments-page) .linkflair-spoiler a.title:hover {
   background: #4caf50;
 }
 
-.side .md [href*="search?q=flair%3A%22variety"] {
+.side .md [href*="search?q=flair%3A%22misc"] {
   background: #dd5e89;
 }
 
@@ -3979,7 +3979,7 @@ body:not(.comments-page) .linkflair-spoiler a.title:hover {
   background-color: #303030;
 }
 
-html:lang(kr-01) .linkflair-news {
+html:lang(kr-01) .linkflair-funny {
   display: none;
 }
 
@@ -3987,7 +3987,7 @@ html:lang(kr-01) .side .md [href*="kr-01"] {
   display: none;
 }
 
-html:lang(kr-02) .linkflair-teaser {
+html:lang(kr-02) .linkflair-cover {
   display: none;
 }
 
@@ -3995,7 +3995,7 @@ html:lang(kr-02) .side .md [href*="kr-02"] {
   display: none;
 }
 
-html:lang(kr-03) .linkflair-performance {
+html:lang(kr-03) .linkflair-review {
   display: none;
 }
 
@@ -4011,7 +4011,7 @@ html:lang(kr-04) .side .md [href*="kr-04"] {
   display: none;
 }
 
-html:lang(kr-05) .linkflair-release {
+html:lang(kr-05) .linkflair-fancam {
   display: none;
 }
 
@@ -4019,7 +4019,7 @@ html:lang(kr-05) .side .md [href*="kr-05"] {
   display: none;
 }
 
-html:lang(kr-06) .linkflair-variety {
+html:lang(kr-06) .linkflair-misc {
   display: none;
 }
 
@@ -4146,10 +4146,80 @@ Making changes to the top bar
   margin-bottom: 0.7142857142857143em !important;
 }
 
-.side h5:nth-child(36) {
+.side h5:nth-child(33) {
   visibility: hidden;
 }
 
 .side h4:first-of-type {
   font-weight: bold;
+}
+
+.res-nightmode .side .md ul:nth-child(2) {
+  background-color: #303030;
+}
+
+.res-nightmode .side .md ul:nth-child(2) li {
+  background-color: #292929;
+}
+
+.side .md ul:nth-child(2) {
+  position: absolute;
+  top: 219px;
+  /* display: inline-block; */
+  background-color: #f1f1f1;
+  left: 0px;
+  width: 100%;
+  height: 30px;
+  margin-left: 200px;
+}
+
+.side .md ul:nth-child(2) li {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  line-height: 35px;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: rgba(221, 221, 221, 0.7);
+  margin: 0 25px;
+}
+
+.side .md ul:nth-child(2) li a {
+  color: #fff;
+}
+
+.side .md ul:nth-child(2) li:nth-child(1) {
+  background-color: #dd5e89;
+}
+
+.side .md ul:nth-child(2) li:nth-child(1) a {
+  padding: 10px 50px;
+}
+
+.side .md ul:nth-child(2) li:nth-child(2):hover {
+  color: #fff;
+  background-color: #4caf50;
+}
+
+.side .md ul:nth-child(2) li:nth-child(2) a {
+  color: #4caf50;
+  padding: 10px 30px;
+}
+
+.side .md ul:nth-child(2) li:nth-child(2) a:hover {
+  color: #fff;
+}
+
+.side .md ul:nth-child(2) li:nth-child(3):hover {
+  color: #fff;
+  background-color: #9575cd;
+}
+
+.side .md ul:nth-child(2) li:nth-child(3) a {
+  padding: 10px 30px;
+  color: #9575cd;
+}
+
+.side .md ul:nth-child(2) li:nth-child(3) a:hover {
+  color: #fff;
 }

@@ -2,24 +2,14 @@
   display: inline-block !important;
 }
 
-#userbarToggle,
-#header-bottom-right .user,
-#header-bottom-right span a,
-#header-bottom-right:hover span a {
-  text-shadow: $text-shadow;
-}
-
 @mixin header-bottom-right($image, $gradient, $image-light) {
   @if ($image) {
     @if ($gradient) {
       #userbarToggle,
       #header-bottom-right .user,
       #header-bottom-right span a {
-        color: $dark-secondary-text !important;
-      }
-
-      #header-bottom-right:hover span a {
-        color: $dark-text !important;
+        color: $primary !important;
+        font-weight: 500;
       }
 
       .pref-lang.choice {
@@ -37,11 +27,8 @@
       #userbarToggle,
       #header-bottom-right .user,
       #header-bottom-right span a {
-        color: $light-secondary-text !important;
-      }
-
-      #header-bottom-right:hover span a {
-        color: $light-text !important;
+        color: $primary !important;
+        font-weight: 500;
       }
 
       .pref-lang.choice {
@@ -59,11 +46,8 @@
       #userbarToggle,
       #header-bottom-right .user,
       #header-bottom-right span a {
-        color: $dark-secondary-text !important;
-      }
-
-      #header-bottom-right:hover span a {
-        color: $dark-text !important;
+        color: $primary !important;
+        font-weight: 500;
       }
 
       .pref-lang.choice {
@@ -132,7 +116,7 @@
   background-color: transparent !important;
 }
 
-html.res #header-bottom-right { top: 200px; }
+html.res #header-bottom-right { top: 230px; }
 
 .res-nightmode #userbarToggle {
   @extend #userbarToggle;

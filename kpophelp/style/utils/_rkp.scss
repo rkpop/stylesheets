@@ -252,3 +252,72 @@ Making changes to the top bar
     left: -150px;
     width: 290px;
 }
+
+.res-nightmode
+.side .md ul:nth-child(2) {
+    background-color: #303030;
+    li {
+        background-color: #292929;
+    }
+}
+
+.side .md ul:nth-child(2) {
+	position: absolute;
+    top: 219px;
+    /* display: inline-block; */
+    background-color: #f1f1f1;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+    margin-left: 90px;
+
+	li {
+		display: inline-block;
+        width: 150px;
+        text-align: center;
+        line-height: 35px;
+        font-weight: 500;
+        font-size: 14px;
+        background-color: rgba(221, 221, 221, 0.7);
+        margin: 0 25px;
+
+        a {
+            color: #fff;
+        }
+
+        &:nth-child(1) {
+            &:hover {
+                background-color: #dd5e89;
+            }
+            a {
+                padding: 10px 50px;
+                color: #dd5e89;
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            background-color: #4caf50;
+            a {
+                padding: 10px 30px;
+            }
+        }
+
+        &:nth-child(3) {
+			&:hover {
+            	background-color: #9575cd;
+			}
+            a {
+				color: #9575cd;
+                padding: 10px 30px;
+				&:hover {
+					color: #fff;
+				}
+            }
+        }
+	}
+
+}
+

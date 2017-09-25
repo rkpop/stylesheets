@@ -1,12 +1,16 @@
 @import "content/sitetable";
 
-.res-nightmode div.content { background-color: transparent !important; }
+.res-nightmode div.content {
+    background-color: transparent !important;
+    margin-top: 36px;
+}
 
 .modtools-page div.content,
 div.content {
 	margin : {
 		right: 345px;
 		left: 10px;
+        top: 36px
 	}
 }
 
