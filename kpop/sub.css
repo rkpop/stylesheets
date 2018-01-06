@@ -1,4 +1,3 @@
-@charset "UTF-8"
 .titlebox blockquote p:nth-of-type(1) {
   background-position: 0 -130px
 }
@@ -358,15 +357,15 @@ button {
   background-color: #81c784 !important
 }
 
-.commentarea .menuarea .spacer + .spacer form {
+.commentarea .menuarea .spacer+.spacer form {
   font-size: 13px !important
 }
 
-.res-nightmode .commentarea .menuarea .spacer + .spacer form {
+.res-nightmode .commentarea .menuarea .spacer+.spacer form {
   color: rgba(0, 0, 0, 0.87)
 }
 
-.commentarea .menuarea .spacer + .spacer form {
+.commentarea .menuarea .spacer+.spacer form {
   color: #fff
 }
 
@@ -387,8 +386,32 @@ button {
   color: #fff
 }
 
-button, .titlebox a.option, .res-fancy-toggle-button, .submit-page button[type="submit"], #sr-form .save-button button, .submit-link .morelink a, .submit-text .morelink a, .side a[href="/r/kpop/wiki/relatedsubs"], .side a[href="/r/kpop/wiki/usefulsites"], .commentarea .menuarea .spacer + .spacer form, #REScommentSubToggle, .save-button > button:nth-child(1), .guiders_button,
-.res-nightmode button, .res-nightmode .titlebox a.option, .res-nightmode .res-fancy-toggle-button, .res-nightmode .submit-page button[type="submit"], .res-nightmode #sr-form .save-button button, .res-nightmode .submit-link .morelink a, .res-nightmode .submit-text .morelink a, .res-nightmode .side a[href="/r/kpop/wiki/relatedsubs"], .res-nightmode .side a[href="/r/kpop/wiki/usefulsites"], .res-nightmode .commentarea .menuarea .spacer + .spacer form, .res-nightmode #REScommentSubToggle, .res-nightmode .save-button > button:nth-child(1), .res-nightmode .guiders_button {
+button,
+.titlebox a.option,
+.res-fancy-toggle-button,
+.submit-page button[type="submit"],
+#sr-form .save-button button,
+.submit-link .morelink a,
+.submit-text .morelink a,
+.side a[href="/r/kpop/wiki/relatedsubs"],
+.side a[href="/r/kpop/wiki/usefulsites"],
+.commentarea .menuarea .spacer+.spacer form,
+#REScommentSubToggle,
+.save-button>button:nth-child(1),
+.guiders_button,
+.res-nightmode button,
+.res-nightmode .titlebox a.option,
+.res-nightmode .res-fancy-toggle-button,
+.res-nightmode .submit-page button[type="submit"],
+.res-nightmode #sr-form .save-button button,
+.res-nightmode .submit-link .morelink a,
+.res-nightmode .submit-text .morelink a,
+.res-nightmode .side a[href="/r/kpop/wiki/relatedsubs"],
+.res-nightmode .side a[href="/r/kpop/wiki/usefulsites"],
+.res-nightmode .commentarea .menuarea .spacer+.spacer form,
+.res-nightmode #REScommentSubToggle,
+.res-nightmode .save-button>button:nth-child(1),
+.res-nightmode .guiders_button {
   height: 36px
   min-width: 64px
   padding: 0 8px !important
@@ -405,49 +428,110 @@ button, .titlebox a.option, .res-fancy-toggle-button, .submit-page button[type="
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-button::-moz-focus-inner, .titlebox a.option::-moz-focus-inner, .res-fancy-toggle-button::-moz-focus-inner, .submit-page button[type="submit"]::-moz-focus-inner, #sr-form .save-button button::-moz-focus-inner, .submit-link .morelink a::-moz-focus-inner, .submit-text .morelink a::-moz-focus-inner, .side a[href="/r/kpop/wiki/relatedsubs"]::-moz-focus-inner, .side a[href="/r/kpop/wiki/usefulsites"]::-moz-focus-inner, .commentarea .menuarea .spacer + .spacer form::-moz-focus-inner, #REScommentSubToggle::-moz-focus-inner, .save-button > button:nth-child(1)::-moz-focus-inner, .guiders_button::-moz-focus-inner,
-.res-nightmode button::-moz-focus-inner, .res-nightmode .titlebox a.option::-moz-focus-inner, .res-nightmode .res-fancy-toggle-button::-moz-focus-inner, .res-nightmode .submit-page button[type="submit"]::-moz-focus-inner, .res-nightmode #sr-form .save-button button::-moz-focus-inner, .res-nightmode .submit-link .morelink a::-moz-focus-inner, .res-nightmode .submit-text .morelink a::-moz-focus-inner, .res-nightmode .side a[href="/r/kpop/wiki/relatedsubs"]::-moz-focus-inner, .res-nightmode .side a[href="/r/kpop/wiki/usefulsites"]::-moz-focus-inner, .res-nightmode .commentarea .menuarea .spacer + .spacer form::-moz-focus-inner, .res-nightmode #REScommentSubToggle::-moz-focus-inner, .res-nightmode .save-button > button:nth-child(1)::-moz-focus-inner, .res-nightmode .guiders_button::-moz-focus-inner {
+button::-moz-focus-inner,
+.titlebox a.option::-moz-focus-inner,
+.res-fancy-toggle-button::-moz-focus-inner,
+.submit-page button[type="submit"]::-moz-focus-inner,
+#sr-form .save-button button::-moz-focus-inner,
+.submit-link .morelink a::-moz-focus-inner,
+.submit-text .morelink a::-moz-focus-inner,
+.side a[href="/r/kpop/wiki/relatedsubs"]::-moz-focus-inner,
+.side a[href="/r/kpop/wiki/usefulsites"]::-moz-focus-inner,
+.commentarea .menuarea .spacer+.spacer form::-moz-focus-inner,
+#REScommentSubToggle::-moz-focus-inner,
+.save-button>button:nth-child(1)::-moz-focus-inner,
+.guiders_button::-moz-focus-inner,
+.res-nightmode button::-moz-focus-inner,
+.res-nightmode .titlebox a.option::-moz-focus-inner,
+.res-nightmode .res-fancy-toggle-button::-moz-focus-inner,
+.res-nightmode .submit-page button[type="submit"]::-moz-focus-inner,
+.res-nightmode #sr-form .save-button button::-moz-focus-inner,
+.res-nightmode .submit-link .morelink a::-moz-focus-inner,
+.res-nightmode .submit-text .morelink a::-moz-focus-inner,
+.res-nightmode .side a[href="/r/kpop/wiki/relatedsubs"]::-moz-focus-inner,
+.res-nightmode .side a[href="/r/kpop/wiki/usefulsites"]::-moz-focus-inner,
+.res-nightmode .commentarea .menuarea .spacer+.spacer form::-moz-focus-inner,
+.res-nightmode #REScommentSubToggle::-moz-focus-inner,
+.res-nightmode .save-button>button:nth-child(1)::-moz-focus-inner,
+.res-nightmode .guiders_button::-moz-focus-inner {
   border: 0
 }
 
-button, .submit-page button[type="submit"], #sr-form .save-button button, .submit-link .morelink a, .submit-text .morelink a, .side a[href="/r/kpop/wiki/relatedsubs"], .side a[href="/r/kpop/wiki/usefulsites"], .save-button > button:nth-child(1), .guiders_button {
+button,
+.submit-page button[type="submit"],
+#sr-form .save-button button,
+.submit-link .morelink a,
+.submit-text .morelink a,
+.side a[href="/r/kpop/wiki/relatedsubs"],
+.side a[href="/r/kpop/wiki/usefulsites"],
+.save-button>button:nth-child(1),
+.guiders_button {
   font-size: 14px !important
 }
 
-.res-nightmode button, .res-nightmode .commentarea .menuarea .spacer + .spacer form, .res-nightmode #REScommentSubToggle, .res-nightmode .guiders_button {
+.res-nightmode button,
+.res-nightmode .commentarea .menuarea .spacer+.spacer form,
+.res-nightmode #REScommentSubToggle,
+.res-nightmode .guiders_button {
   background-color: transparent !important
 }
 
-.res-nightmode button:hover, .res-nightmode .commentarea .menuarea .spacer + .spacer form:hover, .res-nightmode #REScommentSubToggle:hover, .res-nightmode .guiders_button:hover {
+.res-nightmode button:hover,
+.res-nightmode .commentarea .menuarea .spacer+.spacer form:hover,
+.res-nightmode #REScommentSubToggle:hover,
+.res-nightmode .guiders_button:hover {
   background-color: rgba(204, 204, 204, 0.15) !important
 }
 
-.res-nightmode button:focus:not(:active), .res-nightmode .commentarea .menuarea .spacer + .spacer form:focus:not(:active), .res-nightmode #REScommentSubToggle:focus:not(:active), .res-nightmode .guiders_button:focus:not(:active) {
+.res-nightmode button:focus:not(:active),
+.res-nightmode .commentarea .menuarea .spacer+.spacer form:focus:not(:active),
+.res-nightmode #REScommentSubToggle:focus:not(:active),
+.res-nightmode .guiders_button:focus:not(:active) {
   background-color: rgba(255, 255, 255, 0.12) !important
 }
 
-.res-nightmode button:active, .res-nightmode .commentarea .menuarea .spacer + .spacer form:active, .res-nightmode #REScommentSubToggle:active, .res-nightmode .guiders_button:active {
+.res-nightmode button:active,
+.res-nightmode .commentarea .menuarea .spacer+.spacer form:active,
+.res-nightmode #REScommentSubToggle:active,
+.res-nightmode .guiders_button:active {
   background-color: rgba(204, 204, 204, 0.25) !important
 }
 
-button, .commentarea .menuarea .spacer + .spacer form, #REScommentSubToggle, .guiders_button {
+button,
+.commentarea .menuarea .spacer+.spacer form,
+#REScommentSubToggle,
+.guiders_button {
   background: none transparent !important
 }
 
-button:hover, .commentarea .menuarea .spacer + .spacer form:hover, #REScommentSubToggle:hover, .guiders_button:hover {
+button:hover,
+.commentarea .menuarea .spacer+.spacer form:hover,
+#REScommentSubToggle:hover,
+.guiders_button:hover {
   background-color: rgba(153, 153, 153, 0.2) !important
 }
 
-button:focus:not(:active), .commentarea .menuarea .spacer + .spacer form:focus:not(:active), #REScommentSubToggle:focus:not(:active), .guiders_button:focus:not(:active) {
+button:focus:not(:active),
+.commentarea .menuarea .spacer+.spacer form:focus:not(:active),
+#REScommentSubToggle:focus:not(:active),
+.guiders_button:focus:not(:active) {
   background-color: rgba(0, 0, 0, 0.12) !important
 }
 
-button:active, .commentarea .menuarea .spacer + .spacer form:active, #REScommentSubToggle:active, .guiders_button:active {
+button:active,
+.commentarea .menuarea .spacer+.spacer form:active,
+#REScommentSubToggle:active,
+.guiders_button:active {
   background-color: rgba(153, 153, 153, 0.4) !important
 }
 
-.submit-link .morelink a, .submit-text .morelink a, .side a[href="/r/kpop/wiki/relatedsubs"], .side a[href="/r/kpop/wiki/usefulsites"],
-.submit-page button[type="submit"], #sr-form .save-button button, .save-button > button:nth-child(1) {
+.submit-link .morelink a,
+.submit-text .morelink a,
+.side a[href="/r/kpop/wiki/relatedsubs"],
+.side a[href="/r/kpop/wiki/usefulsites"],
+.submit-page button[type="submit"],
+#sr-form .save-button button,
+.save-button>button:nth-child(1) {
   color: #fff !important
   background: #00bcd4 radial-gradient(circle, rgba(77, 208, 225, 0.3) 15%, transparent 30%) no-repeat 50% 50%/0 !important
   -webkit-transition: background 0.3s cubic-bezier(0, 0, 0.2, 1), color 0.6s cubic-bezier(0, 0, 0.2, 1) !important
@@ -455,26 +539,42 @@ button:active, .commentarea .menuarea .spacer + .spacer form:active, #REScomment
   transition: background 0.3s cubic-bezier(0, 0, 0.2, 1), color 0.6s cubic-bezier(0, 0, 0.2, 1) !important
 }
 
-.submit-link .morelink a:focus, .submit-text .morelink a:focus, .side a[href="/r/kpop/wiki/relatedsubs"]:focus, .side a[href="/r/kpop/wiki/usefulsites"]:focus,
-.submit-page button[type="submit"]:focus, #sr-form .save-button button:focus, .save-button > button:nth-child(1):focus {
+.submit-link .morelink a:focus,
+.submit-text .morelink a:focus,
+.side a[href="/r/kpop/wiki/relatedsubs"]:focus,
+.side a[href="/r/kpop/wiki/usefulsites"]:focus,
+.submit-page button[type="submit"]:focus,
+#sr-form .save-button button:focus,
+.save-button>button:nth-child(1):focus {
   outline: 0
   background-size: 1000% !important
 }
 
-.submit-link .morelink a:hover, .submit-text .morelink a:hover, .side a[href="/r/kpop/wiki/relatedsubs"]:hover, .side a[href="/r/kpop/wiki/usefulsites"]:hover,
-.submit-page button[type="submit"]:hover, #sr-form .save-button button:hover, .save-button > button:nth-child(1):hover {
+.submit-link .morelink a:hover,
+.submit-text .morelink a:hover,
+.side a[href="/r/kpop/wiki/relatedsubs"]:hover,
+.side a[href="/r/kpop/wiki/usefulsites"]:hover,
+.submit-page button[type="submit"]:hover,
+#sr-form .save-button button:hover,
+.save-button>button:nth-child(1):hover {
   background-color: #0097a7 !important
 }
 
-.submit-page button[type="submit"], #sr-form .save-button button, .save-button > button:nth-child(1) {
+.submit-page button[type="submit"],
+#sr-form .save-button button,
+.save-button>button:nth-child(1) {
   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12) !important
 }
 
-.submit-page button[type="submit"]:active, #sr-form .save-button button:active, .save-button > button:nth-child(1):active {
+.submit-page button[type="submit"]:active,
+#sr-form .save-button button:active,
+.save-button>button:nth-child(1):active {
   box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12) !important
 }
 
-.submit-page button[type="submit"]:focus:not(:active), #sr-form .save-button button:focus:not(:active), .save-button > button:nth-child(1):focus:not(:active) {
+.submit-page button[type="submit"]:focus:not(:active),
+#sr-form .save-button button:focus:not(:active),
+.save-button>button:nth-child(1):focus:not(:active) {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36)
   background-color: #4dd0e1 !important
 }
@@ -483,7 +583,7 @@ button:active, .commentarea .menuarea .spacer + .spacer form:active, #REScomment
   box-shadow: none
 }
 
-#siteTable > .thing {
+#siteTable>.thing {
   box-shadow: none
 }
 
@@ -515,24 +615,140 @@ button:active, .commentarea .menuarea .spacer + .spacer form:active, #REScomment
   color: rgba(0, 0, 0, 0.87) !important
 }
 
-.res-nightmode .link.promotedlink.promoted, .link.promotedlink.external, .res-nightmode #compose-message, .res-nightmode .wiki-page-content, .res-nightmode .combined-search-page .searchpane, .res-nightmode .combined-search-page .search-result, .res-nightmode #subreddit_stylesheet, .res-nightmode ul#image-preview-list li, .res-nightmode #image-upload, .res-nightmode .linefield, .res-nightmode .searchpane, .res-nightmode .commentarea .menuarea, .res-nightmode .commentarea > .usertext, .res-nightmode .archived-infobar, .res-nightmode .formtabs-content, .res-nightmode .tabpane-content, .res-nightmode .modtools-page > div.content, .res-nightmode .side .spacer:first-of-type, .res-nightmode .side .titlebox, .res-nightmode .side #moderation_tools, .res-nightmode .side #ad_main_top, .res-nightmode .side #ad_main, .res-nightmode .side .sidecontentbox, .res-nightmode .submit-link::before, .res-nightmode #login_login-main, .res-nightmode .hover-bubble.multi-selector, .res-nightmode .flairselector, .res-nightmode .footer {
+.res-nightmode .link.promotedlink.promoted,
+.link.promotedlink.external,
+.res-nightmode #compose-message,
+.res-nightmode .wiki-page-content,
+.res-nightmode .combined-search-page .searchpane,
+.res-nightmode .combined-search-page .search-result,
+.res-nightmode #subreddit_stylesheet,
+.res-nightmode ul#image-preview-list li,
+.res-nightmode #image-upload,
+.res-nightmode .linefield,
+.res-nightmode .searchpane,
+.res-nightmode .commentarea .menuarea,
+.res-nightmode .commentarea>.usertext,
+.res-nightmode .archived-infobar,
+.res-nightmode .formtabs-content,
+.res-nightmode .tabpane-content,
+.res-nightmode .modtools-page>div.content,
+.res-nightmode .side .spacer:first-of-type,
+.res-nightmode .side .titlebox,
+.res-nightmode .side #moderation_tools,
+.res-nightmode .side #ad_main_top,
+.res-nightmode .side #ad_main,
+.res-nightmode .side .sidecontentbox,
+.res-nightmode .submit-link::before,
+.res-nightmode #login_login-main,
+.res-nightmode .hover-bubble.multi-selector,
+.res-nightmode .flairselector,
+.res-nightmode .footer {
   background-color: #424242 !important
   color: #fff
 }
 
-.link.promotedlink.promoted, .link.promotedlink.external, #compose-message, .wiki-page-content, .combined-search-page .searchpane, .combined-search-page .search-result, #subreddit_stylesheet, ul#image-preview-list li, #image-upload, .linefield, .searchpane, .commentarea .menuarea, .commentarea > .usertext, .archived-infobar, .formtabs-content, .tabpane-content, .modtools-page > div.content, .side .spacer:first-of-type, .side .titlebox, .side #moderation_tools, .side #ad_main_top, .side #ad_main, .side .sidecontentbox, .submit-link::before, #login_login-main, .hover-bubble.multi-selector, .flairselector, .footer {
+.link.promotedlink.promoted,
+.link.promotedlink.external,
+#compose-message,
+.wiki-page-content,
+.combined-search-page .searchpane,
+.combined-search-page .search-result,
+#subreddit_stylesheet,
+ul#image-preview-list li,
+#image-upload,
+.linefield,
+.searchpane,
+.commentarea .menuarea,
+.commentarea>.usertext,
+.archived-infobar,
+.formtabs-content,
+.tabpane-content,
+.modtools-page>div.content,
+.side .spacer:first-of-type,
+.side .titlebox,
+.side #moderation_tools,
+.side #ad_main_top,
+.side #ad_main,
+.side .sidecontentbox,
+.submit-link::before,
+#login_login-main,
+.hover-bubble.multi-selector,
+.flairselector,
+.footer {
   background-color: #fff
   color: rgba(0, 0, 0, 0.87)
 }
 
-.gold-accent.comment-visits-box, .linkinfo, .content.submit .info-notice, .locked-infobar,
-.link.promotedlink.promoted, .link.promotedlink.external, #compose-message, .wiki-page-content, .combined-search-page .searchpane, .combined-search-page .search-result, #subreddit_stylesheet, ul#image-preview-list li, #image-upload, .linefield, .searchpane, .commentarea .menuarea, .commentarea > .usertext, .archived-infobar, .formtabs-content, .tabpane-content, .modtools-page > div.content, .side .spacer:first-of-type, .side .titlebox, .side #moderation_tools, .side #ad_main_top, .side #ad_main, .side .sidecontentbox, .submit-link::before, #login_login-main, .hover-bubble.multi-selector, .flairselector, .footer {
+.gold-accent.comment-visits-box,
+.linkinfo,
+.content.submit .info-notice,
+.locked-infobar,
+.link.promotedlink.promoted,
+.link.promotedlink.external,
+#compose-message,
+.wiki-page-content,
+.combined-search-page .searchpane,
+.combined-search-page .search-result,
+#subreddit_stylesheet,
+ul#image-preview-list li,
+#image-upload,
+.linefield,
+.searchpane,
+.commentarea .menuarea,
+.commentarea>.usertext,
+.archived-infobar,
+.formtabs-content,
+.tabpane-content,
+.modtools-page>div.content,
+.side .spacer:first-of-type,
+.side .titlebox,
+.side #moderation_tools,
+.side #ad_main_top,
+.side #ad_main,
+.side .sidecontentbox,
+.submit-link::before,
+#login_login-main,
+.hover-bubble.multi-selector,
+.flairselector,
+.footer {
   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12) !important
 }
 
-.gold-accent.comment-visits-box, .linkinfo, .content.submit .info-notice, .locked-infobar,
-#searchexpando, #siteTable > .thing, .guider,
-.link.promotedlink.promoted, .link.promotedlink.external, #compose-message, .wiki-page-content, .combined-search-page .searchpane, .combined-search-page .search-result, #subreddit_stylesheet, ul#image-preview-list li, #image-upload, .linefield, .searchpane, .commentarea .menuarea, .commentarea > .usertext, .archived-infobar, .formtabs-content, .tabpane-content, .modtools-page > div.content, .side .spacer:first-of-type, .side .titlebox, .side #moderation_tools, .side #ad_main_top, .side #ad_main, .side .sidecontentbox, .submit-link::before, #login_login-main, .hover-bubble.multi-selector, .flairselector, .footer {
+.gold-accent.comment-visits-box,
+.linkinfo,
+.content.submit .info-notice,
+.locked-infobar,
+#searchexpando,
+#siteTable>.thing,
+.guider,
+.link.promotedlink.promoted,
+.link.promotedlink.external,
+#compose-message,
+.wiki-page-content,
+.combined-search-page .searchpane,
+.combined-search-page .search-result,
+#subreddit_stylesheet,
+ul#image-preview-list li,
+#image-upload,
+.linefield,
+.searchpane,
+.commentarea .menuarea,
+.commentarea>.usertext,
+.archived-infobar,
+.formtabs-content,
+.tabpane-content,
+.modtools-page>div.content,
+.side .spacer:first-of-type,
+.side .titlebox,
+.side #moderation_tools,
+.side #ad_main_top,
+.side #ad_main,
+.side .sidecontentbox,
+.submit-link::before,
+#login_login-main,
+.hover-bubble.multi-selector,
+.flairselector,
+.footer {
   padding: 8px !important
   border: 0 !important
   border-radius: 2px !important
@@ -567,13 +783,14 @@ select option {
   background-color: #424242
 }
 
-#searchexpando label:not(:first-of-type), .gold-accent.comment-visits-box .title::after {
+#searchexpando label:not(:first-of-type),
+.gold-accent.comment-visits-box .title::after {
   height: 19px
-  width: 19px
   background: url(%%dropdown%%) no-repeat right
 }
 
-.res-nightmode #searchexpando label:not(:first-of-type), .res-nightmode .gold-accent.comment-visits-box .title::after {
+.res-nightmode #searchexpando label:not(:first-of-type),
+.res-nightmode .gold-accent.comment-visits-box .title::after {
   background: url(%%dropdown-night%%) no-repeat right
 }
 
@@ -657,7 +874,8 @@ select option {
   border: 1px solid rgba(255, 255, 255, 0.5)
 }
 
-.res-nightmode .expando-button.image, .res-nightmode .expando-button.gallery {
+.res-nightmode .expando-button.image,
+.res-nightmode .expando-button.gallery {
   box-sizing: unset
 }
 
@@ -665,23 +883,42 @@ select option {
   border-color: rgba(255, 255, 255, 0.7)
 }
 
-.res-nightmode .expando-button.collapsed::before, .res-nightmode .expando-button.collapsed::after, .res-nightmode .expando-button.collapsed:hover::before, .res-nightmode .expando-button.collapsed:hover::after, .res-nightmode .expando-button.expanded::before, .res-nightmode .expando-button.expanded::after, .res-nightmode .expando-button.expanded:hover::before, .res-nightmode .expando-button.expanded:hover::after {
+.res-nightmode .expando-button.collapsed::before,
+.res-nightmode .expando-button.collapsed::after,
+.res-nightmode .expando-button.collapsed:hover::before,
+.res-nightmode .expando-button.collapsed:hover::after,
+.res-nightmode .expando-button.expanded::before,
+.res-nightmode .expando-button.expanded::after,
+.res-nightmode .expando-button.expanded:hover::before,
+.res-nightmode .expando-button.expanded:hover::after {
   background: rgba(255, 255, 255, 0.5) !important
 }
 
-.res-nightmode .expando-button.video.collapsed, .res-nightmode .expando-button.video.collapsed:hover, .res-nightmode .expando-button.video.expanded, .res-nightmode .expando-button.video.expanded:hover {
+.res-nightmode .expando-button.video.collapsed,
+.res-nightmode .expando-button.video.collapsed:hover,
+.res-nightmode .expando-button.video.expanded,
+.res-nightmode .expando-button.video.expanded:hover {
   background-position: -106px -87px !important
 }
 
-.res-nightmode .expando-button.image.collapsed, .res-nightmode .expando-button.image.collapsed:hover, .res-nightmode .expando-button.image.expanded, .res-nightmode .expando-button.image.expanded:hover {
+.res-nightmode .expando-button.image.collapsed,
+.res-nightmode .expando-button.image.collapsed:hover,
+.res-nightmode .expando-button.image.expanded,
+.res-nightmode .expando-button.image.expanded:hover {
   background-position: -92px 0 !important
 }
 
-.res-nightmode .expando-button.gallery.collapsed, .res-nightmode .expando-button.gallery.collapsed:hover, .res-nightmode .expando-button.gallery.expanded, .res-nightmode .expando-button.gallery.expanded:hover {
+.res-nightmode .expando-button.gallery.collapsed,
+.res-nightmode .expando-button.gallery.collapsed:hover,
+.res-nightmode .expando-button.gallery.expanded,
+.res-nightmode .expando-button.gallery.expanded:hover {
   background-position: -24px 0 !important
 }
 
-.res-nightmode .expando-button.selftext.collapsed, .res-nightmode .expando-button.selftext.collapsed:hover, .res-nightmode .expando-button.selftext.expanded, .res-nightmode .expando-button.selftext.expanded:hover {
+.res-nightmode .expando-button.selftext.collapsed,
+.res-nightmode .expando-button.selftext.collapsed:hover,
+.res-nightmode .expando-button.selftext.expanded,
+.res-nightmode .expando-button.selftext.expanded:hover {
   background-position: -130px -117px !important
 }
 
@@ -702,28 +939,42 @@ select option {
   border-color: rgba(0, 0, 0, 0.54)
 }
 
-.expando-button.collapsed::before, .expando-button.collapsed::after, .expando-button.collapsed:hover::before, .expando-button.collapsed:hover::after, .expando-button.expanded::before, .expando-button.expanded::after, .expando-button.expanded:hover::before, .expando-button.expanded:hover::after {
+.expando-button.collapsed::before,
+.expando-button.collapsed::after,
+.expando-button.collapsed:hover::before,
+.expando-button.collapsed:hover::after,
+.expando-button.expanded::before,
+.expando-button.expanded::after,
+.expando-button.expanded:hover::before,
+.expando-button.expanded:hover::after {
   background: rgba(0, 0, 0, 0.38) !important
   content: ""
   position: absolute
   display: block
 }
 
-.expando-button.collapsed::before, .expando-button.collapsed:hover::before, .expando-button.expanded::before, .expando-button.expanded:hover::before {
+.expando-button.collapsed::before,
+.expando-button.collapsed:hover::before,
+.expando-button.expanded::before,
+.expando-button.expanded:hover::before {
   width: 7px !important
   height: 1px !important
   top: 17px
   left: 14px
 }
 
-.expando-button.collapsed::after, .expando-button.collapsed:hover::after, .expando-button.expanded::after, .expando-button.expanded:hover::after {
+.expando-button.collapsed::after,
+.expando-button.collapsed:hover::after,
+.expando-button.expanded::after,
+.expando-button.expanded:hover::after {
   width: 1px
   height: 7px
   top: 14px
   left: 17px
 }
 
-.expando-button.collapsed::after, .expando-button.expanded::after {
+.expando-button.collapsed::after,
+.expando-button.expanded::after {
   -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1)
   -moz-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1)
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1)
@@ -742,7 +993,10 @@ select option {
   transform: rotate(90deg)
 }
 
-.expando-button.video.collapsed, .expando-button.video.collapsed:hover, .expando-button.video.expanded, .expando-button.video.expanded:hover {
+.expando-button.video.collapsed,
+.expando-button.video.collapsed:hover,
+.expando-button.video.expanded,
+.expando-button.video.expanded:hover {
   background-position: -176px -63px
 }
 
@@ -750,15 +1004,24 @@ select option {
   box-sizing: unset
 }
 
-.expando-button.image.collapsed, .expando-button.image.collapsed:hover, .expando-button.image.expanded, .expando-button.image.expanded:hover {
+.expando-button.image.collapsed,
+.expando-button.image.collapsed:hover,
+.expando-button.image.expanded,
+.expando-button.image.expanded:hover {
   background-position: -68px 0 !important
 }
 
-.expando-button.gallery.collapsed, .expando-button.gallery.collapsed:hover, .expando-button.gallery.expanded, .expando-button.gallery.expanded:hover {
+.expando-button.gallery.collapsed,
+.expando-button.gallery.collapsed:hover,
+.expando-button.gallery.expanded,
+.expando-button.gallery.expanded:hover {
   background-position: 0 0 !important
 }
 
-.expando-button.selftext.collapsed, .expando-button.selftext.collapsed:hover, .expando-button.selftext.expanded, .expando-button.selftext.expanded:hover {
+.expando-button.selftext.collapsed,
+.expando-button.selftext.collapsed:hover,
+.expando-button.selftext.expanded,
+.expando-button.selftext.expanded:hover {
   background-position: -107px -117px
 }
 
@@ -770,11 +1033,13 @@ select option {
   width: 11.66667em
 }
 
-.res-nightmode #sr-header-area .drop-choices.srdrop, .res-nightmode .drop-choices.lightdrop {
+.res-nightmode #sr-header-area .drop-choices.srdrop,
+.res-nightmode .drop-choices.lightdrop {
   background-color: #424242 !important
 }
 
-#sr-header-area .drop-choices.srdrop, .drop-choices.lightdrop {
+#sr-header-area .drop-choices.srdrop,
+.drop-choices.lightdrop {
   display: block
   width: 0
   max-height: 0
@@ -790,27 +1055,36 @@ select option {
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-#sr-header-area .drop-choices.srdrop.inuse, .drop-choices.lightdrop.inuse {
+#sr-header-area .drop-choices.srdrop.inuse,
+.drop-choices.lightdrop.inuse {
   max-height: 690px
   margin-top: 10px
   visibility: visible
   opacity: 1
 }
 
-.res-nightmode .RESDropdownList li, .res-nightmode .srdrop a.choice, .res-nightmode .lightdrop a.choice {
+.res-nightmode .RESDropdownList li,
+.res-nightmode .srdrop a.choice,
+.res-nightmode .lightdrop a.choice {
   color: #fff !important
 }
 
-.res-nightmode .RESDropdownList li:hover, .res-nightmode .srdrop a.choice:hover, .res-nightmode .lightdrop a.choice:hover {
+.res-nightmode .RESDropdownList li:hover,
+.res-nightmode .srdrop a.choice:hover,
+.res-nightmode .lightdrop a.choice:hover {
   background-color: #212121 !important
 }
 
-.RESDropdownList li, .srdrop a.choice, .lightdrop a.choice {
+.RESDropdownList li,
+.srdrop a.choice,
+.lightdrop a.choice {
   padding: 8px
   color: rgba(0, 0, 0, 0.87) !important
 }
 
-.RESDropdownList li:hover, .srdrop a.choice:hover, .lightdrop a.choice:hover {
+.RESDropdownList li:hover,
+.srdrop a.choice:hover,
+.lightdrop a.choice:hover {
   background-color: #f5f5f5 !important
 }
 
@@ -933,7 +1207,8 @@ select option {
   box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12) !important
 }
 
-.RESDialogSmall::before, .RESDialogSmall::after {
+.RESDialogSmall::before,
+.RESDialogSmall::after {
   display: none !important
 }
 
@@ -1072,7 +1347,6 @@ th {
 }
 
 .res-nightmode tbody tr:hover {
-  /*background-color: #101010*/
   background-color: #ff007e
 }
 
@@ -1211,7 +1485,7 @@ textarea {
   margin-bottom: 9px !important
 }
 
-.usertext-edit > .markdownEditor-wrapper {
+.usertext-edit>.markdownEditor-wrapper {
   width: auto
 }
 
@@ -1219,7 +1493,7 @@ textarea {
   margin-bottom: 10px
 }
 
-.res-nightmode .RESDialogSmall.livePreview > h3 {
+.res-nightmode .RESDialogSmall.livePreview>h3 {
   background-color: #00bcd4
   color: #fff
 }
@@ -1228,7 +1502,7 @@ textarea {
   color: #fff
 }
 
-.RESDialogSmall.livePreview > h3 {
+.RESDialogSmall.livePreview>h3 {
   height: 40px
   background-color: #00bcd4
 }
@@ -1255,12 +1529,14 @@ textarea {
   background: none !important
 }
 
-.res-nightmode .thumbnail.self, .res-nightmode .thumbnail.default {
+.res-nightmode .thumbnail.self,
+.res-nightmode .thumbnail.default {
   border: 1px solid rgba(255, 255, 255, 0.7) !important
   opacity: 0.5
 }
 
-.res-nightmode .thumbnail.self:hover, .res-nightmode .thumbnail.default:hover {
+.res-nightmode .thumbnail.self:hover,
+.res-nightmode .thumbnail.default:hover {
   opacity: 1
 }
 
@@ -1297,7 +1573,8 @@ textarea {
   transform: translate(-50%, -50%)
 }
 
-.thumbnail.self, .thumbnail.default {
+.thumbnail.self,
+.thumbnail.default {
   height: 70px
   width: 70px
   border-radius: 50%
@@ -1306,7 +1583,8 @@ textarea {
   margin: 0 26px 0 10px
 }
 
-.thumbnail.self:hover, .thumbnail.default:hover {
+.thumbnail.self:hover,
+.thumbnail.default:hover {
   opacity: 0.5
 }
 
@@ -1365,11 +1643,21 @@ input[type="checkbox"]:disabled {
   cursor: auto
 }
 
-.res-nightmode .login-form-side input[type="checkbox"] + label::before, .res-nightmode .c-checkbox input[type="checkbox"] + label::before, .res-nightmode .flairtoggle input[type="checkbox"] + label::before, .res-nightmode .sr_style_toggle input[type="checkbox"] + label::before, .res-nightmode .linefield input[type="checkbox"] + label::before, .res-nightmode .roundfield-content input[type="checkbox"] + label::before {
+.res-nightmode .login-form-side input[type="checkbox"]+label::before,
+.res-nightmode .c-checkbox input[type="checkbox"]+label::before,
+.res-nightmode .flairtoggle input[type="checkbox"]+label::before,
+.res-nightmode .sr_style_toggle input[type="checkbox"]+label::before,
+.res-nightmode .linefield input[type="checkbox"]+label::before,
+.res-nightmode .roundfield-content input[type="checkbox"]+label::before {
   border: 2px solid rgba(255, 255, 255, 0.7) !important
 }
 
-.login-form-side input[type="checkbox"], .c-checkbox input[type="checkbox"], .flairtoggle input[type="checkbox"], .sr_style_toggle input[type="checkbox"], .linefield input[type="checkbox"], .roundfield-content input[type="checkbox"] {
+.login-form-side input[type="checkbox"],
+.c-checkbox input[type="checkbox"],
+.flairtoggle input[type="checkbox"],
+.sr_style_toggle input[type="checkbox"],
+.linefield input[type="checkbox"],
+.roundfield-content input[type="checkbox"] {
   display: none
   width: 0
   height: 0
@@ -1384,7 +1672,12 @@ input[type="checkbox"]:disabled {
   appearance: none
 }
 
-.login-form-side input[type="checkbox"] + label::before, .c-checkbox input[type="checkbox"] + label::before, .flairtoggle input[type="checkbox"] + label::before, .sr_style_toggle input[type="checkbox"] + label::before, .linefield input[type="checkbox"] + label::before, .roundfield-content input[type="checkbox"] + label::before {
+.login-form-side input[type="checkbox"]+label::before,
+.c-checkbox input[type="checkbox"]+label::before,
+.flairtoggle input[type="checkbox"]+label::before,
+.sr_style_toggle input[type="checkbox"]+label::before,
+.linefield input[type="checkbox"]+label::before,
+.roundfield-content input[type="checkbox"]+label::before {
   display: inline-block
   height: 16px
   width: 16px
@@ -1396,7 +1689,12 @@ input[type="checkbox"]:disabled {
   cursor: pointer
 }
 
-.login-form-side input[type="checkbox"]:checked + label::before, .c-checkbox input[type="checkbox"]:checked + label::before, .flairtoggle input[type="checkbox"]:checked + label::before, .sr_style_toggle input[type="checkbox"]:checked + label::before, .linefield input[type="checkbox"]:checked + label::before, .roundfield-content input[type="checkbox"]:checked + label::before {
+.login-form-side input[type="checkbox"]:checked+label::before,
+.c-checkbox input[type="checkbox"]:checked+label::before,
+.flairtoggle input[type="checkbox"]:checked+label::before,
+.sr_style_toggle input[type="checkbox"]:checked+label::before,
+.linefield input[type="checkbox"]:checked+label::before,
+.roundfield-content input[type="checkbox"]:checked+label::before {
   border-color: #00bcd4 !important
   background: #00bcd4 url(%%spritesheet%%) -246px -138px
   -webkit-transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1)
@@ -1458,12 +1756,6 @@ input[type="checkbox"]:disabled {
   display: none
 }
 
-/**
- * need to provide width of tooltip after content is added
- * need to provide width of object to which the pseudoelement is attached
- * need to provide text within tooltip
- * default for 20x20 icons
- */
 a[href$="#twitter-btn"]:hover::after {
   -webkit-transform: translateY(44px)
   -moz-transform: translateY(44px)
@@ -1478,7 +1770,7 @@ a[href$="#twitter-btn"]::after {
   content: "Twitter"
 }
 
-a[href$="#lastfm-btn"]:hover::after {
+a[href$="#discord-btn"]:hover::after {
   -webkit-transform: translateY(44px)
   -moz-transform: translateY(44px)
   -ms-transform: translateY(44px)
@@ -1486,24 +1778,24 @@ a[href$="#lastfm-btn"]:hover::after {
   transform: translateY(44px)
 }
 
-a[href$="#lastfm-btn"]::after {
+a[href$="#discord-btn"]::after {
+  right: 16px
+  width: 82px
+  content: "Discord"
+}
+
+a[href$="#plugdj-btn"]:hover::after {
+  -webkit-transform: translateY(44px)
+  -moz-transform: translateY(44px)
+  -ms-transform: translateY(44px)
+  -o-transform: translateY(44px)
+  transform: translateY(44px)
+}
+
+a[href$="#plugdj-btn"]::after {
   right: 15px
   width: 80px
-  content: "Last.fm"
-}
-
-a[href$="#steam-btn"]:hover::after {
-  -webkit-transform: translateY(44px)
-  -moz-transform: translateY(44px)
-  -ms-transform: translateY(44px)
-  -o-transform: translateY(44px)
-  transform: translateY(44px)
-}
-
-a[href$="#steam-btn"]::after {
-  right: 12px
-  width: 74px
-  content: "Steam"
+  content: "Plug.dj"
 }
 
 a[href$="#irc-btn"]:hover::after {
@@ -1546,7 +1838,11 @@ a[href$="#irc-btn"]::after {
   transform: translateY(14px)
 }
 
-a[href$="#twitter-btn"]::after, a[href$="#lastfm-btn"]::after, a[href$="#steam-btn"]::after, a[href$="#irc-btn"]::after, .sidecontentbox .gadget .right a::after {
+a[href$="#twitter-btn"]::after,
+a[href$="#discord-btn"]::after,
+a[href$="#plugdj-btn"]::after,
+a[href$="#irc-btn"]::after,
+.sidecontentbox .gadget .right a::after {
   position: relative
   z-index: 10
   display: block
@@ -1565,7 +1861,11 @@ a[href$="#twitter-btn"]::after, a[href$="#lastfm-btn"]::after, a[href$="#steam-b
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-a[href$="#twitter-btn"]:hover::after, a[href$="#lastfm-btn"]:hover::after, a[href$="#steam-btn"]:hover::after, a[href$="#irc-btn"]:hover::after, .sidecontentbox .gadget .right a:hover::after {
+a[href$="#twitter-btn"]:hover::after,
+a[href$="#discord-btn"]:hover::after,
+a[href$="#plugdj-btn"]:hover::after,
+a[href$="#irc-btn"]:hover::after,
+.sidecontentbox .gadget .right a:hover::after {
   visibility: visible
   background-color: rgba(97, 97, 97, 0.9)
 }
@@ -1651,7 +1951,8 @@ h6,
   overflow: visible
 }
 
-.res-nightmode .link .arrow.upmod::before, .res-nightmode .link .arrow.upmod:hover::before,
+.res-nightmode .link .arrow.upmod::before,
+.res-nightmode .link .arrow.upmod:hover::before,
 .res-nightmode .reddit-link .arrow.upmod::before,
 .res-nightmode .reddit-link .arrow.upmod:hover::before,
 .res-nightmode .comment .arrow.upmod::before,
@@ -1661,7 +1962,8 @@ h6,
   background-color: #c60c30
 }
 
-.res-nightmode .link .arrow.downmod::before, .res-nightmode .link .arrow.downmod:hover::before,
+.res-nightmode .link .arrow.downmod::before,
+.res-nightmode .link .arrow.downmod:hover::before,
 .res-nightmode .reddit-link .arrow.downmod::before,
 .res-nightmode .reddit-link .arrow.downmod:hover::before,
 .res-nightmode .comment .arrow.downmod::before,
@@ -1699,7 +2001,10 @@ h6,
   width: 30px
 }
 
-.res-nightmode .arrow.upmod, .res-nightmode .arrow.up, .res-nightmode .arrow.downmod, .res-nightmode .arrow.down,
+.res-nightmode .arrow.upmod,
+.res-nightmode .arrow.up,
+.res-nightmode .arrow.downmod,
+.res-nightmode .arrow.down,
 .arrow.upmod,
 .arrow.up,
 .arrow.downmod,
@@ -1707,7 +2012,8 @@ h6,
   background: url(%%upboatsndownboats%%) !important
 }
 
-.res-nightmode .arrow.upmod:focus::after, .res-nightmode .arrow.downmod:focus::after,
+.res-nightmode .arrow.upmod:focus::after,
+.res-nightmode .arrow.downmod:focus::after,
 .arrow.upmod:focus::after,
 .arrow.downmod:focus::after {
   display: block
@@ -1749,7 +2055,11 @@ h6,
   background-position: 30px 14px !important
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2 / 1),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
   .res-nightmode .expando-button.video.collapsed,
   .res-nightmode .expando-button.video.collapsed:hover,
   .res-nightmode .expando-button.video.expanded,
@@ -1810,28 +2120,52 @@ h6,
   .thumbnail.nsfw {
     background-position: -2px -105px
   }
-  .res-nightmode .expando-button.video.collapsed, .res-nightmode .expando-button.video.collapsed:hover, .res-nightmode .expando-button.video.expanded, .res-nightmode .expando-button.video.expanded:hover {
+  .res-nightmode .expando-button.video.collapsed,
+  .res-nightmode .expando-button.video.collapsed:hover,
+  .res-nightmode .expando-button.video.expanded,
+  .res-nightmode .expando-button.video.expanded:hover {
     background-position: -1px -203px !important
   }
-  .res-nightmode .expando-button.image.collapsed, .res-nightmode .expando-button.image.collapsed:hover, .res-nightmode .expando-button.image.expanded, .res-nightmode .expando-button.image.expanded:hover {
+  .res-nightmode .expando-button.image.collapsed,
+  .res-nightmode .expando-button.image.collapsed:hover,
+  .res-nightmode .expando-button.image.expanded,
+  .res-nightmode .expando-button.image.expanded:hover {
     background-position: -1px -79px !important
   }
-  .res-nightmode .expando-button.gallery.collapsed, .res-nightmode .expando-button.gallery.collapsed:hover, .res-nightmode .expando-button.gallery.expanded, .res-nightmode .expando-button.gallery.expanded:hover {
+  .res-nightmode .expando-button.gallery.collapsed,
+  .res-nightmode .expando-button.gallery.collapsed:hover,
+  .res-nightmode .expando-button.gallery.expanded,
+  .res-nightmode .expando-button.gallery.expanded:hover {
     background-position: -1px -28px !important
   }
-  .res-nightmode .expando-button.selftext.collapsed, .res-nightmode .expando-button.selftext.collapsed:hover, .res-nightmode .expando-button.selftext.expanded, .res-nightmode .expando-button.selftext.expanded:hover {
+  .res-nightmode .expando-button.selftext.collapsed,
+  .res-nightmode .expando-button.selftext.collapsed:hover,
+  .res-nightmode .expando-button.selftext.expanded,
+  .res-nightmode .expando-button.selftext.expanded:hover {
     background-position: -1px -256px !important
   }
-  .expando-button.video.collapsed, .expando-button.video.collapsed:hover, .expando-button.video.expanded, .expando-button.video.expanded:hover {
+  .expando-button.video.collapsed,
+  .expando-button.video.collapsed:hover,
+  .expando-button.video.expanded,
+  .expando-button.video.expanded:hover {
     background-position: -2px -177px
   }
-  .expando-button.image.collapsed, .expando-button.image.collapsed:hover, .expando-button.image.expanded, .expando-button.image.expanded:hover {
+  .expando-button.image.collapsed,
+  .expando-button.image.collapsed:hover,
+  .expando-button.image.expanded,
+  .expando-button.image.expanded:hover {
     background-position: -2px -53px !important
   }
-  .expando-button.gallery.collapsed, .expando-button.gallery.collapsed:hover, .expando-button.gallery.expanded, .expando-button.gallery.expanded:hover {
+  .expando-button.gallery.collapsed,
+  .expando-button.gallery.collapsed:hover,
+  .expando-button.gallery.expanded,
+  .expando-button.gallery.expanded:hover {
     background-position: -2px -2px !important
   }
-  .expando-button.selftext.collapsed, .expando-button.selftext.collapsed:hover, .expando-button.selftext.expanded, .expando-button.selftext.expanded:hover {
+  .expando-button.selftext.collapsed,
+  .expando-button.selftext.collapsed:hover,
+  .expando-button.selftext.expanded,
+  .expando-button.selftext.expanded:hover {
     background-position: -1px -230px
   }
 }
@@ -1841,7 +2175,8 @@ h6,
   border: 0
 }
 
-.organic-listing .link.promotedlink.promoted, .organic-listing .link.promotedlink.external {
+.organic-listing .link.promotedlink.promoted,
+.organic-listing .link.promotedlink.external {
   width: 100%
 }
 
@@ -1871,32 +2206,32 @@ h6,
   color: rgba(255, 255, 255, 0.5) !important
 }
 
-.res-nightmode #siteTable > .thing {
+.res-nightmode #siteTable>.thing {
   border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important
 }
 
-.res-nightmode #siteTable > .thing .title {
+.res-nightmode #siteTable>.thing .title {
   color: #fff !important
 }
 
-.res-nightmode #siteTable > .thing .title:visited {
+.res-nightmode #siteTable>.thing .title:visited {
   color: #9e9e9e !important
 }
 
-.res-nightmode #siteTable > .thing.RES-keyNav-activeThing {
+.res-nightmode #siteTable>.thing.RES-keyNav-activeThing {
   background-color: #212121 !important
 }
 
-.res-nightmode #siteTable > .thing .tagline {
+.res-nightmode #siteTable>.thing .tagline {
   color: #9e9e9e !important
 }
 
-.res-nightmode #siteTable > .thing .domain,
-.res-nightmode #siteTable > .thing .domain a {
+.res-nightmode #siteTable>.thing .domain,
+.res-nightmode #siteTable>.thing .domain a {
   color: rgba(255, 255, 255, 0.7)
 }
 
-.res-nightmode #siteTable > .thing .buttons li a {
+.res-nightmode #siteTable>.thing .buttons li a {
   color: #9e9e9e
 }
 
@@ -1918,9 +2253,9 @@ h6,
   color: #063c6d
 }
 
-#siteTable > .likes .score,
-#siteTable > .dislikes .score,
-#siteTable > .thing .score {
+#siteTable>.likes .score,
+#siteTable>.dislikes .score,
+#siteTable>.thing .score {
   position: relative
   height: 100%
   padding: 3px 0
@@ -1928,49 +2263,49 @@ h6,
   line-height: 1
 }
 
-#siteTable > .thing {
+#siteTable>.thing {
   height: auto !important
   margin: 0
   border-bottom: 1px solid rgba(0, 0, 0, 0.12) !important
   padding: 5px 5px 3px 5px !important
 }
 
-#siteTable > .thing.RES-keyNav-activeThing {
+#siteTable>.thing.RES-keyNav-activeThing {
   background-color: #f7f7f7
 }
 
-#siteTable > .thing .entry.RES-keyNav-activeElement {
+#siteTable>.thing .entry.RES-keyNav-activeElement {
   background-color: transparent !important
 }
 
-#siteTable > .thing .title {
+#siteTable>.thing .title {
   color: #2196f3
   line-height: 1.35
   margin: 0
 }
 
-#siteTable > .thing .title:hover {
+#siteTable>.thing .title:hover {
   color: #64b5f6
 }
 
-#siteTable > .thing .title:active {
+#siteTable>.thing .title:active {
   color: #1976d2
 }
 
-#siteTable > .thing .title:visited {
+#siteTable>.thing .title:visited {
   color: #9575cd
 }
 
-#siteTable > .thing .tagline {
+#siteTable>.thing .tagline {
   color: rgba(0, 0, 0, 0.87)
 }
 
-#siteTable > .thing .domain,
-#siteTable > .thing .domain a {
+#siteTable>.thing .domain,
+#siteTable>.thing .domain a {
   color: rgba(0, 0, 0, 0.54)
 }
 
-#siteTable > .thing .buttons li a {
+#siteTable>.thing .buttons li a {
   color: rgba(0, 0, 0, 0.87)
 }
 
@@ -1989,7 +2324,7 @@ h6,
   color: #063c6d
 }
 
-.self .expanded ~ .expando .usertext-body {
+.self .expanded~.expando .usertext-body {
   -webkit-animation: 0.2s slide-down cubic-bezier(0.4, 0, 0.2, 1) forwards
   -moz-animation: 0.2s slide-down cubic-bezier(0.4, 0, 0.2, 1) forwards
   animation: 0.2s slide-down cubic-bezier(0.4, 0, 0.2, 1) forwards
@@ -2118,12 +2453,12 @@ div.content {
   background: transparent !important
 }
 
-.pinHeader-subanduser input[name=uh] ~ a::after,
-.pinHeader-userbar input[name=uh] ~ a::after {
+.pinHeader-subanduser input[name=uh]~a::after,
+.pinHeader-userbar input[name=uh]~a::after {
   position: static
 }
 
-input[name=uh] ~ a::after {
+input[name=uh]~a::after {
   position: absolute
   top: -68px
   right: -16px
@@ -2133,175 +2468,177 @@ input[name=uh] ~ a::after {
   height: 223px
   content: ''
   pointer-events: none
-  background-attachment: fixed
+  background-attachment: scroll, fixed
 }
 
-input[name=uh][value^="a"] ~ a::after, input[name=uh][value^="9"] ~ a::after {
+input[name=uh][value^="a"]~a::after,
+input[name=uh][value^="9"]~a::after {
   margin-top: -165px
   background-image: url(%%header1%%)
 }
 
-input[name=uh][value^="b"] ~ a::after, input[name=uh][value^="8"] ~ a::after {
+input[name=uh][value^="b"]~a::after,
+input[name=uh][value^="8"]~a::after {
   margin-top: -165px
   background-image: url(%%header2%%)
 }
 
-input[name=uh][value^="c"] ~ a::after {
+input[name=uh][value^="c"]~a::after {
   margin-top: -165px
   background-image: url(%%header3%%)
 }
 
-input[name=uh][value^="d"] ~ a::after {
+input[name=uh][value^="d"]~a::after {
   margin-top: -165px
   background-image: url(%%header4%%)
 }
 
-input[name=uh][value^="e"] ~ a::after {
+input[name=uh][value^="e"]~a::after {
   margin-top: -165px
   background-image: url(%%header5%%)
 }
 
-input[name=uh][value^="f"] ~ a::after {
+input[name=uh][value^="f"]~a::after {
   margin-top: -165px
   background-image: url(%%header6%%)
 }
 
-input[name=uh][value^="g"] ~ a::after {
+input[name=uh][value^="g"]~a::after {
   margin-top: -165px
   background-image: url(%%header7%%)
 }
 
-input[name=uh][value^="h"] ~ a::after {
+input[name=uh][value^="h"]~a::after {
   margin-top: -165px
   background-image: url(%%header8%%)
 }
 
-input[name=uh][value^="i"] ~ a::after {
+input[name=uh][value^="i"]~a::after {
   margin-top: -165px
   background-image: url(%%header9%%)
 }
 
-input[name=uh][value^="j"] ~ a::after {
+input[name=uh][value^="j"]~a::after {
   margin-top: -165px
   background-image: url(%%header10%%)
 }
 
-input[name=uh][value^="k"] ~ a::after {
+input[name=uh][value^="k"]~a::after {
   margin-top: -165px
   background-image: url(%%header11%%)
 }
 
-input[name=uh][value^="l"] ~ a::after {
+input[name=uh][value^="l"]~a::after {
   margin-top: -165px
   background-image: url(%%header12%%)
 }
 
-input[name=uh][value^="m"] ~ a::after {
+input[name=uh][value^="m"]~a::after {
   margin-top: -165px
   background-image: url(%%header13%%)
 }
 
-input[name=uh][value^="n"] ~ a::after {
+input[name=uh][value^="n"]~a::after {
   margin-top: -165px
   background-image: url(%%header14%%)
 }
 
-input[name=uh][value^="o"] ~ a::after {
+input[name=uh][value^="o"]~a::after {
   margin-top: -165px
   background-image: url(%%header15%%)
 }
 
-input[name=uh][value^="p"] ~ a::after {
+input[name=uh][value^="p"]~a::after {
   margin-top: -165px
   background-image: url(%%header16%%)
 }
 
-input[name=uh][value^="q"] ~ a::after {
+input[name=uh][value^="q"]~a::after {
   margin-top: -165px
   background-image: url(%%header17%%)
 }
 
-input[name=uh][value^="r"] ~ a::after {
+input[name=uh][value^="r"]~a::after {
   margin-top: -165px
   background-image: url(%%header18%%)
 }
 
-input[name=uh][value^="s"] ~ a::after {
+input[name=uh][value^="s"]~a::after {
   margin-top: -165px
   background-image: url(%%header19%%)
 }
 
-input[name=uh][value^="t"] ~ a::after {
+input[name=uh][value^="t"]~a::after {
   margin-top: -165px
   background-image: url(%%header20%%)
 }
 
-input[name=uh][value^="u"] ~ a::after {
+input[name=uh][value^="u"]~a::after {
   margin-top: -165px
   background-image: url(%%header21%%)
 }
 
-input[name=uh][value^="v"] ~ a::after {
+input[name=uh][value^="v"]~a::after {
   margin-top: -165px
   background-image: url(%%header22%%)
 }
 
-input[name=uh][value^="w"] ~ a::after {
+input[name=uh][value^="w"]~a::after {
   margin-top: -165px
   background-image: url(%%header23%%)
 }
 
-input[name=uh][value^="x"] ~ a::after {
+input[name=uh][value^="x"]~a::after {
   margin-top: -165px
   background-image: url(%%header24%%)
 }
 
-input[name=uh][value^="y"] ~ a::after {
+input[name=uh][value^="y"]~a::after {
   margin-top: -165px
   background-image: url(%%header25%%)
 }
 
-input[name=uh][value^="z"] ~ a::after {
+input[name=uh][value^="z"]~a::after {
   margin-top: -165px
   background-image: url(%%header26%%)
 }
 
-input[name=uh][value^="0"] ~ a::after {
+input[name=uh][value^="0"]~a::after {
   margin-top: -165px
   background-image: url(%%header27%%)
 }
 
-input[name=uh][value^="1"] ~ a::after {
+input[name=uh][value^="1"]~a::after {
   margin-top: -165px
   background-image: url(%%header28%%)
 }
 
-input[name=uh][value^="2"] ~ a::after {
+input[name=uh][value^="2"]~a::after {
   margin-top: -165px
   background-image: url(%%header29%%)
 }
 
-input[name=uh][value^="3"] ~ a::after {
+input[name=uh][value^="3"]~a::after {
   margin-top: -165px
   background-image: url(%%header30%%)
 }
 
-input[name=uh][value^="4"] ~ a::after {
+input[name=uh][value^="4"]~a::after {
   margin-top: -165px
   background-image: url(%%header31%%)
 }
 
-input[name=uh][value^="5"] ~ a::after {
+input[name=uh][value^="5"]~a::after {
   margin-top: -165px
   background-image: url(%%header32%%)
 }
 
-input[name=uh][value^="6"] ~ a::after {
+input[name=uh][value^="6"]~a::after {
   margin-top: -165px
   background-image: url(%%header33%%)
 }
 
-input[name=uh][value^="7"] ~ a::after {
+input[name=uh][value^="7"]~a::after {
   margin-top: -165px
   background-image: url(%%header34%%)
 }
@@ -2344,7 +2681,9 @@ input[name=uh][value^="7"] ~ a::after {
   position: relative
 }
 
-#sr-header-area .dropdown.srdrop .selected, #sr-header-area .dropdown.srdrop .selected::before, #sr-header-area .dropdown.srdrop .selected::after {
+#sr-header-area .dropdown.srdrop .selected,
+#sr-header-area .dropdown.srdrop .selected::before,
+#sr-header-area .dropdown.srdrop .selected::after {
   display: block
   width: 20px
   height: 2px
@@ -2354,7 +2693,8 @@ input[name=uh][value^="7"] ~ a::after {
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-#sr-header-area .dropdown.srdrop .selected::before, #sr-header-area .dropdown.srdrop .selected::after {
+#sr-header-area .dropdown.srdrop .selected::before,
+#sr-header-area .dropdown.srdrop .selected::after {
   position: absolute
   content: ''
 }
@@ -2390,11 +2730,12 @@ input[name=uh][value^="7"] ~ a::after {
   display: inline-block !important
 }
 
-#userbarToggle, .res-nightmode #userbarToggle,
+#userbarToggle,
+.res-nightmode #userbarToggle,
 #header-bottom-right .user,
 #header-bottom-right span a {
   color: #dd5e89 !important
-  font-weight: 500
+  font-weight: bold
 }
 
 .pref-lang.choice {
@@ -2436,13 +2777,15 @@ input[name=uh][value^="7"] ~ a::after {
   margin-right: 16px
   padding: 0
   background-color: transparent !important
+  top: 233px
 }
 
 html.res #header-bottom-right {
   top: 230px
 }
 
-#userbarToggle, .res-nightmode #userbarToggle {
+#userbarToggle,
+.res-nightmode #userbarToggle {
   background-color: transparent !important
   border: 0 !important
 }
@@ -2534,7 +2877,7 @@ html.res #header-bottom-right {
   width: 100%
   margin: 0 !important
   font-size: 14px
-  background: linear-gradient(transparent 50%, #808080)
+  background: linear-gradient(transparent 50%, gray)
 }
 
 #header-bottom-left .pagename {
@@ -2617,7 +2960,6 @@ html.res #header-bottom-right {
   #header-bottom-left {
     top: 160px
     height: 64px
-    /*background: linear-gradient(transparent 40%, rgb(221, 94, 137))*/
   }
   #header-bottom-left .pagename a {
     line-height: 62px
@@ -2689,20 +3031,17 @@ html.res #header-bottom-right {
   width: 100%
 }
 
-.side .md h5 + p {
+.side .md h5+p {
   display: flex
   justify-content: space-around
-}
-
-.side .md a {
-  /* &[href="/r/kpop/wiki/rules"], */
 }
 
 .side .md a[href="#/RES_SR_Config/NightModeCompatible"] {
   display: none !important
 }
 
-.side .md a[href="/r/kpop/wiki/relatedsubs"], .side .md a[href="/r/kpop/wiki/usefulsites"] {
+.side .md a[href="/r/kpop/wiki/relatedsubs"],
+.side .md a[href="/r/kpop/wiki/usefulsites"] {
   display: block
   margin: 15px 0
 }
@@ -2716,11 +3055,11 @@ html.res #header-bottom-right {
   background-image: url(%%rkp-social-icons%%) !important
 }
 
-.side .md a[href$="#lastfm-btn"] {
+.side .md a[href$="#discord-btn"] {
   background-position: -50px 0
 }
 
-.side .md a[href$="#steam-btn"] {
+.side .md a[href$="#plugdj-btn"] {
   background-position: -100px 0
 }
 
@@ -2751,7 +3090,7 @@ html.res #header-bottom-right {
   content: "i'm in da-da-da-danger pinocchio~"
 }
 
-.c-checkbox input[type="checkbox"] + label::before {
+.c-checkbox input[type="checkbox"]+label::before {
   vertical-align: -4px
 }
 
@@ -2773,7 +3112,7 @@ html.res #header-bottom-right {
   color: #fff !important
 }
 
-.login-form-side input[type="checkbox"] + label::before {
+.login-form-side input[type="checkbox"]+label::before {
   vertical-align: -25%
 }
 
@@ -2838,7 +3177,7 @@ html.res #header-bottom-right {
   font-weight: bold
 }
 
-label + #moresearchinfo {
+label+#moresearchinfo {
   margin-top: 10px
   border-color: #ffab40
 }
@@ -3044,7 +3383,7 @@ label + #moresearchinfo {
   display: none
 }
 
-.titlebox .flairtoggle input[type="checkbox"] + label::before {
+.titlebox .flairtoggle input[type="checkbox"]+label::before {
   vertical-align: -25%
 }
 
@@ -3061,7 +3400,8 @@ label + #moresearchinfo {
   border: 0
 }
 
-.hover-bubble.multi-selector::before, .hover-bubble.multi-selector::after {
+.hover-bubble.multi-selector::before,
+.hover-bubble.multi-selector::after {
   display: none !important
 }
 
@@ -3263,7 +3603,7 @@ body::before {
   margin: 0
 }
 
-.commentarea .panestack-title ~ .menuarea {
+.commentarea .panestack-title~.menuarea {
   padding-top: 60px !important
   border-top-left-radius: 0 !important
   border-top-right-radius: 0 !important
@@ -3273,13 +3613,13 @@ body::before {
   margin-bottom: 5px
 }
 
-.commentarea .menuarea .spacer + .spacer {
+.commentarea .menuarea .spacer+.spacer {
   display: block
   width: -webkit-calc(100% - 32px)
   width: calc(100% - 32px)
 }
 
-.commentarea .menuarea .spacer + .spacer form:first-of-type {
+.commentarea .menuarea .spacer+.spacer form:first-of-type {
   margin: 0
 }
 
@@ -3287,7 +3627,7 @@ body::before {
   color: rgba(0, 0, 0, 0.54)
 }
 
-.commentarea > .usertext {
+.commentarea>.usertext {
   margin-bottom: 5px
   margin-left: 0
 }
@@ -3527,12 +3867,12 @@ html.res-nightmode .RES-keyNav-activeElement .md-container,
   margin: 0 auto
 }
 
-.flair-settings + .tabmenu {
+.flair-settings+.tabmenu {
   display: block
   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12) !important
 }
 
-.flair-settings + .tabmenu li a {
+.flair-settings+.tabmenu li a {
   text-align: center
   background-color: #fff
   width: -webkit-calc(100% / 3)
@@ -3541,22 +3881,22 @@ html.res-nightmode .RES-keyNav-activeElement .md-container,
   background: transparent
 }
 
-.flair-settings + .tabmenu li a:hover {
+.flair-settings+.tabmenu li a:hover {
   color: rgba(0, 0, 0, 0.87) !important
   background: rgba(255, 209, 129, 0.3)
 }
 
-.flair-settings + .tabmenu li.selected a {
+.flair-settings+.tabmenu li.selected a {
   color: #fff !important
   font-size: inherit
   background-color: #00bcd4
 }
 
-.flair-settings + .tabmenu #tab-grant a.choice {
+.flair-settings+.tabmenu #tab-grant a.choice {
   border-top-left-radius: 2px
 }
 
-.flair-settings + .tabmenu #tab-link_templates a.choice {
+.flair-settings+.tabmenu #tab-link_templates a.choice {
   border-top-right-radius: 2px
 }
 
@@ -3607,11 +3947,11 @@ html.res-nightmode .RES-keyNav-activeElement .md-container,
   margin: 0 0 16px 0
 }
 
-.combined-search-page .search-result.has-thumbnail > .thumbnail {
+.combined-search-page .search-result.has-thumbnail>.thumbnail {
   max-height: 70px
 }
 
-.combined-search-page .search-result.has-thumbnail > .thumbnail img {
+.combined-search-page .search-result.has-thumbnail>.thumbnail img {
   width: unset
 }
 
@@ -3630,7 +3970,7 @@ html.res-nightmode .RES-keyNav-activeElement .md-container,
 
 .linefield {
   width: 100%
-  margin-bottom: 0.9375em
+  margin-bottom: .9375em
 }
 
 .linefield div:not(.commentingAs) {
@@ -3653,11 +3993,12 @@ html.res-nightmode .RES-keyNav-activeElement .md-container,
   appearance: menulist
 }
 
-.linefield input[type="text"], .linefield input[type="password"] {
+.linefield input[type="text"],
+.linefield input[type="password"] {
   width: 100%
 }
 
-.linefield input[type="checkbox"] + label::before {
+.linefield input[type="checkbox"]+label::before {
   vertical-align: -4px
 }
 
@@ -3676,7 +4017,7 @@ html.res-nightmode .RES-keyNav-activeElement .md-container,
   appearance: none
 }
 
-.linefield table input[type="radio"]:not([id*="spam"]) + label::before {
+.linefield table input[type="radio"]:not([id*="spam"])+label::before {
   vertical-align: -3px
   display: inline-block
   height: 16px
@@ -3689,7 +4030,7 @@ html.res-nightmode .RES-keyNav-activeElement .md-container,
   cursor: pointer
 }
 
-.linefield table input[type="radio"]:not([id*="spam"]):checked + label::before {
+.linefield table input[type="radio"]:not([id*="spam"]):checked+label::before {
   border-color: #00bcd4
   background-image: radial-gradient(circle, #00bcd4 50%, transparent 50%)
   background-position: 50% 50%
@@ -3699,7 +4040,7 @@ html.res-nightmode .RES-keyNav-activeElement .md-container,
   animation: radio-toggle 0.2s cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.linefield table input[type="radio"]:not([id*="spam"])[disabled="disabled"] + label::before {
+.linefield table input[type="radio"]:not([id*="spam"])[disabled="disabled"]+label::before {
   border-color: rgba(0, 0, 0, 0.38)
   cursor: auto
 }
@@ -3802,16 +4143,19 @@ ul.tabmenu.formtab a.text-button.choice {
   display: none
 }
 
-.roundfield, .roundfield-content textarea,
+.roundfield,
+.roundfield-content textarea,
 .roundfield input[type="text"],
 .roundfield-content input[type="url"],
-.roundfield .usertext-edit, .roundfield-content textarea .usertext-edit,
+.roundfield .usertext-edit,
+.roundfield-content textarea .usertext-edit,
 .roundfield input[type="text"] .usertext-edit,
 .roundfield-content input[type="url"] .usertext-edit {
   width: 100%
 }
 
-.roundfield, .roundfield-content textarea,
+.roundfield,
+.roundfield-content textarea,
 .roundfield input[type="text"],
 .roundfield-content input[type="url"] {
   padding: 0
@@ -3829,7 +4173,7 @@ ul.tabmenu.formtab a.text-button.choice {
   color: rgba(0, 0, 0, 0.87)
 }
 
-.roundfield-content input[type="checkbox"] + label::before {
+.roundfield-content input[type="checkbox"]+label::before {
   vertical-align: -3px
 }
 
@@ -3971,7 +4315,7 @@ body:not(.comments-page) .linkflair-spoiler a.title:hover {
   background-color: #00bcd4
 }
 
-.linkflair .linkflair-news > span {
+.linkflair .linkflair-news>span {
   color: #fff !important
   background-color: #00bcd4 !important
 }
@@ -3981,7 +4325,7 @@ body:not(.comments-page) .linkflair-spoiler a.title:hover {
   background-color: #f44336
 }
 
-.linkflair .linkflair-release > span {
+.linkflair .linkflair-release>span {
   color: #fff !important
   background-color: #f44336 !important
 }
@@ -3991,7 +4335,7 @@ body:not(.comments-page) .linkflair-spoiler a.title:hover {
   background-color: #9575cd
 }
 
-.linkflair .linkflair-teaser > span {
+.linkflair .linkflair-teaser>span {
   color: #fff !important
   background-color: #9575cd !important
 }
@@ -4001,7 +4345,7 @@ body:not(.comments-page) .linkflair-spoiler a.title:hover {
   background-color: #ffbd24
 }
 
-.linkflair .linkflair-discussion > span {
+.linkflair .linkflair-discussion>span {
   color: #fff !important
   background-color: #ffbd24 !important
 }
@@ -4011,7 +4355,7 @@ body:not(.comments-page) .linkflair-spoiler a.title:hover {
   background-color: #4caf50
 }
 
-.linkflair .linkflair-performance > span {
+.linkflair .linkflair-performance>span {
   color: #fff !important
   background-color: #4caf50 !important
 }
@@ -4021,7 +4365,7 @@ body:not(.comments-page) .linkflair-spoiler a.title:hover {
   background-color: #dd5e89
 }
 
-.linkflair .linkflair-variety > span {
+.linkflair .linkflair-variety>span {
   color: #fff !important
   background-color: #dd5e89 !important
 }
@@ -4031,7 +4375,7 @@ body:not(.comments-page) .linkflair-spoiler a.title:hover {
   background-color: transparent
 }
 
-.linkflair .linkflair-spoiler > span {
+.linkflair .linkflair-spoiler>span {
   color: #000 !important
   background-color: transparent !important
 }
@@ -4041,7 +4385,7 @@ body:not(.comments-page) .linkflair-spoiler a.title:hover {
   background-color: transparent
 }
 
-.linkflair .linkflair-error > span {
+.linkflair .linkflair-error>span {
   color: #000 !important
   background-color: transparent !important
 }
@@ -4207,11 +4551,6 @@ html:lang(kr-06) .side .md [href*="kr-06"] {
   display: none
 }
 
-/*
-
-Making changes to the top bar
-
-*/
 #header-bottom-left .tabmenu li [href*="controversial"] {
   display: none !important
 }
@@ -4220,7 +4559,7 @@ Making changes to the top bar
   display: none !important
 }
 
-.tb-metrics > a {
+.tb-metrics>a {
   display: none !important
 }
 
@@ -4229,12 +4568,12 @@ Making changes to the top bar
   font-weight: normal
 }
 
-#header-bottom-right > span.user > a {
+#header-bottom-right>span.user>a {
   font-size: 14px
 }
 
-.side h5 + ul,
-.side h5 + ul {
+.side h5+ul,
+.side h5+ul {
   padding: 0 8px
   margin: 0 !important
   height: auto
@@ -4243,8 +4582,8 @@ Making changes to the top bar
   transition: all 0.5s
 }
 
-.side h5:hover + ul,
-.side h5 + ul:hover {
+.side h5:hover+ul,
+.side h5+ul:hover {
   height: auto
   padding: 8px
   max-height: 500px
@@ -4345,23 +4684,23 @@ Making changes to the top bar
 .side .md ul:nth-child(2) {
   position: absolute
   top: 219px
-  /* display: inline-block */
   background-color: #f1f1f1
   left: 0px
-  width: 100%
+  max-width: 100%
   height: 30px
-  margin-left: 90px
+  margin-left: 176px
+  padding-left: 0
 }
 
 .side .md ul:nth-child(2) li {
   display: inline-block
   width: 150px
   text-align: center
- line-height: 35px
-  font-weight: 500
+  line-height: 35px
+  font-weight: bold
   font-size: 14px
   background-color: rgba(221, 221, 221, 0.7)
-  margin: 0 25px
+  margin: 0 7px
 }
 
 .side .md ul:nth-child(2) li a {
@@ -4370,10 +4709,11 @@ Making changes to the top bar
 
 .side .md ul:nth-child(2) li:nth-child(1) {
   background-color: #dd5e89
+  margin-left: 0
 }
 
 .side .md ul:nth-child(2) li:nth-child(1) a {
-  padding: 10px 50px
+  padding: 10px 49px
 }
 
 .side .md ul:nth-child(2) li:nth-child(2):hover {

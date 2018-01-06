@@ -9,7 +9,7 @@
       #header-bottom-right .user,
       #header-bottom-right span a {
         color: $primary !important;
-        font-weight: 500;
+        font-weight: bold;
       }
 
       .pref-lang.choice {
@@ -28,7 +28,7 @@
       #header-bottom-right .user,
       #header-bottom-right span a {
         color: $primary !important;
-        font-weight: 500;
+        font-weight: bold;
       }
 
       .pref-lang.choice {
@@ -47,7 +47,7 @@
       #header-bottom-right .user,
       #header-bottom-right span a {
         color: #dd5e89 !important;
-        font-weight: 500;
+        font-weight: bold;
       }
 
       .pref-lang.choice {
@@ -114,6 +114,7 @@
   margin-right: 16px;
   padding: 0;
   background-color: transparent !important;
+  top: 233px;
 }
 
 html.res #header-bottom-right { top: 230px; }

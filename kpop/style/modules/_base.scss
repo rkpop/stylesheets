@@ -58,9 +58,10 @@ body {
     @if $random-header {
       background-image: linear-gradient(to right,#dd5e89 0%,#f7bb97 100%);
     } @else {
-      background-image: $scrim,url(%%header%%);
+      background-image: url(%%header%%);
     }
 
     background-attachment: scroll, fixed;
+    background-position: top center;
   }
 }

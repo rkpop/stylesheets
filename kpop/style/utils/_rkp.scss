@@ -454,22 +454,23 @@ Making changes to the top bar
 .side .md ul:nth-child(2) {
 	position: absolute;
     top: 219px;
-    /* display: inline-block; */
     background-color: #f1f1f1;
     left: 0px;
-    width: 100%;
+    max-width: 100%;
     height: 30px;
-    margin-left: 90px;
+    margin-left: 176px;
+    padding-left: 0;
+
 
 	li {
 		display: inline-block;
         width: 150px;
         text-align: center;
         line-height: 35px;
-        font-weight: 500;
+        font-weight: bold;
         font-size: 14px;
         background-color: rgba(221, 221, 221, 0.7);
-        margin: 0 25px;
+        margin: 0 7px;
 
         a {
             color: #fff;
@@ -477,8 +478,9 @@ Making changes to the top bar
 
         &:nth-child(1) {
             background-color: #dd5e89;
+            margin-left: 0;
             a {
-                padding: 10px 50px;
+                padding: 10px 49px;
             }
         }
 
@@ -509,7 +511,47 @@ Making changes to the top bar
                 }
             }
         }
+
+        &:nth-child(4) {
+            margin: 0;
+            width: 170px;
+            &:hover {
+                color: #fff;
+                background: #00bcd4 radial-gradient(circle,rgba(77,208,225,0.3) 15%,transparent 30%) no-repeat 50% 50%/0 !important;
+            }
+            a {
+                padding: 10px 30px;
+                color: #00bcd4;
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
 	}
 
 }
 
+.midcol {
+    overflow: visible;
+}
+
+.thing.comment
+.arrow.down:hover:before {
+     position: absolute;
+     z-index: 1000;
+     padding: 5px;
+     border: 0;
+     background: #fca;
+     content: "This comment is off-topic.";
+     text-align: center;
+     font-size: 10px;
+     color: #f00;
+     margin-left: 25px;
+     margin-top: 5px;
+     border-radius: 4px;
+     white-space: nowrap;
+}
+
+.commentarea textarea:not(:focus) {
+    background: url(%%disclaimer%%);
+}
