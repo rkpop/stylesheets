@@ -458,7 +458,7 @@ Making changes to the top bar
     left: 0px;
     max-width: 100%;
     height: 30px;
-    margin-left: 176px;
+    margin-left: 25px;
     padding-left: 0;
 
 
@@ -529,6 +529,12 @@ Making changes to the top bar
         }
 	}
 
+}
+
+@media (min-width: 1400px) {
+    .side .md ul:nth-child(2) {
+        margin-left: 176px;
+    }
 }
 
 .midcol {
