@@ -4,7 +4,7 @@ This is the repo for the stylesheets for /r/kpop, /r/kpophelp, and /r/kpoppers
 # Downloading
 Just clone the repository or download a zip file
 
-`git clone https://github.com/kilenaitor/kstylesheets.git`
+`git clone https://github.com/rkpop/kstylesheets.git`
 
 `cd kstylesheets`
 
